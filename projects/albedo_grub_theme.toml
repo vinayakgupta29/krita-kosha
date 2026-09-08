@@ -1,0 +1,38 @@
+# Project Record: Albedo GRUB Theme
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/albedo-grub-theme/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/albedo_grub_README.md"
+
+[project]
+id = "albedo_grub_theme"
+title = "Albedo GRUB Theme"
+category = "Linux Systems & Customization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/albedo-grub-theme"
+deployed_url = ""
+languages = []
+technologies = ["tools.linux"]
+tagline = "Minimalist, high-DPI bootloader theme for GNU GRUB featuring custom typography and icon sets"
+
+[project.readme_summary]
+overview = "A clean, minimalist visual theme designed for the GNU GRUB bootloader. Configured with high-DPI font rendering, custom OS distribution icons, and refined progress bars for multi-boot Linux systems."
+key_components = [
+  "Custom GRUB theme configuration managing coordinate positioning, font scaling, and palette colors",
+  "High-resolution icon assets for popular Linux distributions and kernel options",
+  "Automated bash installation script verifying boot directory permissions and updating grub.cfg"
+]
+
+bullets = [
+  "Designed a minimalist, high-DPI bootloader theme for GNU GRUB with automated installation scripts and multi-OS icon sets."
+]
+keywords = ["grub", "bootloader", "theming", "linux", "systems-customization"]

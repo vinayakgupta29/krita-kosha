@@ -1,0 +1,38 @@
+# Project Record: Plymouth Themes
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/plymouth_themes/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/plymouth_themes_README.md"
+
+[project]
+id = "plymouth_themes"
+title = "Plymouth Boot Splash Themes"
+category = "Linux Systems & Customization"
+date = "Jul-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/plymouth_themes"
+deployed_url = ""
+languages = ["langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Flicker-free graphical boot splash animations and themes for the Linux Plymouth boot subsystem"
+
+[project.readme_summary]
+overview = "A collection of smooth, flicker-free boot splash animations crafted for Plymouth on Linux. Integrates direct kernel modesetting (KMS) for seamless visual transitions from UEFI firmware to the display manager."
+key_components = [
+  "Plymouth script configuration defining frame timing, sprite rotation, and alpha blending",
+  "Automated initramfs regeneration hooks ensuring theme packaging into the early boot image",
+  "Optimized lightweight sprite assets ensuring minimal impact on boot execution times"
+]
+
+bullets = [
+  "Engineered lightweight, flicker-free Plymouth boot splash themes for Linux with automated initramfs packaging scripts."
+]
+keywords = ["plymouth", "boot-splash", "linux", "kernel", "systems-customization"]

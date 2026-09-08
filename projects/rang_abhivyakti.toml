@@ -1,0 +1,35 @@
+# Project Record: Hṛdayapāṭaḥ (Digital Art & Visual Gallery)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://rang.abhivyakti.space/"
+]
+
+[project]
+id = "rang_abhivyakti"
+title = "Hṛdayapāṭaḥ (Digital Art & Visual Gallery)"
+category = "Frontend & Creative Technologies"
+date = "Nov-2025"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
+deployed_url = "https://rang.abhivyakti.space"
+languages = [
+  "langs.ruby",
+  "langs.html",
+  "langs.css",
+  "langs.javascript"
+]
+technologies = [
+  "fw.jekyll"
+]
+tagline = "Responsive digital art gallery and visual narrative portfolio (हृदयपाटः) built with Ruby and Jekyll"
+
+bullets = [
+  "Engineered a responsive, high-performance visual gallery showcasing curated digital art, sketches, and visual narratives using Ruby, Jekyll, and optimized CSS."
+]
+keywords = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]

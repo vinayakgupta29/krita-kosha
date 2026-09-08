@@ -1,0 +1,68 @@
+# Project Record: Vichar (Real-Time Anonymous Discussion Board)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/databases.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://vichar.abhivyakti.space/"
+]
+
+[project]
+id = "vichar_abhivyakti"
+title = "Vichar (Real-Time Anonymous Discussion Board)"
+category = "Distributed Systems & Web Platforms"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
+deployed_url = "https://vichar.abhivyakti.space"
+languages = [
+  "langs.go",
+  "langs.html",
+  "langs.css",
+  "langs.javascript",
+  "langs.typescript"
+]
+technologies = [
+  "tools.html_template",
+  "tools.cloudflare_workers",
+  "db.sqlite",
+  "proto.rest"
+]
+tagline = "Real-time anonymous discussion board built with Go SSR (html/template), Cloudflare worker threads, WebSockets, and cryptographic tripcodes"
+
+[project.readme_summary]
+overview = "A real-time anonymous discussion forum (विचाराङ्गण) built in Go utilizing Server-Side Rendering (SSR) via html/template, coupled with Cloudflare worker threads for edge delivery. Leverages cryptographic tripcodes for persistent zero-registration identity, WebSockets for instantaneous comment updates, and client-side timezone normalization."
+key_components = [
+  "Go-based Server-Side Rendering (SSR) engine utilizing standard html/template for performant, SEO-friendly HTML delivery",
+  "Cloudflare edge deployment utilizing worker threads for low-latency global routing and asset caching",
+  "Concurrent WebSocket broadcast pipeline dispatching live messages to active thread readers without page reloads",
+  "Deterministic cryptographic tripcode generator producing tamper-proof user pseudonyms via one-way cryptographic hashing",
+  "Client-side timezone synchronization via browser cookies and Intl.DateTimeFormat",
+  "Secure Markdown parser with strict XSS sanitization and external link safety wrappers",
+  "Bidirectional discussion hooks connecting to essay publications on Kalam Abhivyakti"
+]
+
+bullets = [
+  "Architected a real-time anonymous discussion board in Go (vichar.abhivyakti.space) using Go Server-Side Rendering (html/template) and WebSockets for low-latency live message broadcasting.",
+  "Engineered a cryptographic tripcode identity system generating deterministic, tamper-resistant pseudonyms via one-way cryptographic hashes, eliminating registration friction while preventing impersonation.",
+  "Deployed on Cloudflare edge using worker threads for global low-latency delivery, integrating dynamic client timezone negotiation and secure Markdown sanitization pipelines."
+]
+keywords = [
+  "go",
+  "html",
+  "css",
+  "javascript",
+  "ssr",
+  "html-template",
+  "cloudflare-workers",
+  "websockets",
+  "real-time",
+  "cryptography",
+  "tripcodes",
+  "sqlite"
+]

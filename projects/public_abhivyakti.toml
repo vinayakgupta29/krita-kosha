@@ -1,0 +1,31 @@
+# Project Record: Abhivyakti Space (Ecosystem Hub & Interactive Portal)
+
+references = [
+  "./taxonomy/languages.toml"
+]
+
+reference_urls = [
+  "https://abhivyakti.space/"
+]
+
+[project]
+id = "public_abhivyakti"
+title = "Abhivyakti Space (Ecosystem Hub & Interactive Portal)"
+category = "Frontend & Creative Technologies"
+date = "Nov-2025"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/public.abhivyakti"
+deployed_url = "https://abhivyakti.space"
+languages = [
+  "langs.html",
+  "langs.css",
+  "langs.javascript"
+]
+technologies = []
+tagline = "Central portal hub connecting the Abhivyakti creative ecosystem with dynamic interactive DOM physics and card tilting"
+
+bullets = [
+  "Engineered the central gateway portal (abhivyakti.space) unifying forum, literature, and art subdomains with dynamic CSS transformations, HTML5, and interactive chaos bubbles in vanilla JavaScript."
+]
+keywords = ["portal", "html", "css", "javascript", "interactive-ui", "hub"]

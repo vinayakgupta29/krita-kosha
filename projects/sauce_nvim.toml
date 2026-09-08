@@ -1,0 +1,38 @@
+# Project Record: sauce.nvim (Neovim Linter Plugin)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/sauce.nvim/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/sauce_nvim_README.md"
+
+[project]
+id = "sauce_nvim"
+title = "sauce.nvim (Custom Neovim Linter Plugin)"
+category = "Developer Tooling & Editors"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/sauce.nvim"
+deployed_url = ""
+languages = ["langs.lua", "langs.javascript"]
+technologies = ["tools.linux", "tools.git"]
+tagline = "Neovim plugin with Tree-sitter integration functioning as a real-time syntax highlighter and linter for structured personal data formats"
+
+[project.readme_summary]
+overview = "A specialized Neovim plugin written in Lua with Tree-sitter queries. Provides real-time syntax highlighting, AST parsing, and validation diagnostic warnings for custom text-based record formats."
+key_components = [
+  "Lua-based Neovim buffer integration using Neovim's native LSP diagnostic namespace",
+  "Custom Tree-sitter queries for incremental parsing and precise syntax color tokens",
+  "Asynchronous buffer linting executing on text change events without editor frame drops"
+]
+
+bullets = [
+  "Developed a custom Neovim plugin in Lua and Tree-sitter, implementing real-time syntax parsing, token highlighting, and diagnostic linting for custom record formats."
+]
+keywords = ["neovim", "lua", "tree-sitter", "linter", "editor-tools", "developer-ergonomics"]

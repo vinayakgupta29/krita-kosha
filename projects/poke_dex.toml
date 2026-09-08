@@ -1,0 +1,25 @@
+# Project Record: Poke-Dex Mobile Application
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+[project]
+id = "poke_dex"
+title = "Poke-Dex Mobile Application"
+category = "Mobile Engineering"
+date = "Apr-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/Poke-Dex"
+deployed_url = ""
+is_complete = false
+languages = ["langs.dart"]
+technologies = ["fw.flutter"]
+tagline = "Cross-platform mobile Pokédex application built in Flutter (Documentation in progress)"
+
+bullets = [
+  "Developed a cross-platform mobile Pokédex application using Flutter and Dart, integrating external REST APIs for Pokémon statistics and type visualization."
+]
+keywords = ["flutter", "dart", "mobile", "rest-api"]

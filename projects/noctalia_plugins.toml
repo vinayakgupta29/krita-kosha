@@ -1,0 +1,38 @@
+# Project Record: Noctalia Shell Plugins
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/noctalia_plugins/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/noctalia_plugins_README.md"
+
+[project]
+id = "noctalia_plugins"
+title = "Noctalia Shell Plugins (Multilingual Input Method Switcher)"
+category = "Linux Systems & Customization"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/noctalia_plugins"
+deployed_url = ""
+languages = ["langs.lua", "langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Desktop status-bar integration plugin for Noctalia Shell enabling instantaneous keyboard input method switching via Fcitx5"
+
+[project.readme_summary]
+overview = "A lightweight status-bar extension for Noctalia Shell designed to streamline multilingual computing workflows. Integrates directly with the Fcitx5 input method daemon via shell hooks to provide fast, status-bar toggling between US English, ITRANS Hindi, Japanese (Mozc), and Sanskrit without needing heavy graphical configuration tools."
+key_components = [
+  "Luau/Shell plugin architecture interfacing with Fcitx5 DBus/CLI interfaces",
+  "Real-time visual indicator on the status bar displaying active language engine",
+  "Zero-overhead input switching designed for polyglot computing and developer ergonomics"
+]
+
+bullets = [
+  "Engineered a status-bar plugin in Lua and Shell for Noctalia desktop environments, interfacing with Fcitx5 to enable low-latency switching across English, Hindi, Japanese, and Sanskrit input methods."
+]
+keywords = ["lua", "linux", "fcitx5", "multilingual", "desktop-tools", "input-methods"]

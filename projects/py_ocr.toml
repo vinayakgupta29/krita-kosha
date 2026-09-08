@@ -1,0 +1,37 @@
+# Project Record: py_ocr (Minor Utility)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/py_ocr/refs/heads/main/README.md"
+]
+
+[project]
+id = "py_ocr"
+title = "py_ocr (Desktop Optical Character Recognition Tool)"
+category = "Automation & Computer Vision"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/py_ocr"
+deployed_url = ""
+is_minor = true
+languages = ["langs.python", "langs.html"]
+technologies = ["tools.docker"]
+tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
+
+[project.readme_summary]
+overview = "A lightweight optical character recognition (OCR) utility written in Python. Processes image inputs to extract text strings, packaged with automated builds for Windows (.exe) and Linux environments."
+key_components = [
+  "Python OCR processing pipeline with image pre-filtering and contrast enhancement",
+  "Containerized Docker packaging ensuring reproducible OCR engine dependencies",
+  "Standalone release builds for quick local execution"
+]
+
+bullets = [
+  "Developed a desktop OCR text extraction tool in Python with containerized Docker packaging and cross-platform executable builds."
+]
+keywords = ["python", "ocr", "computer-vision", "automation", "docker"]

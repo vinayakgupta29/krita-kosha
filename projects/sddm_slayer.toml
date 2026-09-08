@@ -1,0 +1,38 @@
+# Project Record: SDDM Slayer Theme
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/sddm-slayer/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/sddm_slayer_README.md"
+
+[project]
+id = "sddm_slayer"
+title = "SDDM Slayer (Qt/QML Display Manager Theme)"
+category = "Linux Systems & Customization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/sddm-slayer"
+deployed_url = ""
+languages = ["langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Modern, responsive graphical login screen theme for the Simple Desktop Display Manager (SDDM) crafted in Qt/QML"
+
+[project.readme_summary]
+overview = "A custom display manager theme for SDDM (Simple Desktop Display Manager) on Linux desktop systems. Engineered using Qt Quick / QML to deliver responsive UI scaling, keyboard-driven user selection, and polished aesthetic transitions upon system boot."
+key_components = [
+  "Declarative UI layout in Qt Quick (QML) handling variable display resolutions and aspect ratios",
+  "Smooth input focus and password field masking with responsive feedback indicators",
+  "Integrated session selector allowing switching between Wayland and X11 compositors"
+]
+
+bullets = [
+  "Engineered a responsive Linux desktop display manager theme in Qt/QML for SDDM, managing dynamic screen scaling, user authentication UI, and session switching."
+]
+keywords = ["qml", "qt", "sddm", "display-manager", "linux", "desktop-theming"]

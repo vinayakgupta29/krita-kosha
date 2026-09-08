@@ -1,0 +1,38 @@
+# Project Record: Dotfiles (Arch Linux / Wayland Environment)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/dotfiles/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/linux-diy/dotfiles_README.md"
+
+[project]
+id = "dotfiles"
+title = "Dotfiles (Arch Linux & Wayland Environment)"
+category = "Linux Systems & Customization"
+date = "Aug-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/dotfiles"
+deployed_url = ""
+languages = ["langs.bash", "langs.lua", "langs.python"]
+technologies = ["tools.linux", "tools.git"]
+tagline = "Modular, reproducible Arch Linux desktop configuration managing Hyprland Wayland compositor, terminal toolchains, and custom keybindings"
+
+[project.readme_summary]
+overview = "A fully configured, reproducible Arch Linux developer environment managing Wayland/Hyprland window tiling, POSIX shell automation, custom terminal ergonomics, and system-wide aesthetics."
+key_components = [
+  "Hyprland Wayland compositor configuration with smooth hardware-accelerated animations and multi-monitor workflows",
+  "Automated shell scripts managing package installations, environment variables, and font glyph configurations",
+  "Modular configuration structure allowing rapid deployment onto fresh Arch Linux installations"
+]
+
+bullets = [
+  "Architected a modular and reproducible Arch Linux environment managing Hyprland Wayland window tiling, automated POSIX shell scripting, and terminal ergonomics."
+]
+keywords = ["linux", "arch-linux", "hyprland", "wayland", "bash", "lua", "dotfiles"]

@@ -1,0 +1,55 @@
+# Project Record: Kalam (Multilingual Literary & Technical Publishing Platform)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://kalam.abhivyakti.space/"
+]
+
+[project]
+id = "kalam_abhivyakti"
+title = "Kalam (Multilingual Literary & Technical Publishing Platform)"
+category = "Web Engineering & Publishing"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
+deployed_url = "https://kalam.abhivyakti.space"
+languages = [
+  "langs.ruby",
+  "langs.html",
+  "langs.css",
+  "langs.javascript"
+]
+technologies = [
+  "fw.jekyll"
+]
+tagline = "Multilingual publishing platform for essays, technical literature, and stories built with Ruby and Jekyll, featuring Devanagari and Japanese typography"
+
+[project.readme_summary]
+overview = "A clean, reader-focused publishing platform built on Jekyll and Ruby, supporting technical treatises, philosophical essays, short stories, and poetry across multiple scripts including Devanagari and Japanese. Discussion links lead directly to dedicated threads on Vichar."
+key_components = [
+  "Custom Jekyll static site generation with structured metadata, Atom feeds, and tag classification",
+  "Typographical design integrating Noto Serif, Noto Serif Devanagari, and Noto Serif JP",
+  "Deep integration with vichar.abhivyakti.space to host community discourse on published essays"
+]
+
+bullets = [
+  "Developed a multilingual publishing platform (kalam.abhivyakti.space) using Ruby and Jekyll, optimized for long-form reading with custom typography in Latin, Devanagari, and Japanese scripts.",
+  "Constructed structured taxonomy pipelines for articles, stories, and poetry with integrated discussion redirects to Vichar."
+]
+keywords = [
+  "jekyll",
+  "ruby",
+  "html",
+  "css",
+  "javascript",
+  "static-site",
+  "publishing",
+  "devanagari",
+  "typography",
+  "literature"
+]
