@@ -1,0 +1,45 @@
+# Work Experience Index Catalog
+# Glanced at by agents to cherry-pick relevant companies & roles
+
+[[companies]]
+id = "techasoft"
+company_name = "Techasoft Pvt. Ltd."
+short_name = "Techasoft"
+location = "Bangalore, India"
+start_date = "2026-03"
+end_date = "present"
+is_current = true
+work_mode = "in-office"
+roles = ["Systems Engineer (Edge AI & Field Deployment)"]
+tags = ["industrial-automation", "edge-cv", "plc", "modbus", "concurrency", "postgres", "django", "tauri"]
+path = "./work_exp/techasoft.toml"
+
+[[companies]]
+id = "medoc"
+company_name = "Medoc Health IT Pvt. Ltd."
+short_name = "Medoc Health IT"
+location = "Remote"
+start_date = "2022-08"
+end_date = "2025-07"
+is_current = false
+work_mode = "remote"
+roles = [
+  "Technical Lead",
+  "Systems Engineer",
+  "Software Development Intern"
+]
+tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+path = "./work_exp/medoc.toml"
+
+[[companies]]
+id = "appable"
+company_name = "Appable Technologies"
+short_name = "Appable"
+location = "Remote"
+start_date = "2023-07"
+end_date = "2024-06"
+is_current = false
+work_mode = "remote"
+roles = ["Freelance Full-Stack Software Developer"]
+tags = ["freelance", "database-architecture", "postgresql", "mptt", "offline-first", "biometrics"]
+path = "./work_exp/appable.toml"

@@ -1,0 +1,42 @@
+# Work Experience Record: Techasoft Pvt. Ltd.
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/databases.toml",
+  "./taxonomy/protocols.toml"
+]
+
+[company]
+id = "techasoft"
+company_name = "Techasoft Pvt. Ltd."
+short_name = "Techasoft"
+location = "Bangalore, India"
+start_date = "2026-03"
+end_date = "present"
+is_current = true
+work_mode = "in-office"
+tags = ["industrial-automation", "edge-cv", "plc", "modbus", "concurrency", "postgres", "django", "tauri"]
+
+[[company.roles]]
+id = "techasoft_systems_engineer"
+role = "Systems Engineer (Edge AI & Field Deployment)"
+employment_type = "full-time"
+start_date = "2026-03"
+end_date = "present"
+technologies = [
+  "fw.django",
+  "fw.tauri",
+  "db.postgres",
+  "proto.modbus",
+  "langs.python",
+  "langs.rust",
+  "tools.linux"
+]
+bullets = [
+  "Architected the system software stack for an industrial factory automation line, pairing a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.",
+  "Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V Programmable Logic Controllers (PLCs), actuating pneumatic solenoid valves within an 8ms latency budget.",
+  "Developed a mathematical coordinate-transformation pipeline mapping image-space pixel coordinates to real-world millimeter coordinates at 30 FPS, dynamically computing Regions of Interest (ROIs) for automated conveyor inspection.",
+  "Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and raw query optimization, eliminating write-concurrency deadlocks during continuous factory-floor sensor logging.",
+  "Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory production sites, optimizing TensorRT execution to increase detection accuracy from 85% to 95%+."
+]

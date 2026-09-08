@@ -1,0 +1,81 @@
+# Work Experience Record: Medoc Health IT Pvt. Ltd.
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/databases.toml",
+  "./taxonomy/protocols.toml"
+]
+
+[company]
+id = "medoc"
+company_name = "Medoc Health IT Pvt. Ltd."
+short_name = "Medoc Health IT"
+location = "Remote"
+start_date = "2022-08"
+end_date = "2025-07"
+is_current = false
+work_mode = "remote"
+tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+
+# --- Stage 3: Technical Lead ---
+[[company.roles]]
+id = "medoc_tech_lead"
+role = "Technical Lead"
+employment_type = "full-time"
+start_date = "2025-02"
+end_date = "2025-07"
+technologies = [
+  "langs.go",
+  "fw.echo",
+  "fw.node",
+  "fw.flutter",
+  "tools.aws",
+  "tools.docker",
+  "proto.rest"
+]
+bullets = [
+  "Directed an engineering division of 15–20 developers decomposing a monolithic Node.js platform into loosely coupled Go microservices, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
+  "Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98% under 500+ concurrent requests.",
+  "Designed and implemented foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to priority shifts toward high-throughput core services.",
+  "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and containerized microservices to guarantee continuous uptime for hospital clinical workflows."
+]
+
+# --- Stage 2: Systems Engineer ---
+[[company.roles]]
+id = "medoc_systems_engineer"
+role = "Systems Engineer"
+employment_type = "full-time"
+start_date = "2023-02"
+end_date = "2025-01"
+technologies = [
+  "fw.flutter",
+  "fw.node",
+  "db.postgres",
+  "db.mongodb",
+  "tools.docker"
+]
+bullets = [
+  "Managed technical product development and engineering architecture for a core patient healthcare product, leading a dedicated squad of 5 developers across Flutter client applications and Node.js backend services.",
+  "Engineered an O(log n) emergency triage priority queue and sparse numerical allocation algorithm in Node.js and MongoDB, processing 150+ clinical admissions/hour without latency degradation.",
+  "Constructed containerized development environments with Docker Compose multi-stage builds, enforcing local-to-production parity and reducing configuration-related bugs by 60%."
+]
+
+# --- Stage 1: Software Development Intern ---
+[[company.roles]]
+id = "medoc_intern"
+role = "Software Development Intern"
+employment_type = "internship"
+start_date = "2022-08"
+end_date = "2023-01"
+technologies = [
+  "fw.flutter",
+  "langs.javascript",
+  "fw.node",
+  "langs.sql",
+  "tools.docker"
+]
+bullets = [
+  "Developed modular UI components and responsive clinical screens in Flutter for patient-facing healthcare applications.",
+  "Implemented authenticated REST backend endpoints in Node.js with SQL validation schemas, participating in bug triage and component debugging."
+]

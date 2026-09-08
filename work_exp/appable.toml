@@ -1,0 +1,40 @@
+# Work Experience Record: Appable Technologies
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/databases.toml",
+  "./taxonomy/protocols.toml"
+]
+
+[company]
+id = "appable"
+company_name = "Appable Technologies"
+short_name = "Appable"
+location = "Remote"
+start_date = "2023-07"
+end_date = "2024-06"
+is_current = false
+work_mode = "remote"
+tags = ["freelance", "database-architecture", "postgresql", "mptt", "offline-first", "biometrics"]
+
+[[company.roles]]
+id = "appable_freelance"
+role = "Freelance Full-Stack Software Developer"
+employment_type = "part-time"
+start_date = "2023-07"
+end_date = "2024-06"
+technologies = [
+  "fw.node",
+  "langs.typescript",
+  "db.postgres",
+  "fw.flutter",
+  "db.mongodb",
+  "proto.rest"
+]
+bullets = [
+  "Re-architected legacy client web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65%.",
+  "Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise Human Resource Management System (HRMS) to model arbitrarily nested organizational hierarchies and approval graphs.",
+  "Designed an offline-first workforce attendance system integrating local biometric verification, geographical validation, cryptographic data integrity checks, and transactional background sync queues.",
+  "Engineered a sports venue reservation engine handling multi-variable spatial geometry, dynamic time-dependent pricing tiers, and asynchronous user dispatch pipelines."
+]
