@@ -1,0 +1,57 @@
+# Education Schema Specification & Validation Rules
+# Defines structure for academic degrees, certifications, and language proficiencies.
+
+[index_entry]
+description = "Summary record in education/index.toml"
+degree_fields = [
+  "id",             # string: unique degree identifier (e.g. 'btech_cse')
+  "institution",    # string: university or college name
+  "location",       # string: city, country
+  "degree",         # string: full degree name
+  "dates",          # string: e.g. '2021 – 2025'
+  "cgpa",           # string: e.g. '7.76 (First Division)'
+  "path"            # string: relative path (e.g. './education/btech.toml')
+]
+certification_fields = [
+  "id",             # string: unique certification identifier (e.g. 'cyber_security_igtr')
+  "title",          # string: certification title
+  "organization",   # string: issuing institution
+  "year",           # string: year issued
+  "path"            # string: relative path (e.g. './education/certifications.toml')
+]
+
+[degree_child]
+description = "Detailed degree record in education/<id>.toml"
+required_fields = [
+  "education.id",
+  "education.institution",
+  "education.location",
+  "education.degree",
+  "education.major",
+  "education.start_year",
+  "education.end_year",
+  "education.graduation_date",
+  "education.cgpa",
+  "education.division",
+  "education.medium_of_instruction",
+  "education.coursework",
+  "education.highlights"
+]
+
+[certifications_child]
+description = "Certifications and language proficiencies in education/certifications.toml"
+cert_required_fields = [
+  "id",
+  "title",
+  "issuing_organization",
+  "location",
+  "issue_date",
+  "category",
+  "description"
+]
+languages_required_fields = [
+  "english",
+  "hindi",
+  "japanese",
+  "urdu"
+]

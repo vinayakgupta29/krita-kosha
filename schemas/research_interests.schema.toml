@@ -1,0 +1,20 @@
+# Research & Technical Interests Schema Specification & Validation Rules
+# Defines structure for exploratory research interests and academic focus domains in research_interests.toml
+
+[root]
+description = "Contains exploratory research domains Vinayak intends to pursue in graduate research or specialized engineering roles."
+required_tables = ["interests"]
+
+[interest_entry]
+description = "Record defining a prospective research domain"
+required_fields = [
+  "id",                 # string: unique snake_case identifier (e.g. 'applied_statistics_ai')
+  "title",              # string: formal academic/research domain title
+  "category",           # string: field category (e.g. 'Applied Mathematics & Machine Learning Theory')
+  "focus_statement",    # string: comprehensive narrative statement of research intent and problem scope
+  "key_themes"          # array of strings: specific sub-fields, theoretical questions, and technical approaches
+]
+
+optional_fields = [
+  "draft_reference"     # string: identifier or path of exploratory draft notes (e.g. 'stats_masters_research_draft_0')
+]

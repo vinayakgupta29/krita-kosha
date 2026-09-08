@@ -1,0 +1,52 @@
+# Research & Technical Interests
+# Future-facing research directions, academic interests, and exploratory domains
+# NOTE: These represent prospective research interests Vinayak wishes to pursue, not past completed publications.
+
+[interests]
+
+# 1. Applied Statistics & Mathematical Concepts in Real-World AI
+[interests.applied_statistics_ai]
+id = "applied_statistics_ai"
+title = "Applied Statistics & Mathematical Foundations in Real-World AI Systems"
+category = "Applied Mathematics & Machine Learning Theory"
+focus_statement = """
+Finding applicable use cases of statistics and mathematical concepts in real-world applications \
+like understanding the world around us, and in the age of AI where AI at its core is statistics—whether \
+Large Language Models (LLMs), Convolutional Neural Networks (CNNs), or novel model architectures \
+developed on the fringes."""
+key_themes = [
+  "Statistical foundations of deep learning, probabilistic graphical models, and neural representations",
+  "Mathematical modeling of empirical data distributions and real-world complex phenomena",
+  "Asymptotic analysis, recurrence relations, and combinatorial sequence behavior in algorithmic systems",
+  "Emergent statistical paradigms and novel theoretical architectures beyond conventional transformer layers"
+]
+draft_reference = "stats_masters_research_draft_0"
+
+# 2. Autism, Cognitive Diversity & Accessible Systems Architecture
+[interests.cognitive_diversity_accessibility]
+id = "cognitive_diversity_accessibility"
+title = "Autism, Cognitive Diversity & Accessible Systems Architecture"
+category = "Human-Computer Interaction & Systems Accessibility"
+focus_statement = """
+Independent exploratory interest in autism, scientific support frameworks, and designing computing systems \
+tailored for neurodivergent individuals, focusing on cognitive load reduction, sensory accommodation, and \
+deterministic user interaction patterns."""
+key_themes = [
+  "Scientific frameworks, sensory processing, and cognitive mechanisms of autism spectrum neurodivergence",
+  "Digital environment architectures mitigating sensory overload and extraneous cognitive friction",
+  "Deterministic, low-distraction user interaction design and assistive software paradigms"
+]
+
+# 3. Formal Language Design & Compiler Semantics
+[interests.formal_language_theory]
+id = "formal_language_theory"
+title = "Formal Language Semantics & Compiler Construction"
+category = "Theoretical Computer Science & Systems"
+focus_statement = """
+Exploration of formal grammars (EBNF, LALR(1)), affine type systems, and compiler intermediate representations \
+to guarantee memory safety, correctness proofs, and deterministic execution with zero runtime overhead."""
+key_themes = [
+  "Formal type theory, tagged sum/product types, and extensible type classes",
+  "Intermediate representations (LLVM IR, HIR) and tree-shaking dead-code optimization passes",
+  "Custom serialization protocols eliminating null-pointer runtime failures"
+]

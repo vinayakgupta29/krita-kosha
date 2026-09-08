@@ -1,9 +1,10 @@
-# Work Experience Schema Definition & Required Fields Checklist
+# Work Experience Schema Specification & Validation Rules
+# Defines required and optional fields for work experience index and individual company records.
 
 [index_entry]
 description = "Summary record in work_exp/index.toml"
 required_fields = [
-  "id",                 # string: unique snake_case company/role ID (e.g. 'techasoft')
+  "id",                 # string: unique snake_case company identifier (e.g. 'techasoft')
   "company_name",       # string: legal or trade name of company
   "location",           # string: city, country or 'Remote'
   "start_date",         # string: 'YYYY-MM' (e.g. '2026-03')
@@ -18,16 +19,27 @@ required_fields = [
 [child_file]
 description = "Complete work experience record in work_exp/<id>.toml"
 required_fields = [
-  "references",         # array of strings: relative taxonomy paths
-  "experience.id",
-  "experience.company",
-  "experience.role",
-  "experience.location",
-  "experience.start_date",
-  "experience.end_date",
-  "experience.is_current",
-  "experience.work_mode",
-  "experience.technologies", # array of strings: canonical taxonomy IDs
-  "experience.bullets",      # array of strings: [Action Verb] + [Tool] + [Problem] + [Metric]
-  "experience.keywords"      # array of strings
+  "references",                 # array of strings: relative taxonomy paths
+  "company.id",                 # string: unique company ID
+  "company.company_name",       # string: legal or trade name
+  "company.short_name",         # string: concise display name
+  "company.location",           # string: city, country or 'Remote'
+  "company.start_date",         # string: 'YYYY-MM'
+  "company.end_date",           # string: 'YYYY-MM' or 'present'
+  "company.is_current",         # boolean: true if active
+  "company.work_mode",          # string: 'in-office', 'remote', or 'hybrid'
+  "company.tags",               # array of strings: domain tags
+  "company.roles"               # array of role tables (one or more stages)
+]
+
+[role_entry]
+description = "Role record inside company.roles array"
+required_fields = [
+  "id",                         # string: unique role ID (e.g. 'medoc_tech_lead')
+  "role",                       # string: formal job title
+  "employment_type",            # string: 'full-time', 'part-time', 'internship', 'contract'
+  "start_date",                 # string: 'YYYY-MM'
+  "end_date",                   # string: 'YYYY-MM' or 'present'
+  "technologies",               # array of strings: canonical taxonomy IDs (langs.*, fw.*, tools.*, db.*, proto.*)
+  "bullets"                     # array of strings: [Action Verb] + [Tool] + [Problem] + [Metric] statements
 ]

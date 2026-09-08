@@ -1,0 +1,42 @@
+# Formatting & ATS Profile Schema Specification & Validation Rules
+# Defines rules for formatting.toml governing 1-page resumes and multi-page CVs
+
+[root]
+required_tables = [
+  "ats",
+  "profiles.resume",
+  "profiles.cv"
+]
+
+[ats]
+required_fields = [
+  "target_score",
+  "layout",
+  "bullet_formula",
+  "min_bullets_per_role",
+  "max_bullets_per_role",
+  "standard_section_headings",
+  "prohibited_elements",
+  "date_format",
+  "max_reading_time_seconds"
+]
+
+[profile_spec]
+description = "Common formatting attributes for LaTeX generation targets"
+required_fields = [
+  "page_count",
+  "page_size",
+  "font_family",
+  "base_font_size",
+  "line_spacing",
+  "section_spacing_before",
+  "section_spacing_after",
+  "section_header_size",
+  "section_header_style",
+  "bullet_top_sep",
+  "bullet_item_sep"
+]
+required_subtables = [
+  "margins",
+  "colors"
+]
