@@ -1,0 +1,36 @@
+# Publication, Patent, and Manuscript Schema Specification & Validation Rules
+# Defines required and optional fields for publications/index.toml and individual records
+
+[index_entry]
+description = "Summary records in publications/index.toml"
+
+book_fields = [
+  "id",             # string: unique identifier (e.g. 'book_life')
+  "title",          # string: book title
+  "type",           # string: e.g. 'Poetry Collection', 'Monograph'
+  "author",         # string: author name
+  "publisher",      # string: publishing house
+  "year",           # integer: publication year
+  "status",         # string: e.g. 'published'
+  "path"            # string: relative path
+]
+
+patent_fields = [
+  "id",             # string: unique identifier (e.g. 'patent_cooking')
+  "title",          # string: patent title
+  "inventor",       # string: e.g. 'Vinayak Gupta (Co-author)'
+  "application_id", # string: application/grant number
+  "office",         # string: patent authority
+  "year",           # integer: year published/granted
+  "status",         # string: e.g. 'published', 'granted', 'pending'
+  "path"            # string: relative path
+]
+
+manuscript_fields = [
+  "id",             # string: unique identifier (e.g. 'draft_encryption')
+  "title",          # string: working paper title
+  "author",         # string: author name
+  "status",         # string: e.g. 'Manuscript draft under preparation'
+  "area",           # string: research area
+  "path"            # string: relative path
+]
