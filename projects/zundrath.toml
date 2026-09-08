@@ -1,0 +1,74 @@
+# Project Record: Zundrath Key Management System (KMS)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/zundrath/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/zundrath/README.md"
+
+[project]
+id = "zundrath"
+title = "Zundrath Key Management System (KMS)"
+category = "Distributed Systems & Cryptography"
+date = "Aug-2025"
+status = "archived"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/zundrath"
+deployed_url = ""
+languages = ["langs.go"]
+technologies = ["fw.echo", "tools.docker", "proto.rest"]
+tagline = "High-concurrency cryptographic key management service in Go with automated rotation, HMAC client authorization, and sub-2ms retrieval latency"
+
+[project.readme_summary]
+overview = "A lightweight, production-grade Key Management Service (KMS) in Go for generating, storing, rotating, and retrieving symmetric encryption keys. Encrypts key structs into local binary keystore files and exposes high-throughput HMAC-authenticated HTTP endpoints."
+architecture = """
+┌─────────────────────────────────┐
+│   Client Application (X-Client) │
+└────────────────┬────────────────┘
+                 │ POST /create or /get (HMAC-SHA256 Auth Header)
+                 ▼
+┌─────────────────────────────────┐
+│      Zundrath KMS (Go / Echo)   │
+│ ├── HMAC Verification Layer     │
+│ ├── In-Memory Caching (SyncMap) │
+│ ├── PBKDF2 Master Derivation    │
+│ └── AES-GCM Envelope Encryption │
+└────────────────┬────────────────┘
+                 │ Encrypted Binary Persistence
+                 ▼
+┌─────────────────────────────────┐
+│   Local Keystore (/keystore)    │
+└─────────────────────────────────┘
+"""
+key_components = [
+  "High-throughput Go HTTP service utilizing the Echo framework with concurrent request multiplexing",
+  "Per-client HMAC authentication via X-Client and Authorization request headers",
+  "Encrypted binary keystore persistence storing key structs on disk with AES-256 envelope encryption",
+  "Automated key rotation lifecycle preventing key degradation across long-lived services",
+  "Containerized Docker deployment with multi-stage builds for minimal attack surface"
+]
+benchmarks_and_metrics = "Achieved sub-2ms key retrieval latency under 500+ concurrent requests; cut cryptographic latency by 98% relative to legacy Node.js services."
+
+bullets = [
+  "Architected a centralized cryptographic Key Management System (KMS) in Go and Echo handling symmetric key lifecycle, rotation, and distribution across distributed services.",
+  "Engineered a high-concurrency binary keystore utilizing AES-256 envelope encryption, PBKDF2 key derivation, and per-app HMAC-SHA256 client authentication.",
+  "Optimized in-memory caching and lock contention to achieve sub-2ms key retrieval latency under 500+ concurrent requests, reducing latency by 98% compared to legacy services."
+]
+keywords = [
+  "go",
+  "echo",
+  "cryptography",
+  "kms",
+  "aes-256",
+  "hmac",
+  "pbkdf2",
+  "key-rotation",
+  "docker",
+  "distributed-systems"
+]

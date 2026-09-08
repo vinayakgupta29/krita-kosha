@@ -1,0 +1,67 @@
+# Project Record: Accounting & Inventory System
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/databases.toml",
+  "./taxonomy/protocols.toml"
+]
+
+[project]
+id = "accounting_inventory"
+title = "Complete Accounting & Inventory Management System"
+category = "Enterprise Systems & Financial Engineering"
+date = "Jan-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/accounting-node.TS"
+deployed_url = ""
+languages = [
+  "langs.typescript",
+  "langs.javascript",
+  "langs.dart",
+  "langs.sql",
+  "langs.html"
+]
+technologies = [
+  "fw.node",
+  "fw.express",
+  "fw.flutter",
+  "db.postgres",
+  "tools.docker",
+  "proto.rest"
+]
+tagline = "Full-stack enterprise accounting and stock control system with real-time financial reporting, role-based access control, and containerized backend"
+
+[project.readme_summary]
+overview = """
+A comprehensive double-entry accounting and inventory control platform engineered with a TypeScript/Node.js \
+backend and PostgreSQL database, paired with cross-platform desktop/mobile client views. Built to provide businesses \
+with real-time financial ledger auditing, stock flow tracking, purchase order lifecycles, and automated financial statements."""
+
+key_components = [
+  "Modular REST API engine in TypeScript/Node.js handling transaction ledgers, inventory valuation (FIFO/average cost), and billing",
+  "Normalized relational PostgreSQL schema enforcing transactional consistency across multi-warehouse stock movements and double-entry journals",
+  "Role-based access control (RBAC) separating administrative, auditing, and operational permissions",
+  "Containerized deployment configuration via multi-stage Docker builds ensuring continuous test/production parity"
+]
+
+benchmarks_and_metrics = "Zero transactional race conditions during concurrent stock decrements; automated generation of real-time balance sheets and P&L statements."
+
+bullets = [
+  "Architected an enterprise double-entry accounting and inventory management platform using TypeScript, Node.js, and PostgreSQL, providing real-time ledger auditing and stock control.",
+  "Designed a normalized relational database schema with row-level constraints and atomic transactions, eliminating inventory discrepancies and double-spend errors across multi-warehouse transfers.",
+  "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via containerized REST microservices in Docker."
+]
+
+keywords = [
+  "accounting",
+  "inventory-management",
+  "typescript",
+  "node",
+  "postgresql",
+  "docker",
+  "financial-engineering",
+  "rbac",
+  "rest-api"
+]

@@ -1,0 +1,55 @@
+# Project Record: Tism Games (C++ / SFML Game Collection)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/smashers_sfml/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/smashers_sfml/README.md"
+
+[project]
+id = "tism_games"
+title = "Tism Games (C++ / SFML Game Collection)"
+category = "Game Development & Graphics"
+date = "Jul-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/smashers_sfml"
+deployed_url = ""
+languages = ["langs.cpp", "langs.c"]
+technologies = ["tools.linux"]
+tagline = "Collection of real-time 2D desktop arcade games built in C++ with SFML featuring deterministic tick loops and spatial collision physics"
+
+[project.games_collection]
+games = [
+  { name = "SFML Smashers", genre = "Arcade Clicker", repo = "https://github.com/vinayakgupta29/smashers_sfml", description = "Reflex destruction game implementing spatial screen-space coordinate transformations and instantaneous mouse hit registration." },
+  { name = "SFML Velocity", genre = "Space Shooter", repo = "", description = "Top-down space combat game featuring randomized enemy swarm spawning, dynamic projectile trajectories, and bounding-box collision detection." }
+]
+
+[project.readme_summary]
+overview = "A collection of 2D desktop arcade games engineered in C++ using the Simple and Fast Multimedia Library (SFML). Implements custom 2D coordinate-transformation models, deterministic 60 FPS tick rates, sprite batching, and low-latency event polling."
+key_components = [
+  "C++ game loop engine decoupling rendering from game-state updates to guarantee deterministic 60 FPS execution",
+  "Screen-to-world pixel coordinate mapping for spatial hitboxes and mouse click collision detection",
+  "Kinematic trajectory calculations for particle effects and moving projectile entities",
+  "POSIX Linux native compilation with zero external runtime wrappers"
+]
+
+bullets = [
+  "Engineered a collection of 2D arcade games in C++ using SFML (including SFML Smashers and SFML Velocity), implementing deterministic 60 FPS game loops and spatial collision detection.",
+  "Constructed real-time coordinate-transformation and bounding-box hit registration routines, compiling natively for Linux POSIX environments."
+]
+keywords = [
+  "cpp",
+  "c",
+  "sfml",
+  "game-development",
+  "graphics",
+  "event-loop",
+  "linux",
+  "arcade"
+]

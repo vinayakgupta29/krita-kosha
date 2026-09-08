@@ -1,0 +1,43 @@
+# Project Record: A Directory of Integer Sequences
+
+references = [
+  "./taxonomy/languages.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/A-directory-of-integer-sequences/refs/heads/main/README.md"
+]
+
+[project]
+id = "integer_sequences"
+title = "A Directory of Integer Sequences"
+category = "Mathematics & Algorithms"
+date = "Aug-2023"
+status = "archived"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/A-directory-of-integer-sequences"
+deployed_url = ""
+languages = ["langs.python"]
+technologies = []
+tagline = "Computational mathematics system implementing and analyzing discrete integer sequences and recurrence relations in Python"
+
+[project.readme_summary]
+overview = "A computational mathematics repository implementing discrete integer sequence generators, combinatorial recurrence relations, and formal mathematical documentation in Python. Explores algorithmic complexity, closed-form formulas, and generating functions across classical sequence families."
+key_components = [
+  "Python implementations of classical and specialized integer sequence generation algorithms",
+  "Mathematical analysis of recurrence relations, time complexity, and asymptotic bounds",
+  "Automated script execution providing detailed mathematical descriptions and sequence generation"
+]
+
+bullets = [
+  "Constructed algorithmic Python modules to generate, analyze, and model discrete integer sequences and recursive combinatorial relations.",
+  "Documented mathematical properties, generating functions, and asymptotic complexity bounds across foundational sequence families."
+]
+keywords = [
+  "python",
+  "mathematics",
+  "discrete-math",
+  "integer-sequences",
+  "algorithms",
+  "recurrence-relations"
+]

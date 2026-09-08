@@ -1,0 +1,48 @@
+# Project Record: HTTP Server in C
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/http_server_in_C/refs/heads/main/README.md"
+]
+
+[project]
+id = "http_server_c"
+title = "HTTP Server in Pure C"
+category = "Systems Engineering & Networking"
+date = "Aug-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/http_server_in_C"
+deployed_url = ""
+languages = ["langs.c"]
+technologies = ["tools.linux", "proto.rest"]
+tagline = "Zero-dependency lightweight HTTP/1.1 server implemented in pure C with POSIX sockets, engineered as the foundational network stack prototype for the VKS compiler"
+
+[project.readme_summary]
+overview = "A minimalist, zero-dependency HTTP server written in C using low-level POSIX socket APIs. Developed without AI generation or external libraries to master raw socket lifecycle, buffer management, and concurrency models as the prototype networking subsystem for the VKS compiler language standard library."
+key_components = [
+  "Raw POSIX socket lifecycle: socket(), bind(), listen(), accept(), and non-blocking I/O multiplexing",
+  "Zero-allocation HTTP request header parsing and method routing",
+  "Static asset streaming with content-type resolution and status code dispatch",
+  "Strict memory management with zero memory leaks verified through valgrind"
+]
+
+bullets = [
+  "Engineered a zero-dependency HTTP/1.1 server in C using raw POSIX socket APIs, managing low-level TCP connection lifecycles and non-blocking socket I/O.",
+  "Constructed custom HTTP request header parsing and stream buffering routines, serving as the foundational prototype for the VKS compiler's native networking standard library."
+]
+keywords = [
+  "c",
+  "posix",
+  "sockets",
+  "networking",
+  "http",
+  "systems-programming",
+  "tcp",
+  "memory-management"
+]

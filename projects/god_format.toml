@@ -1,0 +1,56 @@
+# Project Record: Grounded Object Data (GOD) Serialization Format
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/README.md",
+  "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/GRAMMAR_SPEC.md",
+  "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/grammar_rules.md"
+]
+
+local_ref_path = "./.tmp-refs/GOD/README.md"
+
+[project]
+id = "god_format"
+title = "Grounded Object Data (GOD) Serialization Format"
+category = "Compilers & Serialization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/GOD"
+deployed_url = ""
+languages = ["langs.go"]
+technologies = ["proto.god"]
+tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
+
+[project.readme_summary]
+overview = "A human-readable data serialization format designed as a compact, null-safe alternative to JSON. Enforces 'grounded' semantics where every data point corresponds to a concrete zero value (eliminating null-pointer panics) and introduces first-class tabular representations for lists of structured objects."
+formal_grammar_highlights = [
+  "Strict EBNF specification: root elements must be an enclosed object '{ ... }'",
+  "Grounded type safety: omitted or empty fields default to concrete zero values (0, 0.0, false, '') rather than null/undefined",
+  "First-class tabular syntax: '(header:rows)' where column schemas are declared once and shared across rows (e.g. users = (id,name,age:1,'Alice',20;2,'Bob',23;))",
+  "Hand-written lexical scanner and recursive-descent parser in pure Go",
+  "Reflection API integration supporting struct tagging (god:'field_name') and Marshal / MarshalBeautify / Unmarshal pipelines"
+]
+benchmarks_and_metrics = "Reduces network payload sizes by 40% to 50% compared to standard JSON when serializing tabular collections."
+
+bullets = [
+  "Designed a formal EBNF grammar specification for Grounded Object Data (GOD), enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
+  "Engineered a hand-written lexical scanner, recursive-descent parser, and reflection-driven marshaller/unmarshaller in Go, natively supporting struct tags (god:'field_name').",
+  "Implemented first-class tabular structures ((header:rows)) that eliminate repetitive key overhead, slashing structured payload sizes by 40–50% compared to equivalent JSON representations.",
+  "Packaged and published as an open-source Go module (github.com/vinayakgupta29/GOD) with deterministic formatting and error recovery."
+]
+keywords = [
+  "go",
+  "serialization",
+  "ebnf",
+  "compiler",
+  "lexer",
+  "parser",
+  "reflection",
+  "performance",
+  "zero-null"
+]
