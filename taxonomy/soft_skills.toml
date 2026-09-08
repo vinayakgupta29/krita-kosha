@@ -1,0 +1,23 @@
+# Canonical Soft Skills & Leadership Taxonomy for Krita Kosha
+
+[cognitive_and_learning]
+first_principles_thinking = { name = "First-Principles Thinking", description = "Dissecting complex engineering challenges into mathematical invariants and physical constraints before selecting runtimes, libraries, or tooling." }
+rapid_polyglot_acquisition = { name = "Rapid Polyglot Acquisition", description = "Ramping up on unfamiliar programming languages, compilers, protocols, and runtimes to production delivery capability within two weeks." }
+mathematical_modeling = { name = "Mathematical & Algorithmic Modeling", description = "Formulating real-world spatial, geometric, and probabilistic dynamics into discrete algorithms (image-to-world ROIs, O(log n) triage queues, recurrence relations)." }
+systems_intuition = { name = "Low-Level Systems Intuition", description = "Holistic mental modeling of memory layouts, cache locality, network transport overhead, hardware-software boundaries, and concurrency race conditions." }
+
+[leadership_and_ownership]
+engineering_leadership = { name = "Engineering Division Leadership", description = "Leading teams of 15–20 developers, decomposing monolithic platforms into decoupled services, and managing sprint velocity across diverse technical squads." }
+product_ownership = { name = "End-to-End Product Ownership", description = "Bridging stakeholder and clinical/industrial requirements with concrete technical architectures, owning full lifecycles from whiteboarding to deployment." }
+autonomous_resilience = { name = "Autonomous Engineering Resilience", description = "Sustaining high-throughput delivery and critical infrastructure maintenance as a solo developer during team restructuring and lean staffing cycles." }
+incident_triage = { name = "High-Pressure Incident Triage", description = "Debugging and resolving critical live factory and clinical system failures within strict SLAs (software hotfixes ≤ 5 hours, ensuring 99.9% uptime on 24/7 lines)." }
+
+[communication_and_collaboration]
+cross_boundary_articulation = { name = "Cross-Boundary Technical Articulation", description = "Explaining low-level systems architectures, compiler pipelines, and cryptographic safety proofs to cross-functional engineers, stakeholders, and non-technical clients." }
+legacy_api_reverse_engineering = { name = "Legacy API Reverse-Engineering", description = "Navigating, deciphering, and building resilient adapters for undocumented or fragmented legacy government API ecosystems (ABHA v3/v4)." }
+field_enablement_and_training = { name = "On-Site Field Enablement & Training", description = "Conducting on-site acceptance testing, calibration, and operational training for 50+ industrial plant operators and factory teams with zero post-handover escalations." }
+multilingual_communication = { name = "Multilingual Global Communication", description = "Navigating diverse technical environments with fluent English (primary medium of education throughout schooling and undergrad), native Hindi, intermediate Japanese, and conversational Urdu." }
+
+[ergonomics_and_accessibility]
+cognitive_load_reduction = { name = "Cognitive Load Reduction", description = "Designing deterministic, predictable software interaction patterns and CLI/GUI workflows that eliminate extraneous user fatigue." }
+neurodiversity_awareness = { name = "Neurodiversity-Aware Systems Design", description = "Independent exploratory focus on autism, sensory processing accommodations, and digital environment architectures tailored for cognitive diversity." }

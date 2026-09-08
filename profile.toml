@@ -1,0 +1,74 @@
+# Professional Profile & Personal Identity
+
+[identity]
+name = "Vinayak Gupta"
+location = "Chhapiheda, Rajgarh, Madhya Pradesh, India"
+phone = "+91-70490-49698"
+email = "vinayakg236@gmail.com"
+
+[links]
+github = "https://github.com/vinayakgupta29"
+linkedin = "https://linkedin.com/in/vinayak-gupta-70a808202"
+portfolio = "https://vinayakgupta29.github.io/portfolio"
+blog = "https://vinayakgupta29.github.io/blogs"
+
+[philosophy]
+statement = """
+Language-agnostic systems engineer driven by first principles and algorithmic clarity. \
+Approaches software construction by dissecting core problem mechanics and theoretical constraints before \
+selecting the optimal runtime, libraries, and hardware interface. Demonstrates rapid technical adaptability, \
+routinely mastering unfamiliar languages, frameworks, and low-level specifications within two weeks."""
+
+[strengths]
+keywords = [
+  "Language-Agnostic Engineering",
+  "First-Principles Problem Solving",
+  "Rapid Polyglot Ramp-Up (< 2 Weeks)",
+  "Low-Level Systems to Full-Stack Verticality",
+  "Sub-Millisecond Concurrency & Performance Tuning",
+  "Zero-Trust Cryptography & Embedded Storage",
+  "Compiler & Grammar Construction",
+  "Cross-Functional Technical Leadership",
+  "Legacy API Reverse Engineering",
+  "Industrial Edge AI & Hardware-Software Interfacing"
+]
+
+bullets = [
+  "Language-Agnostic First-Principles Mastery: Solves core problem mechanics and theoretical invariants before selecting runtimes; demonstrates verified production capability across Go, Rust, OCaml, C/C++, Python, TypeScript, Dart, and Lua, mastering unfamiliar stacks and specifications within two weeks.",
+  "Unbroken Vertical Systems Fluency: Bridges the entire computing spectrum from bare-metal 24V PLC hardware loops under 8ms deadlines and POSIX socket networking, to high-concurrency cloud microservices and cross-platform desktop/mobile interfaces.",
+  "Extreme Latency & Concurrency Optimization: Engineered sub-2ms cryptographic microservices (Go Echo KMS), eliminated database write-concurrency deadlocks in continuous manufacturing telemetry, and authored custom serialization formats (GOD) cutting payload sizes by up to 50%.",
+  "Cryptographic Data Persistence & Integrity: Architected embedded ACID storage engines, write-ahead logging (WAL), authenticated AES-256-GCM encryption, PBKDF2 key derivation, and multi-phase zero-downtime key rotation protocols.",
+  "High-Stakes Technical Leadership & Delivery: Directed engineering teams of 15–20 developers, onboarded 3 multi-specialty hospitals serving 40,000+ active patients, reverse-engineered legacy national health APIs (ABHA), and coordinated edge AI deployments across 12+ factory sites with zero post-handover escalations."
+]
+
+
+[summaries]
+
+# 1. Backend & Distributed Systems Focus
+backend_systems = """
+Versatile, systems-oriented Software Engineer with ~3 years of experience engineering high-concurrency \
+backend architectures, distributed services, and data persistence pipelines using Go, Node.js, and PostgreSQL. \
+Proven track record designing sub-2ms cryptographic microservices, scaling healthcare platforms for 40,000+ \
+active patients across 3 multi-specialty hospitals, and migrating heavy production databases to eliminate \
+write deadlocks. Adept at navigating legacy API specifications and building resilient, decoupled distributed systems."""
+
+# 2. Compilers, Low-Level & Embedded Systems Focus
+systems_compiler = """
+Systems and Compiler Engineer specializing in formal programming language design, high-performance runtimes, \
+and hardware-software interfacing. Author of the VKS-LLVM functional compiler (OCaml Menhir frontend, Rust/LLVM IR \
+backend) and custom serialization engines (GOD format, lib_pbke). Experienced in deterministic PLC control loops \
+under 8ms latency constraints, native POSIX Linux desktop clients, and memory-safe systems software in Rust and Go."""
+
+# 3. Hybrid Full-Stack & Agentic AI Focus
+fullstack_agentic = """
+Multi-disciplinary Software Engineer combining low-level systems backend engineering (Go, Rust, Python, C/C++) \
+with cross-platform client development (Flutter, React/TS) and autonomous AI agent workflows. Experienced in \
+constructing deterministic LLM reasoning loops, tool-calling pipelines, and production systems that bridge \
+application software, low-level serializations, and edge hardware execution."""
+
+# 4. Academic & Graduate Admissions Focus (Master's in CS / Distributed Systems / AI)
+academic_masters = """
+Computer Science graduate with deep research interest in programming language semantics, formal grammar design, \
+and distributed systems reliability. Demonstrated independent capability in compiler construction (LLVM IR, affine \
+type systems, LALR parsing), custom mathematical sequence modeling, and cryptographic persistence engines. Seeking \
+advanced academic study to investigate autonomous systems, formal language theory, and high-assurance distributed runtimes."""

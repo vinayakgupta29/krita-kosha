@@ -1,0 +1,49 @@
+# Profile Schema Specification & Validation Rules
+# Defines required and optional fields for profile.toml
+
+[profile]
+description = "Core candidate identity, contact information, engineering philosophy, strengths, and targeted summary archetypes"
+required_tables = [
+  "identity",
+  "links",
+  "philosophy",
+  "strengths",
+  "summaries"
+]
+
+[identity]
+required_fields = [
+  "name",       # string: full legal/preferred name (e.g. 'Vinayak Gupta')
+  "location",   # string: geographic location (city, state, country)
+  "phone",      # string: E.164 or formatted international telephone number
+  "email"       # string: primary professional email address
+]
+
+[links]
+required_fields = [
+  "github",     # string: GitHub profile URL
+  "linkedin",   # string: LinkedIn profile URL
+  "portfolio",  # string: personal portfolio or website URL
+  "blog"        # string: personal engineering blog URL
+]
+
+[philosophy]
+required_fields = [
+  "statement"   # string: first-principles engineering ethos and technical methodology
+]
+
+[strengths]
+required_fields = [
+  "keywords",   # array of strings: concise core competencies
+  "bullets"     # array of strings: detailed impact & capability statements
+]
+
+[summaries]
+description = "Role-targeted executive summaries tailored for distinct career archetypes"
+required_fields = [
+  "backend_systems",    # string: summary tailored for backend/distributed systems engineering
+  "systems_compiler",   # string: summary tailored for low-level systems & compiler roles
+  "fullstack_agentic",  # string: summary tailored for hybrid fullstack & agentic AI engineering
+  "academic_masters"    # string: summary tailored for graduate academic admissions & research
+]
+
