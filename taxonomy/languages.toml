@@ -1,0 +1,66 @@
+# Canonical Programming Languages Registry
+
+[langs.go]
+formatted = "Go"
+aliases = ["golang", "Golang", "Go (Golang)"]
+category = "systems"
+
+[langs.rust]
+formatted = "Rust"
+aliases = ["rust-lang", "Rust"]
+category = "systems"
+
+[langs.c]
+formatted = "C"
+aliases = ["c", "C99", "C11"]
+category = "systems"
+
+[langs.cpp]
+formatted = "C++"
+aliases = ["cpp", "c++", "C++17", "C++20"]
+category = "systems"
+
+[langs.zig]
+formatted = "Zig"
+aliases = ["zig", "zig-lang"]
+category = "systems"
+
+[langs.python]
+formatted = "Python"
+aliases = ["python3", "py", "Python 3"]
+category = "general"
+
+[langs.typescript]
+formatted = "TypeScript"
+aliases = ["ts", "TS", "Typescript"]
+category = "application"
+
+[langs.javascript]
+formatted = "JavaScript"
+aliases = ["js", "JS", "Javascript", "ES6"]
+category = "application"
+
+[langs.dart]
+formatted = "Dart"
+aliases = ["dart"]
+category = "application"
+
+[langs.java]
+formatted = "Java"
+aliases = ["java"]
+category = "application"
+
+[langs.ocaml]
+formatted = "OCaml"
+aliases = ["ocaml"]
+category = "functional"
+
+[langs.sql]
+formatted = "SQL (PL/pgSQL)"
+aliases = ["sql", "SQL", "plpgsql", "PL/pgSQL"]
+category = "query"
+
+[langs.bash]
+formatted = "Bash / Shell"
+aliases = ["sh", "bash", "shell", "POSIX Shell"]
+category = "scripting"

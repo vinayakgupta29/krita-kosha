@@ -1,0 +1,21 @@
+# Canonical Databases & Storage Engines Registry
+
+[db.postgres]
+formatted = "PostgreSQL"
+aliases = ["postgres", "postgresql", "pg", "Postgres"]
+category = "relational"
+
+[db.sqlite]
+formatted = "SQLite"
+aliases = ["sqlite", "sqlite3"]
+category = "embedded_relational"
+
+[db.mongodb]
+formatted = "MongoDB"
+aliases = ["mongo", "mongodb"]
+category = "document"
+
+[db.redis]
+formatted = "Redis"
+aliases = ["redis"]
+category = "in_memory_cache"

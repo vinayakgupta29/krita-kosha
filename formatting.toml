@@ -1,0 +1,80 @@
+# Global ATS & Formatting Specifications for Krita Kosha
+
+[ats]
+target_score = 95
+layout = "single_column"
+bullet_formula = "[Action Verb] + [Technical Tool/Architecture] + [Problem Solved] + [Measurable Metric/Outcome]"
+min_bullets_per_role = 2
+max_bullets_per_role = 4
+standard_section_headings = [
+  "Professional Summary",
+  "Technical Skills",
+  "Work Experience",
+  "Key Projects",
+  "Education",
+  "Publications & Academic Work"
+]
+prohibited_elements = [
+  "tables_for_body_text",
+  "icon_fonts_for_data",
+  "decorative_graphics",
+  "graphical_skill_progress_bars",
+  "multi_column_body_layouts"
+]
+date_format = "Month YYYY"
+max_reading_time_seconds = 10
+
+# -----------------------------------------------------------------------------
+# 1-Page Industry Resume Profile
+# -----------------------------------------------------------------------------
+[profiles.resume]
+page_count = 1
+page_size = "a4paper"
+font_family = "lmodern"
+base_font_size = "10pt"
+line_spacing = 1.05
+section_spacing_before = "6pt"
+section_spacing_after = "3pt"
+section_header_size = "\\large"
+section_header_style = "\\bfseries\\color{primary}"
+bullet_top_sep = "2pt"
+bullet_item_sep = "1.5pt"
+max_total_body_lines = 40
+
+[profiles.resume.margins]
+top = "1.2cm"
+bottom = "1.2cm"
+left = "1.2cm"
+right = "1.2cm"
+
+[profiles.resume.colors]
+primary = "#1A365D"
+text = "#111827"
+rule = "#CBD5E1"
+
+# -----------------------------------------------------------------------------
+# Multi-Page Technical & Academic CV Profile
+# -----------------------------------------------------------------------------
+[profiles.cv]
+page_count = 0                          # 0 indicates flexible / multi-page (typically 2-4 pages)
+page_size = "a4paper"
+font_family = "lmodern"
+base_font_size = "10pt"
+line_spacing = 1.15
+section_spacing_before = "10pt"
+section_spacing_after = "6pt"
+section_header_size = "\\Large"
+section_header_style = "\\bfseries\\color{primary}"
+bullet_top_sep = "3pt"
+bullet_item_sep = "2pt"
+
+[profiles.cv.margins]
+top = "1.8cm"
+bottom = "1.8cm"
+left = "1.8cm"
+right = "1.8cm"
+
+[profiles.cv.colors]
+primary = "#23407C"
+text = "#000000"
+rule = "#E2E8F0"

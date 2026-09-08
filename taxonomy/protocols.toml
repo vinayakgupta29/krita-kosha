@@ -1,0 +1,26 @@
+# Canonical Protocols, Serialization Formats & Communication Interfaces
+
+[proto.modbus]
+formatted = "Modbus TCP"
+aliases = ["modbus", "modbus-tcp", "Modbus"]
+category = "industrial"
+
+[proto.grpc]
+formatted = "gRPC"
+aliases = ["grpc"]
+category = "rpc"
+
+[proto.rest]
+formatted = "RESTful APIs"
+aliases = ["rest", "restful", "REST", "REST API", "REST APIs"]
+category = "web"
+
+[proto.pbke]
+formatted = "PBKE Serialization"
+aliases = ["pbke", "PBKE format"]
+category = "custom_serialization"
+
+[proto.god]
+formatted = "GOD (Grounded Object Data)"
+aliases = ["god", "god-format", "GOD format"]
+category = "custom_serialization"

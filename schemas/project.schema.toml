@@ -1,0 +1,34 @@
+# Project Schema Definition & Required Fields Checklist
+
+[index_entry]
+description = "Summary record in projects/index.toml"
+required_fields = [
+  "id",             # string: unique snake_case identifier (e.g. 'toy_lang')
+  "title",          # string: display title of the project
+  "category",       # string: e.g. 'Compilers & Systems', 'Distributed Systems'
+  "tagline",        # string: concise 1-line elevator pitch
+  "languages",      # array of strings: canonical language references (e.g. ['langs.rust'])
+  "tags",           # array of strings: search & filter tags
+  "repo_url",       # string: GitHub or repository URL (can be empty string if private/unhosted)
+  "deployed_url",   # string: live site/app URL (can be empty string if not deployed)
+  "path"            # string: relative path to child file (e.g. './projects/toy_lang.toml')
+]
+
+[child_file]
+description = "Complete project record in projects/<id>.toml"
+required_fields = [
+  "references",     # array of strings: relative paths to taxonomy files needed
+  "project.id",
+  "project.title",
+  "project.category",
+  "project.tagline",
+  "project.repo_url",
+  "project.deployed_url",
+  "project.languages",
+  "project.technologies",  # array of strings: fw.*, tools.*, db.*, proto.*
+  "project.readme_summary.overview",
+  "project.readme_summary.key_components",
+  "project.readme_summary.benchmarks_and_metrics",
+  "project.bullets",       # array of strings: ATS-compliant impact statements
+  "project.keywords"       # array of strings: keyword search tokens
+]

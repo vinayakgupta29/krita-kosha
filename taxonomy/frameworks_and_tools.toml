@@ -1,0 +1,79 @@
+# Consolidated Frameworks and Tools Taxonomy
+# Frameworks use prefix [fw.<id>] and Tools use prefix [tools.<id>]
+
+references = ["./languages.toml"]
+
+# -----------------------------------------------------------------------------
+# Frameworks & Application Runtimes (fw.*)
+# -----------------------------------------------------------------------------
+
+[fw.django]
+formatted = "Django"
+language = "langs.python"
+category = "backend"
+
+[fw.tauri]
+formatted = "Tauri"
+language = "langs.rust"
+category = "client_desktop"
+
+[fw.echo]
+formatted = "Echo"
+language = "langs.go"
+category = "backend"
+
+[fw.express]
+formatted = "Express"
+language = "langs.typescript"
+category = "backend"
+
+[fw.node]
+formatted = "Node.js"
+aliases = ["node", "Node", "NodeJS", "Node.JS"]
+language = "langs.javascript"
+category = "runtime"
+
+[fw.react]
+formatted = "React.js"
+aliases = ["react", "reactjs", "React", "ReactJS", "React.JS"]
+language = "langs.typescript"
+category = "frontend"
+
+[fw.flutter]
+formatted = "Flutter"
+aliases = ["flutter", "Flutter Engine"]
+language = "langs.dart"
+category = "mobile_crossplatform"
+
+# -----------------------------------------------------------------------------
+# Tools, Compilers, Cloud & Infrastructure (tools.*)
+# -----------------------------------------------------------------------------
+
+[tools.llvm]
+formatted = "LLVM"
+aliases = ["llvm-ir", "LLVM IR"]
+category = "compilers"
+
+[tools.docker]
+formatted = "Docker"
+aliases = ["docker", "docker-compose", "Docker Compose"]
+category = "devops"
+
+[tools.git]
+formatted = "Git"
+category = "vcs"
+
+[tools.aws]
+formatted = "AWS (EC2, S3)"
+aliases = ["aws", "Amazon Web Services"]
+category = "cloud"
+
+[tools.linux]
+formatted = "Linux / POSIX"
+aliases = ["linux", "posix", "Native Linux"]
+category = "os"
+
+[tools.cicd]
+formatted = "CI/CD Pipelines"
+aliases = ["cicd", "ci/cd", "CI/CD"]
+category = "devops"
