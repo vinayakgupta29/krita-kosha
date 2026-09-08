@@ -1,0 +1,145 @@
+% -----------------------------------------------------------------------------
+% Krita Kosha: 1-Page ATS-Compliant Industry Resume Template
+% Target ATS Score: >= 95
+% Author: Vinayak Gupta
+% -----------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=1.2cm, right=1.2cm, top=1.2cm, bottom=1.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+% --- Visual & Typography Setup ---
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% --- Palette ---
+\definecolor{primary}{HTML}{1A365D}
+\definecolor{textdark}{HTML}{111827}
+\definecolor{border}{HTML}{CBD5E1}
+
+% --- Section Format ---
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}{0em}
+  {}[\vspace{-2pt}\color{border}\titlerule]
+
+\titlespacing*{\section}
+  {0pt}{6pt}{3pt}
+
+% --- Tight Itemize Setup ---
+\setlist[itemize]{
+  leftmargin=1.2em,
+  topsep=2pt,
+  itemsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\begin{document}
+\color{textdark}
+
+% =============================================================================
+% HEADER / CONTACT
+% =============================================================================
+\begin{center}
+  {\Huge \textbf{\color{primary} Vinayak Gupta}} \\[4pt]
+  \small
+  Chhapiheda, MP, India \ $\vert$ \
+  +91-70490-49698 \ $\vert$ \
+  \href{mailto:vinayakg236@gmail.com}{\underline{vinayakg236@gmail.com}} \ $\vert$ \
+  \href{https://github.com/vinayakgupta29}{\underline{github.com/vinayakgupta29}} \ $\vert$ \
+  \href{https://linkedin.com/in/vinayak-gupta-70a808202}{\underline{linkedin.com/in/vinayak-gupta}} \ $\vert$ \
+  \href{https://vinayakgupta29.github.io/portfolio}{\underline{Portfolio}}
+\end{center}
+\vspace{-4pt}
+
+% =============================================================================
+% PROFESSIONAL SUMMARY
+% =============================================================================
+\section*{Professional Summary}
+\vspace{1pt}
+Systems-oriented Software Engineer with ~3 years of experience building high-concurrency backend architectures, distributed services, and data persistence pipelines using Go, Node.js, and PostgreSQL. Proven track record designing sub-2ms cryptographic microservices, scaling healthcare platforms for 40,000+ active patients across 3 multi-specialty hospitals, and migrating heavy production databases to eliminate write deadlocks. Experienced in low-level POSIX environments, PLC hardware-software integration, and compilers.
+
+% =============================================================================
+% TECHNICAL SKILLS
+% =============================================================================
+\section*{Technical Skills}
+\vspace{1pt}
+\textbf{Languages:} Go, Rust, C, C++, Python, TypeScript, JavaScript, OCaml, Dart, Ruby, SQL, Bash, HTML, CSS \\
+\textbf{Frameworks \& Libraries:} Echo, Django, Tauri, Node.js, Express, Flutter, React.js, Jekyll \\
+\textbf{Tools \& Infrastructure:} LLVM, Docker, AWS (EC2, S3), Git, CI/CD, Linux (Arch/POSIX), Cloudflare Workers \\
+\textbf{Databases \& Protocols:} PostgreSQL, SQLite, MongoDB, Redis $\vert$ Modbus TCP, REST, gRPC, PBKE, GOD Format
+
+% =============================================================================
+% WORK EXPERIENCE
+% =============================================================================
+\section*{Work Experience}
+
+\textbf{Techasoft Pvt. Ltd.} \hfill \textbf{Mar 2026 – Present} \\
+\textit{Systems Engineer (Edge AI \& Field Deployment)} \hfill \textit{Bangalore, India}
+\begin{itemize}
+  \item Architected industrial automation software pairing a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.
+  \item Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V PLCs, actuating pneumatic solenoid valves within an 8ms latency budget.
+  \item Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and query optimization, eliminating write-concurrency deadlocks during continuous factory sensor logging.
+  \item Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory sites, tuning TensorRT execution to increase detection accuracy from 85\% to 95\%+.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Medoc Health IT Pvt. Ltd.} \hfill \textbf{Aug 2022 – Jul 2025} \\
+\textit{Technical Lead (Feb 2025 – Jul 2025) / Systems Engineer (Feb 2023 – Jan 2025) / Intern (Aug 2022 – Jan 2023)} \hfill \textit{Remote}
+\begin{itemize}
+  \item Directed an engineering division of 15--20 developers decomposing a monolithic Node.js platform into Go microservices, accelerating deployment to daily releases and scaling throughput for 40,000+ patients.
+  \item Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98\% under 500+ concurrent requests.
+  \item Designed foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to high-throughput core service scaling.
+  \item Engineered an $O(\log n)$ emergency triage priority queue and sparse numerical allocation algorithm in Node.js and MongoDB, processing 150+ clinical admissions/hour without latency degradation.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Appable Technologies} \hfill \textbf{Jul 2023 – Jun 2024} \\
+\textit{Freelance Full-Stack Software Developer} \hfill \textit{Remote}
+\begin{itemize}
+  \item Re-architected legacy web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65\%.
+  \item Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise HRMS to model arbitrarily nested organizational hierarchies and approval graphs.
+\end{itemize}
+
+% =============================================================================
+% KEY PROJECTS
+% =============================================================================
+\section*{Key Projects}
+
+\textbf{VKS-LLVM Compiler} $\vert$ \textit{OCaml, Rust, LLVM, Menhir} \hfill \href{https://github.com/vinayakgupta29/llvm-compiler}{\underline{GitHub}}
+\begin{itemize}
+  \item Architected a multi-stage functional compiler pairing an OCaml frontend (ocamllex, Menhir parser, type checker, JSON HIR generator) with a high-performance Rust backend emitting native LLVM IR.
+  \item Formalized language grammar, type semantics, and AST specifications with Gemini Antigravity, compiling .vks programs into standalone native x86-64 machine binaries with sub-100ms compilation times.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Personal Bahi Khata} $\vert$ \textit{Rust, Flutter, AES-256-GCM, Zstd, FFI} \hfill \href{https://play.google.com/store/apps/details?id=com.vins.bahi_khata}{\underline{Google Play}}
+\begin{itemize}
+  \item Engineered an offline-first embedded storage engine in Rust with full ACID transaction guarantees, AES-256-GCM authenticated encryption, and Zstd compression, integrated into a cross-platform Flutter client.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Grounded Object Data (GOD) Format} $\vert$ \textit{Go, Reflection, EBNF} \hfill \href{https://github.com/vinayakgupta29/GOD}{\underline{GitHub}}
+\begin{itemize}
+  \item Designed a lightweight, null-safe data serialization format and Go reflection engine with native tabular syntax, reducing payload sizes by up to 50\% compared to JSON.
+\end{itemize}
+
+% =============================================================================
+% EDUCATION
+% =============================================================================
+\section*{Education}
+\textbf{LNCT University}, Bhopal, India \hfill \textbf{2021 – 2025} \\
+\textit{Bachelor of Technology (B.Tech) in Computer Science and Engineering} \hfill \textbf{CGPA: 7.76 (First Division)}
+
+\end{document}

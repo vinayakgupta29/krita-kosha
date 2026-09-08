@@ -1,0 +1,281 @@
+% -----------------------------------------------------------------------------
+% Krita Kosha: Multi-Page Comprehensive Technical & Academic CV Template
+% Author: Vinayak Gupta
+% -----------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=1.8cm, right=1.8cm, top=1.8cm, bottom=1.8cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% --- Typography & Page Setup ---
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{gray} Vinayak Gupta \ $\cdot$ \ Curriculum Vitae \ $\cdot$ \ Page \thepage}
+
+\raggedbottom
+\raggedright
+
+% --- Palette ---
+\definecolor{primary}{HTML}{23407C}
+\definecolor{textdark}{HTML}{111827}
+\definecolor{border}{HTML}{CBD5E1}
+
+% --- Section Format ---
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}
+  {}[\vspace{-2pt}\color{border}\titlerule]
+
+\titlespacing*{\section}
+  {0pt}{10pt}{5pt}
+
+% --- Itemize Setup ---
+\setlist[itemize]{
+  leftmargin=1.4em,
+  topsep=2.5pt,
+  itemsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\begin{document}
+\color{textdark}
+
+% =============================================================================
+% HEADER / CONTACT
+% =============================================================================
+\begin{center}
+  {\huge \textbf{\color{primary} Vinayak Gupta}} \\[6pt]
+  \normalsize
+  Chhapiheda, Madhya Pradesh, India \ $\vert$ \
+  +91-70490-49698 \ $\vert$ \
+  \href{mailto:vinayakg236@gmail.com}{\underline{vinayakg236@gmail.com}} \\[3pt]
+  \small
+  \href{https://github.com/vinayakgupta29}{\underline{github.com/vinayakgupta29}} \ $\vert$ \
+  \href{https://linkedin.com/in/vinayak-gupta-70a808202}{\underline{linkedin.com/in/vinayak-gupta}} \ $\vert$ \
+  \href{https://vinayakgupta29.github.io/portfolio}{\underline{vinayakgupta29.github.io/portfolio}}
+\end{center}
+\vspace{2pt}
+
+% =============================================================================
+% RESEARCH & TECHNICAL INTERESTS
+% =============================================================================
+\section*{Research \& Technical Interests}
+
+\textbf{Applied Statistics \& Mathematical Foundations in Real-World AI Systems}
+\begin{itemize}
+  \item \textit{Focus:} Finding applicable use cases of statistics and mathematical concepts in real-world applications like understanding the world around us, and in the age of AI where AI at its core is statistics---whether Large Language Models (LLMs), Convolutional Neural Networks (CNNs), or novel model architectures developed on the fringes.
+  \item \textit{Themes:} Statistical foundations of deep learning and probabilistic inference; empirical modeling of data distributions; asymptotic recurrence relations and sequence behavior; emergent mathematical paradigms beyond standard transformer layers.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Autism, Cognitive Diversity \& Accessible Systems Architecture}
+\begin{itemize}
+  \item \textit{Focus:} Independent exploratory interest in autism, scientific support frameworks, and designing computing systems tailored for neurodivergent individuals, focusing on cognitive load reduction, sensory accommodation, and deterministic user interaction patterns.
+  \item \textit{Themes:} Scientific frameworks of neurodivergence; digital environments mitigating cognitive friction and sensory overload; deterministic assistive user interface paradigms.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Formal Language Semantics \& Compiler Construction}
+\begin{itemize}
+  \item \textit{Focus:} Exploration of formal grammars (EBNF, LALR(1)), affine type systems, and intermediate representations to guarantee memory safety, correctness proofs, and deterministic execution with zero runtime overhead.
+  \item \textit{Themes:} Formal type theory, sum/product types, extensible type classes; LLVM IR optimization passes; null-safe binary serialization engines.
+\end{itemize}
+
+% =============================================================================
+% EDUCATION
+% =============================================================================
+\section*{Education}
+
+\textbf{LNCT University}, Bhopal, Madhya Pradesh, India \hfill \textbf{2021 – 2025} \\
+\textit{Bachelor of Technology (B.Tech) in Computer Science and Engineering} \hfill \textbf{CGPA: 7.76 (First Division)} \\
+\small
+\textbf{Medium of Instruction:} English (Kindergarten through Undergraduate Degree) \\
+\textbf{Key Coursework:} Data Structures \& Algorithms, Operating Systems \& Systems Programming, Database Management Systems, Theory of Computation \& Formal Languages, Compiler Design, Computer Networks \& Distributed Systems, Object-Oriented Software Design.
+
+% =============================================================================
+% PROFESSIONAL EXPERIENCE
+% =============================================================================
+\section*{Professional Experience}
+
+\textbf{Techasoft Pvt. Ltd.} \hfill \textbf{Mar 2026 – Present} \\
+\textit{Systems Engineer (Edge AI \& Field Deployment)} \hfill \textit{Bangalore, India}
+\begin{itemize}
+  \item Architected the industrial software stack for a factory automation line, combining a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.
+  \item Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V Programmable Logic Controllers (PLCs), actuating pneumatic solenoid valves within an 8ms latency budget.
+  \item Developed a mathematical coordinate-transformation pipeline mapping image-space pixel coordinates to real-world millimeter coordinates at 30 FPS, dynamically computing Regions of Interest (ROIs) for automated conveyor inspection.
+  \item Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and raw query optimization, eliminating write-concurrency deadlocks during continuous factory-floor sensor logging.
+  \item Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory sites, tuning TensorRT execution to increase detection accuracy from 85\% to 95\%+.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Medoc Health IT Pvt. Ltd.} \hfill \textbf{Aug 2022 – Jul 2025} \\
+\textit{Technical Lead (Feb 2025 – Jul 2025)} \hfill \textit{Remote}
+\begin{itemize}
+  \item Directed an engineering division of 15--20 developers decomposing a monolithic Node.js platform into loosely coupled Go microservices, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.
+  \item Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98\% under 500+ concurrent requests.
+  \item Designed foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to priority shifts toward high-throughput core services.
+  \item Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and containerized microservices to guarantee continuous uptime for hospital clinical workflows.
+\end{itemize}
+
+\textit{Systems Engineer (Feb 2023 – Jan 2025)} \hfill \textit{Remote}
+\begin{itemize}
+  \item Managed technical product development and engineering architecture for a core patient healthcare product, leading a dedicated squad of 5 developers across Flutter client applications and Node.js backend services.
+  \item Engineered an $O(\log n)$ emergency triage priority queue and sparse numerical allocation algorithm in Node.js and MongoDB, processing 150+ clinical admissions/hour without latency degradation.
+  \item Constructed containerized development environments with Docker Compose multi-stage builds, enforcing local-to-production parity and reducing configuration-related bugs by 60\%.
+\end{itemize}
+
+\textit{Software Development Intern (Aug 2022 – Jan 2023)} \hfill \textit{Remote}
+\begin{itemize}
+  \item Developed full-stack healthcare modules using Node.js and Flutter, integrating external clinical REST APIs and streamlining internal patient record management.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Appable Technologies} \hfill \textbf{Jul 2023 – Jun 2024} \\
+\textit{Freelance Full-Stack Software Developer} \hfill \textit{Remote}
+\begin{itemize}
+  \item Re-architected legacy client web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65\%.
+  \item Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise Human Resource Management System (HRMS) to model arbitrarily nested organizational hierarchies and approval graphs.
+  \item Designed an offline-first workforce attendance system integrating local biometric verification, geographical validation, cryptographic data integrity checks, and transactional background sync queues.
+  \item Engineered a sports venue reservation engine handling multi-variable spatial geometry, dynamic time-dependent pricing tiers, and asynchronous user dispatch pipelines.
+\end{itemize}
+
+% =============================================================================
+% SELECTED PROJECTS & SYSTEMS
+% =============================================================================
+\section*{Selected Projects \& Systems Software}
+
+\textbf{VKS-LLVM Compiler} \hfill \href{https://github.com/vinayakgupta29/llvm-compiler}{\underline{GitHub: vinayakgupta29/llvm-compiler}} \\
+\textit{Technologies: OCaml (Dune, Menhir, ocamllex), Rust, LLVM IR, JSON HIR}
+\begin{itemize}
+  \item Architected a multi-stage functional compiler pairing an OCaml frontend (lexer, Menhir LALR(1) parser, type checker, JSON HIR generator) with a high-performance Rust backend emitting native LLVM IR.
+  \item Formalized language grammar, type semantics, and AST specifications with Gemini Antigravity, implementing Haskell-like pattern matching, algebraic sum/product types, and polymorphic type classes.
+  \item Engineered LLVM IR code generation and optimization passes in Rust, compiling .vks programs into standalone native x86-64 machine binaries with sub-100ms compilation times.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Personal Bahi Khata (Embedded Ledger Engine \& Mobile Client)} \hfill \href{https://play.google.com/store/apps/details?id=com.vins.bahi_khata}{\underline{Google Play Store}} \\
+\textit{Technologies: Rust, Flutter, Dart, lib\_pbke, AES-256-GCM, Zstd, FFI, Linux}
+\begin{itemize}
+  \item Engineered an offline-first financial ledger featuring an embedded ACID-compliant storage engine in Rust with write-ahead logging (WAL) and memory-mapped append logs.
+  \item Formulated a binary record serialization protocol incorporating authenticated AES-256-GCM encryption and Zstd compression, achieving 50--70\% storage reduction.
+  \item Deployed the client application to Google Play, maintaining dual target support across Android and Linux desktop via shared Rust core FFI bindings.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Grounded Object Data (GOD) Serialization Format} \hfill \href{https://github.com/vinayakgupta29/GOD}{\underline{GitHub: vinayakgupta29/GOD}} \\
+\textit{Technologies: Go, Reflection Engine, EBNF Grammar, AST}
+\begin{itemize}
+  \item Invented and formalized an unambiguous, null-safe data serialization format governed by an EBNF grammar, featuring native 2D tabular array layouts and zero-null semantics.
+  \item Implemented a Go reflection engine supporting type-safe decoding, schema coercion, and struct marshaling, reducing tabular data payload sizes by 30--50\% compared to JSON.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Zundrath Key Management System (KMS)} \hfill \href{https://github.com/vinayakgupta29/zundrath}{\underline{GitHub: vinayakgupta29/zundrath}} \\
+\textit{Technologies: Go, Echo, AES-256, PBKDF2, HMAC, Docker}
+\begin{itemize}
+  \item Designed a cryptographic key management microservice in Go featuring in-memory key caching, automated rotation intervals, and PBKDF2 key derivation.
+  \item Engineered HMAC-SHA256 client authentication and audit logging, maintaining sub-2ms key retrieval latency under 500+ concurrent requests.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{HTTP Server in Pure C} \hfill \href{https://github.com/vinayakgupta29/http_server_in_C}{\underline{GitHub: vinayakgupta29/http_server_in_C}} \\
+\textit{Technologies: C, POSIX Sockets, TCP/IP, Linux}
+\begin{itemize}
+  \item Engineered a zero-dependency HTTP/1.1 server from scratch in pure C utilizing low-level POSIX sockets, manual HTTP header parsing, and custom memory management as a systems prototype for the VKS compiler runtime.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{A Directory of Integer Sequences} \hfill \href{https://github.com/vinayakgupta29/A-directory-of-integer-sequences}{\underline{GitHub: vinayakgupta29/A-directory-of-integer-sequences}} \\
+\textit{Technologies: Python, Discrete Mathematics, Combinatorics, Recurrence Relations}
+\begin{itemize}
+  \item Implemented and analyzed discrete integer sequences and recurrence relations, creating algorithmic models for asymptotic sequence behavior and computational number theory.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Vichar (Real-Time Anonymous Discussion Board)} \hfill \href{https://vichar.abhivyakti.space}{\underline{vichar.abhivyakti.space}} \\
+\textit{Technologies: Go, SSR (html/template), Cloudflare Workers, WebSockets, Tripcodes, HTML, CSS, JavaScript}
+\begin{itemize}
+  \item Built a real-time anonymous discussion platform using Go server-side rendering (html/template) and Cloudflare worker threads for distributed edge execution.
+  \item Implemented cryptographic tripcode authentication and low-latency WebSocket live updates.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Tism Games (SFML Game Collection)} \hfill \href{https://github.com/vinayakgupta29/smashers_sfml}{\underline{GitHub: vinayakgupta29/smashers\_sfml}} \\
+\textit{Technologies: C++, C, SFML, 2D Graphics, Spatial Physics}
+\begin{itemize}
+  \item Developed a desktop arcade game collection in C++ with SFML (including SFML Smashers and SFML Velocity), featuring deterministic frame-tick loops and bounding-box collision physics.
+\end{itemize}
+
+% =============================================================================
+% PUBLICATIONS & LITERATURE
+% =============================================================================
+\section*{Publications \& Literature}
+
+\textbf{Book: Poetry Collection} \\
+\textit{Life} \hfill \textbf{2023} \\
+Author: Vinayak Gupta \ $\vert$ \ Publisher: Sangam Publications \\
+\small Published literary collection of poetry and philosophical reflections exploring human introspection, solitude, and existential observation.
+
+\vspace{3pt}
+% =============================================================================
+% PATENTS
+% =============================================================================
+\section*{Patents}
+
+\textbf{System for Cooking} \hfill \textbf{Published 2025} \\
+Inventors: Vinayak Gupta (Co-author) \ $\vert$ \ Authority: Indian Patent Office \ $\vert$ \ Application ID: 202521070227 \\
+\small Automated cooking apparatus and control architecture integrating thermal sensor feedback loops, actuator regulation, and deterministic process sequencing.
+
+\vspace{3pt}
+% =============================================================================
+% WORKING PAPERS & RESEARCH DRAFTS
+% =============================================================================
+\section*{Working Papers \& Research Drafts}
+
+\begin{itemize}
+  \item \textbf{A Novel Approach to Encryption for Data Security in Mobile Applications} \\
+  \textit{Status:} Manuscript draft under preparation \ $\vert$ \ \textit{Area:} Backend Systems / Cryptography / Secure Systems Design \\
+  \small Investigating authenticated symmetric encryption (AES-256-GCM), key derivation schemes, and embedded ACID storage engines for local-first mobile security.
+  \item \textbf{Applied Statistics \& Mathematical Foundations in Real-World AI Systems} \\
+  \textit{Status:} Exploratory research draft (\texttt{stats\_masters\_research\_draft\_0}) \ $\vert$ \ \textit{Area:} Applied Mathematics \& Machine Learning Theory \\
+  \small Formulating practical statistical applications across modern AI paradigms, analyzing empirical data distributions, combinatorial sequence behavior, and fringe model architectures.
+\end{itemize}
+
+% =============================================================================
+% TECHNICAL SKILLS
+% =============================================================================
+\section*{Technical Skills}
+
+\begin{itemize}
+  \item \textbf{Languages:} Go, Rust, C, C++, Python, TypeScript, JavaScript, OCaml, Dart, Ruby, Lua, Bash, SQL, HTML, CSS
+  \item \textbf{Frameworks \& Libraries:} Echo, Django, Tauri, Node.js, Express, Flutter, React.js, Jekyll
+  \item \textbf{Developer Tools \& Infrastructure:} LLVM, Docker, AWS (EC2, S3), Git, CI/CD, Linux (Arch/POSIX, Hyprland, Wayland), Cloudflare Workers, HTML Templating
+  \item \textbf{Databases:} PostgreSQL, SQLite, MongoDB, Redis
+  \item \textbf{Protocols \& Data Formats:} Modbus TCP, REST, gRPC, PBKE Binary Serialization, Grounded Object Data (GOD)
+\end{itemize}
+
+% =============================================================================
+% CERTIFICATIONS & LANGUAGES
+% =============================================================================
+\section*{Certifications \& Languages}
+
+\begin{itemize}
+  \item \textbf{Cyber Security and Ethical Hacking} --- Indo-German Tool Room (IGTR), Indore, India (2025) \\
+  \small Practical certification covering network security protocols, vulnerability assessment, penetration testing, and cryptographic fundamentals.
+  \item \textbf{English:} Fluent (Primary medium of instruction from kindergarten through undergraduate degree)
+  \item \textbf{Japanese:} Intermediate (Learning / Conversational)
+  \item \textbf{Hindi:} Native Fluency \ $\vert$ \ \textbf{Urdu:} Conversational
+\end{itemize}
+
+\end{document}

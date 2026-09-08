@@ -1,0 +1,13 @@
+# Local temporary reference files (to be removed after DB finalization)
+.tmp-refs/
+
+# LaTeX build artifacts
+.latex-build/
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
