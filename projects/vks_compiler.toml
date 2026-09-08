@@ -1,0 +1,81 @@
+# Project Record: VKS-LLVM Compiler
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/llvm-compiler/refs/heads/monorepo/README.md",
+  "https://raw.githubusercontent.com/vinayakgupta29/llvm-compiler/refs/heads/monorepo/rules.md",
+  "https://raw.githubusercontent.com/vinayakgupta29/compiler_front_end_ocaml/refs/heads/main/README.md"
+]
+
+local_ref_path = "./.tmp-refs/llvm-compiler/rules_main.md"
+
+[project]
+id = "vks_compiler"
+title = "VKS-LLVM Compiler"
+category = "Compilers & Systems"
+repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
+repo_branch = "monorepo"
+deployed_url = ""
+languages = ["langs.ocaml", "langs.rust"]
+technologies = ["tools.llvm"]
+tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
+
+[project.readme_summary]
+overview = "A statically typed functional programming language compiler pairing an OCaml frontend (Dune, Menhir, ocamllex) with a high-performance Rust/LLVM backend. Language grammar, formal semantics, and AST specifications were formalized with Gemini Antigravity."
+architecture = """
+┌─────────────────┐
+│  VKS Source     │ (.vks)
+└────────┬────────┘
+         ▼
+┌─────────────────┐
+│ OCaml Frontend  │ (ocamllex Lexer, Menhir Parser, Type Checker, JSON HIR Gen)
+└────────┬────────┘
+         ▼ (JSON HIR via yojson)
+┌─────────────────┐
+│  Rust Backend   │ (LLVM IR Gen, Optimization Passes, Code Gen)
+└────────┬────────┘
+         ▼
+┌─────────────────┐
+│ Native Binary   │ (Standalone x86-64 executable)
+└─────────────────┘
+"""
+grammar_and_syntax = [
+  "Strict distinction between pure functions (func ... => expr) and side-effecting procedures (proc ... returning Nil)",
+  "First-class functions with automatic currying via '_' placeholder, lambda expressions (\\(x) => ...), and composition (f . g)",
+  "Haskell-style pattern matching, guard clauses (| n == 0 => 1), and user-defined infix operators ((+)(infixr 5))",
+  "Algebraic data types (data Vec2i { x: Int, y: Int }) and type classes for extensible polymorphism",
+  "Compile-time type inference (:=) alongside explicit type annotations (:)",
+  "Hierarchical module namespacing with PascalCase types/modules, snakeCase identifiers, and @root resolution directives",
+  "Scope-based value lifetimes with shadow binding support and immutable-by-default name bindings"
+]
+key_components = [
+  "OCaml frontend featuring ocamllex tokenizer, Menhir LALR(1) parser, semantic type checker, and JSON HIR generator",
+  "Rust backend ingesting JSON HIR to drive LLVM IR generation and optimization passes",
+  "Native code generator emitting standalone x86-64 machine binaries with zero runtime dependencies",
+  "Tooling suite including CLI compiler (vks), interactive REPL (vksi), and core standard library (std/)"
+]
+benchmarks_and_metrics = "Sub-100ms compilation times for multi-module programs; minimal native binary signature."
+
+bullets = [
+  "Architected a multi-stage functional compiler pairing an OCaml frontend (ocamllex, Menhir parser, type checker, JSON HIR generator) with a high-performance Rust backend emitting LLVM IR.",
+  "Formalized language grammar, type semantics, and AST specifications with Gemini Antigravity, implementing Haskell-like pattern matching, algebraic sum/product types, and polymorphic type classes.",
+  "Engineered LLVM IR code generation and optimization passes in Rust, compiling `.vks` source programs into standalone native x86-64 binaries with zero external runtime dependencies."
+]
+keywords = [
+  "compiler",
+  "llvm",
+  "ast",
+  "lexer",
+  "parser",
+  "menhir",
+  "ocamllex",
+  "type-system",
+  "ocaml",
+  "rust",
+  "functional-programming",
+  "systems-programming"
+]
