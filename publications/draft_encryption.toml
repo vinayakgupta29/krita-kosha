@@ -1,0 +1,11 @@
+# Research Working Paper / Manuscript Draft: Mobile Data Security
+
+[manuscript]
+id = "draft_encryption"
+title = "A Novel approach to Encryption for Data Security in Mobile Applications"
+category = "manuscript_draft"
+author = "Vinayak Gupta"
+status = "manuscript_draft_under_preparation"
+area = "Backend systems / cryptography / Secure Systems design"
+description = "Investigates zero-knowledge authenticated symmetric encryption (AES-256-GCM) combined with authenticated key derivation and local-first SQLite/WAL storage engines for high-assurance mobile financial databases."
+tags = ["cryptography", "mobile-security", "aes-256-gcm", "pbke", "embedded-storage"]

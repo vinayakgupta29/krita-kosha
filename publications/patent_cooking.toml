@@ -1,0 +1,13 @@
+# Patent Record: System for Cooking
+
+[patent]
+id = "patent_cooking"
+title = "System for Cooking"
+category = "patent"
+co_author = "Vinayak Gupta"
+application_id = "202521070227"
+issuing_office = "Indian Patent Office"
+status = "published"
+publication_year = 2025
+description = "Automated cooking apparatus and control system integrating thermal sensor feedback loops, actuator regulation, and deterministic process sequencing."
+tags = ["patent", "hardware", "control-systems", "automation", "sensors"]

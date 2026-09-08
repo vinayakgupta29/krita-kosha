@@ -1,0 +1,14 @@
+# Publication Record: Life (Poetry Collection)
+
+[publication]
+id = "book_life"
+title = "Life"
+category = "book"
+type = "Poetry Collection"
+author = "Vinayak Gupta"
+publisher = "Sangam Publications"
+year = 2023
+language = "English"
+status = "published"
+description = "Published collection of poetry and philosophical literature exploring human experience, introspective perception, and existential observation."
+tags = ["poetry", "literature", "book", "sangam-publications"]

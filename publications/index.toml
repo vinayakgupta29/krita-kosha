@@ -1,0 +1,37 @@
+# Publications, Patents, and Working Papers Index
+
+[[books]]
+id = "book_life"
+title = "Life"
+type = "Poetry Collection"
+author = "Vinayak Gupta"
+publisher = "Sangam Publications"
+year = 2023
+status = "published"
+path = "./publications/book_life.toml"
+
+[[patents]]
+id = "patent_cooking"
+title = "System for Cooking"
+inventor = "Vinayak Gupta (Co-author)"
+application_id = "202521070227"
+office = "Indian Patent Office"
+year = 2025
+status = "published"
+path = "./publications/patent_cooking.toml"
+
+[[manuscripts]]
+id = "draft_encryption"
+title = "A Novel approach to Encryption for Data Security in Mobile Applications"
+author = "Vinayak Gupta"
+status = "Manuscript draft under preparation"
+area = "Backend systems / cryptography / Secure Systems design"
+path = "./publications/draft_encryption.toml"
+
+[[manuscripts]]
+id = "stats_masters_research_draft_0"
+title = "Applied Statistics & Mathematical Concepts in Real-World AI Systems"
+author = "Vinayak Gupta"
+status = "Exploratory research draft"
+area = "Applied Mathematics & Machine Learning Theory"
+path = "./research_interests.toml"
