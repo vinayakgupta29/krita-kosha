@@ -1,0 +1,24 @@
+# Project Catalog Index
+# Read by agents to cherry-pick matching projects against target JDs
+
+[[projects]]
+id = "vks_compiler"
+title = "VKS-LLVM Compiler"
+category = "Compilers & Systems"
+tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
+languages = ["langs.ocaml", "langs.rust"]
+tags = ["compiler", "llvm", "ast", "lexer", "parser", "menhir", "ocamllex", "rust", "ocaml", "systems-programming"]
+repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
+deployed_url = ""
+path = "./projects/vks_compiler.toml"
+
+[[projects]]
+id = "bahi_khata"
+title = "Personal Bahi Khata (Embedded Ledger Engine & Mobile Client)"
+category = "Systems & Mobile Engineering"
+tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
+languages = ["langs.rust", "langs.dart"]
+tags = ["rust", "flutter", "embedded-database", "cryptography", "aes-256-gcm", "zstd", "compression", "ffi", "wasm", "offline-first", "acid"]
+repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
+deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
+path = "./projects/bahi_khata.toml"

@@ -17,10 +17,12 @@ category = "web"
 
 [proto.pbke]
 formatted = "PBKE Serialization"
-aliases = ["pbke", "PBKE format"]
+aliases = ["pbke", "PBKE format", "PBKE"]
+developer = "Vinayak Gupta"
 category = "custom_serialization"
 
 [proto.god]
 formatted = "GOD (Grounded Object Data)"
 aliases = ["god", "god-format", "GOD format"]
+developer = "Vinayak Gupta"
 category = "custom_serialization"

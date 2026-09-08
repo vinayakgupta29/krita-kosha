@@ -1,0 +1,78 @@
+# Project Record: Personal Bahi Khata
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://github.com/vinayakgupta29/personal_bahi_khata",
+  "https://github.com/vinayakgupta29/lib_pbke",
+  "https://play.google.com/store/apps/details?id=com.vins.bahi_khata",
+  "https://vinayakgupta29.github.io/blogs/2024-02-03/personal-bahi-khata/",
+  "https://vinayakgupta29.github.io/blogs/2026-07-27/personal-bahi-khata-rust/"
+]
+
+local_ref_path = "./.tmp-refs/personal_bahi_khata/docs/pbke/index.html"
+
+[project]
+id = "bahi_khata"
+title = "Personal Bahi Khata (Embedded Ledger Engine & Mobile Client)"
+category = "Systems & Mobile Engineering"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
+engine_repo_url = "https://github.com/vinayakgupta29/lib_pbke"
+deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
+languages = ["langs.rust", "langs.dart"]
+technologies = ["fw.flutter", "proto.pbke"]
+tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
+
+[project.readme_summary]
+overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store."
+architecture = """
+┌──────────────────────────────────────┐
+│  Flutter Mobile Client (Dart / UI)   │ (Play Store: com.vins.bahi_khata)
+└──────────────────┬───────────────────┘
+                   │ C ABI (Null-Safe, Panic-Caught FFI)
+                   ▼
+┌──────────────────────────────────────┐
+│      lib_pbke Core Engine (Rust)     │
+│ ├── FFI Layer (ffi.rs)               │
+│ ├── In-Memory Cache (pbke_db.rs)     │ (Protected by FLUSH_LOCK)
+│ ├── AES-256-GCM Encryption           │ (PBKDF2 Key Derivation)
+│ ├── Zstd Compression (pbke_compress) │ (76% payload reduction)
+│ ├── Crash-Safe Disk IO (pbke_disk)   │ (Atomic temp-file swap)
+│ └── Import/Export (import_export)    │ (Auto-detecting CSV/JSON/PBKE)
+└──────────────────────────────────────┘
+"""
+key_components = [
+  "Embedded ACID-compliant Rust storage engine (lib_pbke) utilizing in-memory caching and FLUSH_LOCK concurrency guards",
+  "Authenticated AES-256-GCM encryption with PBKDF2 key derivation for local zero-knowledge privacy",
+  "Lossless Zstandard (Zstd) compression reducing raw binary size by 76% with sub-1ms decompression overhead",
+  "Crash-resilient atomic disk write pipeline writing to temporary files prior to atomic file-descriptor swaps",
+  "Foreign Function Interface (FFI) exposing a zero-panic, C-compatible ABI across Linux (.so), Android, Windows (.dll), and WebAssembly (.wasm)",
+  "Cross-platform Flutter application featuring banking SMS regex extraction, custom tag tagging, and multi-format (RFC-4180 CSV, JSON, binary PBKE) export"
+]
+benchmarks_and_metrics = "76% compression reduction (89,674 -> 21,724 bytes); 2x faster execution than pure Dart equivalents; sub-1ms FFI boundary latency."
+
+bullets = [
+  "Engineered an ACID-compliant, crash-resilient storage engine in Rust (lib_pbke) featuring authenticated AES-256-GCM encryption, PBKDF2 key derivation, and atomic disk flush locks.",
+  "Integrated native Zstandard (Zstd) compression, slashing encrypted storage footprint by 76% (89KB -> 21KB) with sub-1ms decompression overhead, outperforming previous Dart implementations by 2x.",
+  "Designed a null-safe, panic-caught C ABI Foreign Function Interface (FFI), seamlessly bridging the Rust storage core to a production Flutter mobile application deployed on Google Play.",
+  "Implemented automated banking SMS parsing via regular expressions and an auto-detecting data interchange pipeline supporting RFC-4180 CSV, JSON, and proprietary PBKE binary formats."
+]
+keywords = [
+  "rust",
+  "flutter",
+  "embedded-database",
+  "cryptography",
+  "aes-256-gcm",
+  "zstd",
+  "compression",
+  "ffi",
+  "wasm",
+  "offline-first",
+  "acid",
+  "play-store"
+]
