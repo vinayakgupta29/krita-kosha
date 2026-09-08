@@ -1,11 +1,13 @@
 # Project Catalog Index
-# Read by agents to cherry-pick matching projects against target JDs
+# Scanned by agents to cherry-pick matching projects against target JDs
 
 [[projects]]
 id = "vks_compiler"
 title = "VKS-LLVM Compiler"
 category = "Compilers & Systems"
 tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
+date = "Jul-2026"
+status = "actively maintained"
 languages = ["langs.ocaml", "langs.rust"]
 tags = ["compiler", "llvm", "ast", "lexer", "parser", "menhir", "ocamllex", "rust", "ocaml", "systems-programming"]
 repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
@@ -17,8 +19,245 @@ id = "bahi_khata"
 title = "Personal Bahi Khata (Embedded Ledger Engine & Mobile Client)"
 category = "Systems & Mobile Engineering"
 tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
+date = "Jun-2026"
+status = "actively maintained"
 languages = ["langs.rust", "langs.dart"]
 tags = ["rust", "flutter", "embedded-database", "cryptography", "aes-256-gcm", "zstd", "compression", "ffi", "wasm", "offline-first", "acid"]
 repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
 deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
 path = "./projects/bahi_khata.toml"
+
+[[projects]]
+id = "god_format"
+title = "Grounded Object Data (GOD) Serialization Format"
+category = "Compilers & Serialization"
+tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
+date = "Jun-2026"
+status = "actively maintained"
+languages = ["langs.go"]
+tags = ["go", "serialization", "ebnf", "compiler", "lexer", "parser", "reflection", "performance", "zero-null"]
+repo_url = "https://github.com/vinayakgupta29/GOD"
+deployed_url = ""
+path = "./projects/god_format.toml"
+
+[[projects]]
+id = "zundrath"
+title = "Zundrath Key Management System (KMS)"
+category = "Distributed Systems & Cryptography"
+tagline = "High-concurrency cryptographic key management service in Go with automated rotation, HMAC client authorization, and sub-2ms retrieval latency"
+date = "Aug-2025"
+status = "archived"
+languages = ["langs.go"]
+tags = ["go", "echo", "cryptography", "kms", "aes-256", "hmac", "pbkdf2", "key-rotation", "docker", "distributed-systems"]
+repo_url = "https://github.com/vinayakgupta29/zundrath"
+deployed_url = ""
+path = "./projects/zundrath.toml"
+
+[[projects]]
+id = "http_server_c"
+title = "HTTP Server in Pure C"
+category = "Systems Engineering & Networking"
+tagline = "Zero-dependency lightweight HTTP/1.1 server implemented in pure C with POSIX sockets, engineered as the foundational network stack prototype for the VKS compiler"
+date = "Aug-2026"
+status = "actively maintained"
+languages = ["langs.c"]
+tags = ["c", "posix", "sockets", "networking", "http", "systems-programming", "tcp", "memory-management"]
+repo_url = "https://github.com/vinayakgupta29/http_server_in_C"
+deployed_url = ""
+path = "./projects/http_server_c.toml"
+
+[[projects]]
+id = "integer_sequences"
+title = "A Directory of Integer Sequences"
+category = "Mathematics & Algorithms"
+tagline = "Computational mathematics system implementing and analyzing discrete integer sequences and recurrence relations in Python"
+date = "Aug-2023"
+status = "archived"
+languages = ["langs.python"]
+tags = ["python", "mathematics", "discrete-math", "integer-sequences", "algorithms", "recurrence-relations"]
+repo_url = "https://github.com/vinayakgupta29/A-directory-of-integer-sequences"
+deployed_url = ""
+path = "./projects/integer_sequences.toml"
+
+[[projects]]
+id = "tism_games"
+title = "Tism Games (C++ / SFML Game Collection)"
+category = "Game Development & Graphics"
+tagline = "Collection of real-time 2D desktop arcade games built in C++ with SFML featuring deterministic tick loops and spatial collision physics"
+date = "Jul-2026"
+status = "actively maintained"
+languages = ["langs.cpp", "langs.c"]
+tags = ["cpp", "c", "sfml", "game-development", "graphics", "event-loop", "linux", "arcade"]
+repo_url = "https://github.com/vinayakgupta29/smashers_sfml"
+deployed_url = ""
+path = "./projects/tism_games.toml"
+
+[[projects]]
+id = "vichar_abhivyakti"
+title = "Vichar (Real-Time Anonymous Discussion Board)"
+category = "Distributed Systems & Web Platforms"
+tagline = "Real-time anonymous discussion board built with Go SSR (html/template), Cloudflare worker threads, WebSockets, and cryptographic tripcodes"
+date = "Jun-2026"
+status = "actively maintained"
+languages = ["langs.go", "langs.html", "langs.css", "langs.javascript", "langs.typescript"]
+tags = ["go", "ssr", "html-template", "cloudflare-workers", "websockets", "real-time", "cryptography", "tripcodes", "sqlite"]
+repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
+deployed_url = "https://vichar.abhivyakti.space"
+path = "./projects/vichar_abhivyakti.toml"
+
+[[projects]]
+id = "kalam_abhivyakti"
+title = "Kalam (Multilingual Literary & Technical Publishing Platform)"
+category = "Web Engineering & Publishing"
+tagline = "Multilingual publishing platform for essays, technical literature, and stories built with Ruby and Jekyll, featuring Devanagari and Japanese typography"
+date = "Sep-2026"
+status = "actively maintained"
+languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
+tags = ["jekyll", "ruby", "html", "css", "javascript", "static-site", "publishing", "devanagari", "typography", "literature"]
+repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
+deployed_url = "https://kalam.abhivyakti.space"
+path = "./projects/kalam_abhivyakti.toml"
+
+[[projects]]
+id = "rang_abhivyakti"
+title = "Hṛdayapāṭaḥ (Digital Art & Visual Gallery)"
+category = "Frontend & Creative Technologies"
+tagline = "Responsive digital art gallery and visual narrative portfolio (हृदयपाटः) built with Ruby and Jekyll"
+date = "Nov-2025"
+status = "actively maintained"
+languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
+tags = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
+repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
+deployed_url = "https://rang.abhivyakti.space"
+path = "./projects/rang_abhivyakti.toml"
+
+[[projects]]
+id = "public_abhivyakti"
+title = "Abhivyakti Space (Ecosystem Hub & Interactive Portal)"
+category = "Frontend & Creative Technologies"
+tagline = "Central portal hub connecting the Abhivyakti creative ecosystem with dynamic interactive DOM physics and card tilting"
+date = "Nov-2025"
+status = "actively maintained"
+languages = ["langs.html", "langs.css", "langs.javascript"]
+tags = ["portal", "html", "css", "javascript", "interactive-ui", "hub"]
+repo_url = "https://github.com/vinayakgupta29/public.abhivyakti"
+deployed_url = "https://abhivyakti.space"
+path = "./projects/public_abhivyakti.toml"
+
+[[projects]]
+id = "dotfiles"
+title = "Dotfiles (Arch Linux & Wayland Environment)"
+category = "Linux Systems & Customization"
+tagline = "Modular, reproducible Arch Linux desktop configuration managing Hyprland Wayland compositor, terminal toolchains, and custom keybindings"
+date = "Aug-2026"
+status = "actively maintained"
+languages = ["langs.bash", "langs.lua", "langs.python"]
+tags = ["linux", "arch-linux", "hyprland", "wayland", "bash", "lua", "dotfiles"]
+repo_url = "https://github.com/vinayakgupta29/dotfiles"
+deployed_url = ""
+path = "./projects/dotfiles.toml"
+
+[[projects]]
+id = "noctalia_plugins"
+title = "Noctalia Shell Plugins (Multilingual Input Method Switcher)"
+category = "Linux Systems & Customization"
+tagline = "Desktop status-bar integration plugin for Noctalia Shell enabling instantaneous keyboard input method switching via Fcitx5"
+date = "Sep-2026"
+status = "actively maintained"
+languages = ["langs.lua", "langs.bash"]
+tags = ["lua", "linux", "fcitx5", "multilingual", "desktop-tools", "input-methods"]
+repo_url = "https://github.com/vinayakgupta29/noctalia_plugins"
+deployed_url = ""
+path = "./projects/noctalia_plugins.toml"
+
+[[projects]]
+id = "sauce_nvim"
+title = "sauce.nvim (Custom Neovim Linter Plugin)"
+category = "Developer Tooling & Editors"
+tagline = "Neovim plugin with Tree-sitter integration functioning as a real-time syntax highlighter and linter for structured personal data formats"
+date = "Sep-2026"
+status = "actively maintained"
+languages = ["langs.lua", "langs.javascript"]
+tags = ["neovim", "lua", "tree-sitter", "linter", "editor-tools", "developer-ergonomics"]
+repo_url = "https://github.com/vinayakgupta29/sauce.nvim"
+deployed_url = ""
+path = "./projects/sauce_nvim.toml"
+
+[[projects]]
+id = "sddm_slayer"
+title = "SDDM Slayer (Qt/QML Display Manager Theme)"
+category = "Linux Systems & Customization"
+tagline = "Modern, responsive graphical login screen theme for the Simple Desktop Display Manager (SDDM) crafted in Qt/QML"
+date = "Jun-2026"
+status = "actively maintained"
+languages = ["langs.bash"]
+tags = ["qml", "qt", "sddm", "display-manager", "linux", "desktop-theming"]
+repo_url = "https://github.com/vinayakgupta29/sddm-slayer"
+deployed_url = ""
+path = "./projects/sddm_slayer.toml"
+
+[[projects]]
+id = "albedo_grub_theme"
+title = "Albedo GRUB Theme"
+category = "Linux Systems & Customization"
+tagline = "Minimalist, high-DPI bootloader theme for GNU GRUB featuring custom typography and icon sets"
+date = "Jun-2026"
+status = "actively maintained"
+languages = []
+tags = ["grub", "bootloader", "theming", "linux", "systems-customization"]
+repo_url = "https://github.com/vinayakgupta29/albedo-grub-theme"
+deployed_url = ""
+path = "./projects/albedo_grub_theme.toml"
+
+[[projects]]
+id = "plymouth_themes"
+title = "Plymouth Boot Splash Themes"
+category = "Linux Systems & Customization"
+tagline = "Flicker-free graphical boot splash animations and themes for the Linux Plymouth boot subsystem"
+date = "Jul-2026"
+status = "actively maintained"
+languages = ["langs.bash"]
+tags = ["plymouth", "boot-splash", "linux", "kernel", "systems-customization"]
+repo_url = "https://github.com/vinayakgupta29/plymouth_themes"
+deployed_url = ""
+path = "./projects/plymouth_themes.toml"
+
+[[projects]]
+id = "poke_dex"
+title = "Poke-Dex Mobile Application"
+category = "Mobile Engineering"
+tagline = "Cross-platform mobile Pokédex application built in Flutter (Documentation in progress)"
+date = "Apr-2026"
+status = "actively maintained"
+languages = ["langs.dart"]
+tags = ["flutter", "dart", "mobile", "rest-api"]
+repo_url = "https://github.com/vinayakgupta29/Poke-Dex"
+deployed_url = ""
+path = "./projects/poke_dex.toml"
+
+[[projects]]
+id = "py_ocr"
+title = "py_ocr (Desktop Optical Character Recognition Tool)"
+category = "Automation & Computer Vision"
+tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
+date = "Jun-2026"
+status = "actively maintained"
+languages = ["langs.python", "langs.html"]
+tags = ["python", "ocr", "computer-vision", "automation", "docker"]
+repo_url = "https://github.com/vinayakgupta29/py_ocr"
+deployed_url = ""
+path = "./projects/py_ocr.toml"
+
+[[projects]]
+id = "accounting_inventory"
+title = "Complete Accounting & Inventory Management System"
+category = "Enterprise Systems & Financial Engineering"
+tagline = "Full-stack enterprise accounting and stock control system with real-time financial reporting, role-based access control, and containerized backend"
+date = "Jan-2026"
+status = "actively maintained"
+languages = ["langs.typescript", "langs.javascript", "langs.dart", "langs.sql", "langs.html"]
+tags = ["typescript", "node", "postgresql", "docker", "flutter", "accounting", "inventory", "rbac", "rest-api"]
+repo_url = "https://github.com/vinayakgupta29/accounting-node.TS"
+deployed_url = ""
+path = "./projects/accounting_inventory.toml"
+

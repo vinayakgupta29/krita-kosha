@@ -1,34 +1,51 @@
-# Project Schema Definition & Required Fields Checklist
+# Project Schema Specification & Validation Rules
+# Defines required and optional fields for project index and individual records.
 
 [index_entry]
 description = "Summary record in projects/index.toml"
 required_fields = [
-  "id",             # string: unique snake_case identifier (e.g. 'toy_lang')
+  "id",             # string: unique snake_case identifier (e.g. 'vks_compiler')
   "title",          # string: display title of the project
-  "category",       # string: e.g. 'Compilers & Systems', 'Distributed Systems'
+  "category",       # string: e.g. 'Compilers & Systems', 'Linux Systems & Customization'
   "tagline",        # string: concise 1-line elevator pitch
+  "date",           # string: Mon-Year format based on latest commit (e.g. 'Jul-2026')
+  "status",         # string: 'actively maintained' or 'archived'
   "languages",      # array of strings: canonical language references (e.g. ['langs.rust'])
   "tags",           # array of strings: search & filter tags
-  "repo_url",       # string: GitHub or repository URL (can be empty string if private/unhosted)
-  "deployed_url",   # string: live site/app URL (can be empty string if not deployed)
-  "path"            # string: relative path to child file (e.g. './projects/toy_lang.toml')
+  "repo_url",       # string: GitHub repository URL (or empty string)
+  "deployed_url",   # string: live deployment URL (or empty string)
+  "path"            # string: relative path to child file (e.g. './projects/vks_compiler.toml')
 ]
 
 [child_file]
-description = "Complete project record in projects/<id>.toml"
+description = "Detailed project record in projects/<id>.toml"
 required_fields = [
-  "references",     # array of strings: relative paths to taxonomy files needed
-  "project.id",
-  "project.title",
-  "project.category",
-  "project.tagline",
-  "project.repo_url",
-  "project.deployed_url",
-  "project.languages",
-  "project.technologies",  # array of strings: fw.*, tools.*, db.*, proto.*
+  "references",            # array of strings: relative paths to taxonomy files needed
+  "project.id",            # string: unique snake_case identifier
+  "project.title",         # string: display title
+  "project.category",      # string: domain category
+  "project.date",          # string: Mon-Year format based on latest commit
+  "project.status",        # string: 'actively maintained' or 'archived'
+  "project.tagline",       # string: concise summary
+  "project.repo_url",      # string: URL (or empty string)
+  "project.deployed_url",  # string: URL (or empty string)
+  "project.languages",     # array of strings: canonical taxonomy IDs (langs.*)
+  "project.technologies",  # array of strings: canonical taxonomy IDs (fw.*, tools.*, db.*, proto.*)
+  "project.bullets",       # array of strings: ATS-compliant impact statements
+  "project.keywords"       # array of strings: search tokens for JD matching
+]
+
+optional_fields = [
+  "reference_urls",                  # array of strings: upstream documentation / commit URLs
+  "local_ref_path",                  # string: path to local cached reference docs
+  "project.author",                  # string: author attribution
+  "project.repo_branch",             # string: active git branch if not main/master
+  "project.status",                  # string: e.g. 'complete', 'in_progress', 'draft'
+  "project.is_complete",             # boolean: false if in development / draft
+  "project.readme_summary",          # table: in-depth architectural breakdown
   "project.readme_summary.overview",
+  "project.readme_summary.architecture",
   "project.readme_summary.key_components",
   "project.readme_summary.benchmarks_and_metrics",
-  "project.bullets",       # array of strings: ATS-compliant impact statements
-  "project.keywords"       # array of strings: keyword search tokens
+  "project.readme_summary.grammar_and_syntax"
 ]
