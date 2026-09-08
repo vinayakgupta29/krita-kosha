@@ -1,0 +1,29 @@
+# Education Record: B.Tech in Computer Science and Engineering
+
+[education]
+id = "btech_cse"
+institution = "LNCT University"
+location = "Bhopal, Madhya Pradesh, India"
+degree = "Bachelor of Technology (B.Tech)"
+major = "Computer Science and Engineering"
+start_year = 2021
+end_year = 2025
+graduation_date = "2025-06"
+cgpa = 7.76
+division = "First Division"
+medium_of_instruction = "English"
+
+coursework = [
+  "Data Structures and Algorithms",
+  "Operating Systems and Systems Programming",
+  "Database Management Systems (Relational & SQL)",
+  "Theory of Computation & Formal Languages",
+  "Compiler Design",
+  "Computer Networks and Distributed Systems",
+  "Object-Oriented Software Design"
+]
+
+highlights = [
+  "Graduated First Division with 7.76 CGPA.",
+  "Conducted independent software engineering and compiler projects alongside academic degree coursework."
+]

@@ -1,0 +1,17 @@
+# Education and Certifications Index
+
+[[degrees]]
+id = "btech_cse"
+institution = "LNCT University"
+location = "Bhopal, India"
+degree = "B.Tech in Computer Science and Engineering"
+dates = "2021 – 2025"
+cgpa = "7.76 (First Division)"
+path = "./education/btech.toml"
+
+[[certifications]]
+id = "cyber_security_igtr"
+title = "Cyber Security and Ethical Hacking"
+organization = "IGTR, Indore"
+year = "2025"
+path = "./education/certifications.toml"

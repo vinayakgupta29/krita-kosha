@@ -1,0 +1,16 @@
+# Certifications and Language Fluency
+
+[[certifications]]
+id = "cyber_security_igtr"
+title = "Cyber Security and Ethical Hacking"
+issuing_organization = "Indo-German Tool Room (IGTR)"
+location = "Indore, India"
+issue_date = "2025"
+category = "security"
+description = "Practical certification covering network security protocols, vulnerability assessment, ethical penetration testing methodologies, and cryptographic fundamentals."
+
+[languages]
+english = "Fluent (Primary medium of instruction from kindergarten through undergraduate degree)"
+hindi = "Native Fluency"
+japanese = "Intermediate (Learning / Conversational)"
+urdu = "Conversational"

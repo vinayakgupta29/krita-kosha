@@ -45,6 +45,12 @@ aliases = ["flutter", "Flutter Engine"]
 language = "langs.dart"
 category = "mobile_crossplatform"
 
+[fw.jekyll]
+formatted = "Jekyll"
+aliases = ["jekyll", "Jekyll SSG"]
+language = "langs.ruby"
+category = "ssg"
+
 # -----------------------------------------------------------------------------
 # Tools, Compilers, Cloud & Infrastructure (tools.*)
 # -----------------------------------------------------------------------------
@@ -77,3 +83,13 @@ category = "os"
 formatted = "CI/CD Pipelines"
 aliases = ["cicd", "ci/cd", "CI/CD"]
 category = "devops"
+
+[tools.html_template]
+formatted = "HTML Templating (html/template)"
+aliases = ["html/template", "html-template", "HTML Templating"]
+category = "templating"
+
+[tools.cloudflare_workers]
+formatted = "Cloudflare Workers"
+aliases = ["cloudflare", "workers", "worker-threads", "Cloudflare"]
+category = "edge_deployment"

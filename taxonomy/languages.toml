@@ -40,6 +40,26 @@ formatted = "JavaScript"
 aliases = ["js", "JS", "Javascript", "ES6"]
 category = "application"
 
+[langs.html]
+formatted = "HTML"
+aliases = ["html", "html5", "HTML5"]
+category = "markup"
+
+[langs.css]
+formatted = "CSS"
+aliases = ["css", "css3", "CSS3", "SCSS"]
+category = "styling"
+
+[langs.ruby]
+formatted = "Ruby"
+aliases = ["ruby", "rb"]
+category = "general"
+
+[langs.lua]
+formatted = "Lua"
+aliases = ["lua", "luau", "Luau"]
+category = "scripting"
+
 [langs.dart]
 formatted = "Dart"
 aliases = ["dart"]
