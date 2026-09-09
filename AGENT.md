@@ -123,3 +123,48 @@ When emitting LaTeX from the database:
    - `^` $\rightarrow$ `\textasciicircum{}`
    - `~` $\rightarrow$ `\textasciitilde{}`
 4. Ensure hyperlinks use `\href{url}{display_text}` and remain clean and clickable in PDF output.
+
+---
+
+## 6. Single-File Export & Catalog Consolidation (dump_data.py)
+
+For external pipelines, backups, single-prompt LLM ingestion, or offline analysis, Krita Kosha provides an automated, zero-dependency Python CLI tool: [`dump_data.py`](./dump_data.py).
+
+### 6.1. Dynamic Resolution Architecture
+When executed, `dump_data.py`:
+1. Dynamically inspects each section directory (`projects/`, `work_exp/`, `education/`, `publications/`, `taxonomy/`, `schemas/`).
+2. Reads the section's `index.toml` (e.g. `projects/index.toml`, `work_exp/index.toml`) to discover all registered child files via their `path` attribute.
+3. Automatically ingests new child files added to any section if they are registered in the section's `index.toml`.
+4. Dynamically scans for any additional or unindexed `.toml` files in each folder, ensuring zero information loss.
+5. Ingests root-level knowledge files (`profile.toml`, `research_interests.toml`, `formatting.toml`) and any new root files.
+6. Serializes all modules into a single, standardized TOML file (`dump.toml` by default) with clean section hierarchies and runs an internal validation pass via `tomllib`.
+
+### 6.2. CLI Usage & Options
+```bash
+# Print help menu and options
+python dump_data.py --help
+
+# Generate default dump.toml (prompts for name if interactive, defaults to dump.toml)
+python dump_data.py
+
+# Specify custom output path
+python dump_data.py -o dump.toml
+python dump_data.py --output /path/to/my_resume_catalog.toml
+
+# Specify custom Krita Kosha root directory
+python dump_data.py -d ./krita-kosha -o dump.toml
+```
+
+### 6.3. Consolidated Output Structure
+The generated `dump.toml` file contains the following primary sections:
+- `[meta]`: Export timestamp, generator version, source repo info, and dynamic entity statistics.
+- `[profile]`: Identity, contact URLs, philosophy, tailored summaries, and core strengths.
+- `[research_interests]`: Exploratory research areas (applied statistics in AI, cognitive diversity, formal languages).
+- `[formatting]`: ATS rules, line budgeting parameters, and LaTeX profile configurations.
+- `[taxonomy]`: Standardized programming languages, frameworks, developer tools, databases, protocols, and soft skills.
+- `[education]`: Degree records, professional certifications, and language fluencies.
+- `[work_experience]`: Companies and comprehensive role records with achievement impact bullets.
+- `[[projects]]`: Complete catalog of 20 engineered projects with repo links, tags, and detailed architectural README summaries.
+- `[publications]`: Books, industrial patents, and manuscript research drafts.
+- `[schemas]`: Structural data schemas for all entity types.
+

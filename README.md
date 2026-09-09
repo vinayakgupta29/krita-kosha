@@ -37,6 +37,8 @@ krita-kosha/
 ├── README.md               # You are here (Human guide)
 ├── INDEX.md                # Master catalog & file map (For agents & developers)
 ├── AGENT.md                # AI operational contract & JD tailoring engine
+├── dump_data.py            # Dynamic single-file export engine (generates dump.toml)
+├── dump.toml               # Consolidated single-file TOML database export
 ├── profile.toml            # Identity, contact, philosophy, and core strengths
 ├── research_interests.toml # Exploratory academic & technical research domains
 ├── formatting.toml         # ATS (≥ 95) rules & LaTeX rendering parameters
@@ -73,6 +75,7 @@ All 20 projects are systematically cross-referenced against their latest upstrea
 ## 4. How It Is Used
 
 ### For Humans:
+- To export single-file database: Run `python dump_data.py` (or `python dump_data.py -o dump.toml`). It dynamically reads all sections and referenced index files and outputs a validated master TOML file.
 - To add a new project: Create a new file under `./projects/<name>.toml` using `schemas/project.schema.toml` as a template, and register it in `./projects/index.toml`.
 - To update experience: Edit `./work_exp/<company>.toml` or `./profile.toml`.
 - To view active templates: Check `./templates/resume_template.tex` (1-page compact industry format) and `./templates/cv_template.tex` (multi-page comprehensive academic format).

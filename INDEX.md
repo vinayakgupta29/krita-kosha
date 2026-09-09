@@ -12,6 +12,8 @@ All paths within the database are relative to the root of `krita-kosha/`:
 krita-kosha/
 ├── INDEX.md                     # Master catalog and database navigation (this file)
 ├── AGENT.md                     # Agent operational contract, CRUD protocol & JD tailoring engine
+├── dump_data.py                 # Dynamic data consolidation engine (reads index.tomls & creates dump.toml)
+├── dump.toml                    # Consolidated single-file TOML export (generated on demand)
 ├── profile.toml                 # Candidate identity, contact links, engineering ethos, and summary archetypes
 ├── research_interests.toml      # Exploratory research interests and academic focus domains
 ├── formatting.toml              # Global ATS (≥ 95) specifications & LaTeX page profiles (resume & CV)
@@ -98,3 +100,19 @@ When specifying technologies across `work_exp/` and `projects/`, agents MUST ref
 To guarantee that `krita-kosha` can be cloned, transferred, or embedded anywhere across operating systems without broken references:
 1. **Never use absolute paths** (e.g. `/home/zoro/...`) inside any TOML files.
 2. All file references must begin with `./` relative to the `krita-kosha/` root directory (e.g., `./taxonomy/languages.toml`, `./projects/god_format.toml`).
+
+---
+
+## 4. Master TOML Export & Consolidation (`dump_data.py`)
+
+Krita Kosha includes a zero-dependency CLI tool [`dump_data.py`](./dump_data.py) that dynamically scans all 47 modular files and compiles them into a single consolidated TOML document (`dump.toml`):
+
+- **Dynamic Section & Index Resolution**: Resolves child files listed under `[[projects]]`, `[[companies]]`, `[[degrees]]`, etc., from each folder's `index.toml`. Adding a new file and registering it in `index.toml` will automatically include it in subsequent exports.
+- **Fail-Safe Unindexed Discovery**: Also scans each directory for any unindexed `.toml` files to prevent data loss.
+- **Zero Third-Party Dependencies**: Pure Python implementation with built-in AST verification via Python 3.11+ `tomllib`.
+- **Usage**:
+  ```bash
+  python dump_data.py --help
+  python dump_data.py -o dump.toml
+  ```
+

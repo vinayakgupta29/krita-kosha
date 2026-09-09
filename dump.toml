@@ -1,0 +1,1936 @@
+[meta]
+title = "Krita Kosha - Consolidated Master Resume & Portfolio Knowledge Base"
+generator = "dump_data.py (Krita Kosha Data Consolidation Engine)"
+generated_at = "2026-09-09T18:45:17.953676+00:00"
+version = "1.0.0"
+author = "Vinayak Gupta"
+source_repository = "vinayakgupta29/krita-kosha"
+summary = "Consolidated single-file export containing complete profile, research interests, education, work experience, projects, publications, canonical taxonomy, and formatting rules."
+
+[meta.stats]
+total_source_files_ingested = 47
+total_projects = 20
+total_companies = 3
+total_degrees = 1
+total_certifications = 1
+total_books = 1
+total_patents = 1
+total_manuscripts = 2
+
+[profile]
+
+[profile.identity]
+name = "Vinayak Gupta"
+location = "Chhapiheda, Rajgarh, Madhya Pradesh, India"
+phone = "+91-70490-49698"
+email = "vinayakg236@gmail.com"
+
+[profile.links]
+github = "https://github.com/vinayakgupta29"
+linkedin = "https://linkedin.com/in/vinayak-gupta-70a808202"
+portfolio = "https://vinayakgupta29.github.io/portfolio"
+blog = "https://vinayakgupta29.github.io/blogs"
+
+[profile.philosophy]
+statement = "Language-agnostic systems engineer driven by first principles and algorithmic clarity. Approaches software construction by dissecting core problem mechanics and theoretical constraints before selecting the optimal runtime, libraries, and hardware interface. Demonstrates rapid technical adaptability, routinely mastering unfamiliar languages, frameworks, and low-level specifications within two weeks."
+
+[profile.strengths]
+keywords = [
+    "Language-Agnostic Engineering",
+    "First-Principles Problem Solving",
+    "Rapid Polyglot Ramp-Up (< 2 Weeks)",
+    "Low-Level Systems to Full-Stack Verticality",
+    "Sub-Millisecond Concurrency & Performance Tuning",
+    "Zero-Trust Cryptography & Embedded Storage",
+    "Compiler & Grammar Construction",
+    "Cross-Functional Technical Leadership",
+    "Legacy API Reverse Engineering",
+    "Industrial Edge AI & Hardware-Software Interfacing",
+  ]
+bullets = [
+    "Language-Agnostic First-Principles Mastery: Solves core problem mechanics and theoretical invariants before selecting runtimes; demonstrates verified production capability across Go, Rust, OCaml, C/C++, Python, TypeScript, Dart, and Lua, mastering unfamiliar stacks and specifications within two weeks.",
+    "Unbroken Vertical Systems Fluency: Bridges the entire computing spectrum from bare-metal 24V PLC hardware loops under 8ms deadlines and POSIX socket networking, to high-concurrency cloud microservices and cross-platform desktop/mobile interfaces.",
+    "Extreme Latency & Concurrency Optimization: Engineered sub-2ms cryptographic microservices (Go Echo KMS), eliminated database write-concurrency deadlocks in continuous manufacturing telemetry, and authored custom serialization formats (GOD) cutting payload sizes by up to 50%.",
+    "Cryptographic Data Persistence & Integrity: Architected embedded ACID storage engines, write-ahead logging (WAL), authenticated AES-256-GCM encryption, PBKDF2 key derivation, and multi-phase zero-downtime key rotation protocols.",
+    "High-Stakes Technical Leadership & Delivery: Directed engineering teams of 15–20 developers, onboarded 3 multi-specialty hospitals serving 40,000+ active patients, reverse-engineered legacy national health APIs (ABHA), and coordinated edge AI deployments across 12+ factory sites with zero post-handover escalations.",
+  ]
+
+[profile.summaries]
+backend_systems = "Versatile, systems-oriented Software Engineer with ~3 years of experience engineering high-concurrency backend architectures, distributed services, and data persistence pipelines using Go, Node.js, and PostgreSQL. Proven track record designing sub-2ms cryptographic microservices, scaling healthcare platforms for 40,000+ active patients across 3 multi-specialty hospitals, and migrating heavy production databases to eliminate write deadlocks. Adept at navigating legacy API specifications and building resilient, decoupled distributed systems."
+systems_compiler = "Systems and Compiler Engineer specializing in formal programming language design, high-performance runtimes, and hardware-software interfacing. Author of the VKS-LLVM functional compiler (OCaml Menhir frontend, Rust/LLVM IR backend) and custom serialization engines (GOD format, lib_pbke). Experienced in deterministic PLC control loops under 8ms latency constraints, native POSIX Linux desktop clients, and memory-safe systems software in Rust and Go."
+fullstack_agentic = "Multi-disciplinary Software Engineer combining low-level systems backend engineering (Go, Rust, Python, C/C++) with cross-platform client development (Flutter, React/TS) and autonomous AI agent workflows. Experienced in constructing deterministic LLM reasoning loops, tool-calling pipelines, and production systems that bridge application software, low-level serializations, and edge hardware execution."
+academic_masters = "Computer Science graduate with deep research interest in programming language semantics, formal grammar design, and distributed systems reliability. Demonstrated independent capability in compiler construction (LLVM IR, affine type systems, LALR parsing), custom mathematical sequence modeling, and cryptographic persistence engines. Seeking advanced academic study to investigate autonomous systems, formal language theory, and high-assurance distributed runtimes."
+
+[research_interests]
+
+[research_interests.interests]
+
+[research_interests.interests.applied_statistics_ai]
+id = "applied_statistics_ai"
+title = "Applied Statistics & Mathematical Foundations in Real-World AI Systems"
+category = "Applied Mathematics & Machine Learning Theory"
+focus_statement = "Finding applicable use cases of statistics and mathematical concepts in real-world applications like understanding the world around us, and in the age of AI where AI at its core is statistics—whether Large Language Models (LLMs), Convolutional Neural Networks (CNNs), or novel model architectures developed on the fringes."
+key_themes = [
+    "Statistical foundations of deep learning, probabilistic graphical models, and neural representations",
+    "Mathematical modeling of empirical data distributions and real-world complex phenomena",
+    "Asymptotic analysis, recurrence relations, and combinatorial sequence behavior in algorithmic systems",
+    "Emergent statistical paradigms and novel theoretical architectures beyond conventional transformer layers",
+  ]
+draft_reference = "stats_masters_research_draft_0"
+
+[research_interests.interests.cognitive_diversity_accessibility]
+id = "cognitive_diversity_accessibility"
+title = "Autism, Cognitive Diversity & Accessible Systems Architecture"
+category = "Human-Computer Interaction & Systems Accessibility"
+focus_statement = "Independent exploratory interest in autism, scientific support frameworks, and designing computing systems tailored for neurodivergent individuals, focusing on cognitive load reduction, sensory accommodation, and deterministic user interaction patterns."
+key_themes = [
+    "Scientific frameworks, sensory processing, and cognitive mechanisms of autism spectrum neurodivergence",
+    "Digital environment architectures mitigating sensory overload and extraneous cognitive friction",
+    "Deterministic, low-distraction user interaction design and assistive software paradigms",
+  ]
+
+[research_interests.interests.formal_language_theory]
+id = "formal_language_theory"
+title = "Formal Language Semantics & Compiler Construction"
+category = "Theoretical Computer Science & Systems"
+focus_statement = "Exploration of formal grammars (EBNF, LALR(1)), affine type systems, and compiler intermediate representations to guarantee memory safety, correctness proofs, and deterministic execution with zero runtime overhead."
+key_themes = [
+    "Formal type theory, tagged sum/product types, and extensible type classes",
+    "Intermediate representations (LLVM IR, HIR) and tree-shaking dead-code optimization passes",
+    "Custom serialization protocols eliminating null-pointer runtime failures",
+  ]
+
+[formatting]
+
+[formatting.ats]
+target_score = 95
+layout = "single_column"
+bullet_formula = "[Action Verb] + [Technical Tool/Architecture] + [Problem Solved] + [Measurable Metric/Outcome]"
+min_bullets_per_role = 2
+max_bullets_per_role = 4
+standard_section_headings = [
+    "Professional Summary",
+    "Technical Skills",
+    "Work Experience",
+    "Key Projects",
+    "Education",
+    "Publications & Academic Work",
+  ]
+prohibited_elements = [
+    "tables_for_body_text",
+    "icon_fonts_for_data",
+    "decorative_graphics",
+    "graphical_skill_progress_bars",
+    "multi_column_body_layouts",
+  ]
+date_format = "Month YYYY"
+max_reading_time_seconds = 10
+
+[formatting.profiles]
+
+[formatting.profiles.resume]
+page_count = 1
+page_size = "a4paper"
+font_family = "lmodern"
+base_font_size = "10pt"
+line_spacing = 1.05
+section_spacing_before = "6pt"
+section_spacing_after = "3pt"
+section_header_size = "\\large"
+section_header_style = "\\bfseries\\color{primary}"
+bullet_top_sep = "2pt"
+bullet_item_sep = "1.5pt"
+max_total_body_lines = 40
+
+[formatting.profiles.resume.margins]
+top = "1.2cm"
+bottom = "1.2cm"
+left = "1.2cm"
+right = "1.2cm"
+
+[formatting.profiles.resume.colors]
+primary = "#1A365D"
+text = "#111827"
+rule = "#CBD5E1"
+
+[formatting.profiles.cv]
+page_count = 0
+page_size = "a4paper"
+font_family = "lmodern"
+base_font_size = "10pt"
+line_spacing = 1.15
+section_spacing_before = "10pt"
+section_spacing_after = "6pt"
+section_header_size = "\\Large"
+section_header_style = "\\bfseries\\color{primary}"
+bullet_top_sep = "3pt"
+bullet_item_sep = "2pt"
+
+[formatting.profiles.cv.margins]
+top = "1.8cm"
+bottom = "1.8cm"
+left = "1.8cm"
+right = "1.8cm"
+
+[formatting.profiles.cv.colors]
+primary = "#23407C"
+text = "#000000"
+rule = "#E2E8F0"
+
+[taxonomy]
+
+[taxonomy.databases]
+
+[taxonomy.databases.db]
+
+[taxonomy.databases.db.postgres]
+formatted = "PostgreSQL"
+aliases = ["postgres", "postgresql", "pg", "Postgres"]
+category = "relational"
+
+[taxonomy.databases.db.sqlite]
+formatted = "SQLite"
+aliases = ["sqlite", "sqlite3"]
+category = "embedded_relational"
+
+[taxonomy.databases.db.mongodb]
+formatted = "MongoDB"
+aliases = ["mongo", "mongodb"]
+category = "document"
+
+[taxonomy.databases.db.redis]
+formatted = "Redis"
+aliases = ["redis"]
+category = "in_memory_cache"
+
+[taxonomy.frameworks_and_tools]
+references = ["./languages.toml"]
+
+[taxonomy.frameworks_and_tools.fw]
+
+[taxonomy.frameworks_and_tools.fw.django]
+formatted = "Django"
+language = "langs.python"
+category = "backend"
+
+[taxonomy.frameworks_and_tools.fw.tauri]
+formatted = "Tauri"
+language = "langs.rust"
+category = "client_desktop"
+
+[taxonomy.frameworks_and_tools.fw.echo]
+formatted = "Echo"
+language = "langs.go"
+category = "backend"
+
+[taxonomy.frameworks_and_tools.fw.express]
+formatted = "Express"
+language = "langs.typescript"
+category = "backend"
+
+[taxonomy.frameworks_and_tools.fw.node]
+formatted = "Node.js"
+aliases = ["node", "Node", "NodeJS", "Node.JS"]
+language = "langs.javascript"
+category = "runtime"
+
+[taxonomy.frameworks_and_tools.fw.react]
+formatted = "React.js"
+aliases = ["react", "reactjs", "React", "ReactJS", "React.JS"]
+language = "langs.typescript"
+category = "frontend"
+
+[taxonomy.frameworks_and_tools.fw.flutter]
+formatted = "Flutter"
+aliases = ["flutter", "Flutter Engine"]
+language = "langs.dart"
+category = "mobile_crossplatform"
+
+[taxonomy.frameworks_and_tools.fw.jekyll]
+formatted = "Jekyll"
+aliases = ["jekyll", "Jekyll SSG"]
+language = "langs.ruby"
+category = "ssg"
+
+[taxonomy.frameworks_and_tools.tools]
+
+[taxonomy.frameworks_and_tools.tools.llvm]
+formatted = "LLVM"
+aliases = ["llvm-ir", "LLVM IR"]
+category = "compilers"
+
+[taxonomy.frameworks_and_tools.tools.docker]
+formatted = "Docker"
+aliases = ["docker", "docker-compose", "Docker Compose"]
+category = "devops"
+
+[taxonomy.frameworks_and_tools.tools.git]
+formatted = "Git"
+category = "vcs"
+
+[taxonomy.frameworks_and_tools.tools.aws]
+formatted = "AWS (EC2, S3)"
+aliases = ["aws", "Amazon Web Services"]
+category = "cloud"
+
+[taxonomy.frameworks_and_tools.tools.linux]
+formatted = "Linux / POSIX"
+aliases = ["linux", "posix", "Native Linux"]
+category = "os"
+
+[taxonomy.frameworks_and_tools.tools.cicd]
+formatted = "CI/CD Pipelines"
+aliases = ["cicd", "ci/cd", "CI/CD"]
+category = "devops"
+
+[taxonomy.frameworks_and_tools.tools.html_template]
+formatted = "HTML Templating (html/template)"
+aliases = ["html/template", "html-template", "HTML Templating"]
+category = "templating"
+
+[taxonomy.frameworks_and_tools.tools.cloudflare_workers]
+formatted = "Cloudflare Workers"
+aliases = ["cloudflare", "workers", "worker-threads", "Cloudflare"]
+category = "edge_deployment"
+
+[taxonomy.languages]
+
+[taxonomy.languages.langs]
+
+[taxonomy.languages.langs.go]
+formatted = "Go"
+aliases = ["golang", "Golang", "Go (Golang)"]
+category = "systems"
+
+[taxonomy.languages.langs.rust]
+formatted = "Rust"
+aliases = ["rust-lang", "Rust"]
+category = "systems"
+
+[taxonomy.languages.langs.c]
+formatted = "C"
+aliases = ["c", "C99", "C11"]
+category = "systems"
+
+[taxonomy.languages.langs.cpp]
+formatted = "C++"
+aliases = ["cpp", "c++", "C++17", "C++20"]
+category = "systems"
+
+[taxonomy.languages.langs.zig]
+formatted = "Zig"
+aliases = ["zig", "zig-lang"]
+category = "systems"
+
+[taxonomy.languages.langs.python]
+formatted = "Python"
+aliases = ["python3", "py", "Python 3"]
+category = "general"
+
+[taxonomy.languages.langs.typescript]
+formatted = "TypeScript"
+aliases = ["ts", "TS", "Typescript"]
+category = "application"
+
+[taxonomy.languages.langs.javascript]
+formatted = "JavaScript"
+aliases = ["js", "JS", "Javascript", "ES6"]
+category = "application"
+
+[taxonomy.languages.langs.html]
+formatted = "HTML"
+aliases = ["html", "html5", "HTML5"]
+category = "markup"
+
+[taxonomy.languages.langs.css]
+formatted = "CSS"
+aliases = ["css", "css3", "CSS3", "SCSS"]
+category = "styling"
+
+[taxonomy.languages.langs.ruby]
+formatted = "Ruby"
+aliases = ["ruby", "rb"]
+category = "general"
+
+[taxonomy.languages.langs.lua]
+formatted = "Lua"
+aliases = ["lua", "luau", "Luau"]
+category = "scripting"
+
+[taxonomy.languages.langs.dart]
+formatted = "Dart"
+aliases = ["dart"]
+category = "application"
+
+[taxonomy.languages.langs.java]
+formatted = "Java"
+aliases = ["java"]
+category = "application"
+
+[taxonomy.languages.langs.ocaml]
+formatted = "OCaml"
+aliases = ["ocaml"]
+category = "functional"
+
+[taxonomy.languages.langs.sql]
+formatted = "SQL (PL/pgSQL)"
+aliases = ["sql", "SQL", "plpgsql", "PL/pgSQL"]
+category = "query"
+
+[taxonomy.languages.langs.bash]
+formatted = "Bash / Shell"
+aliases = ["sh", "bash", "shell", "POSIX Shell"]
+category = "scripting"
+
+[taxonomy.protocols]
+
+[taxonomy.protocols.proto]
+
+[taxonomy.protocols.proto.modbus]
+formatted = "Modbus TCP"
+aliases = ["modbus", "modbus-tcp", "Modbus"]
+category = "industrial"
+
+[taxonomy.protocols.proto.grpc]
+formatted = "gRPC"
+aliases = ["grpc"]
+category = "rpc"
+
+[taxonomy.protocols.proto.rest]
+formatted = "RESTful APIs"
+aliases = ["rest", "restful", "REST", "REST API", "REST APIs"]
+category = "web"
+
+[taxonomy.protocols.proto.pbke]
+formatted = "PBKE Serialization"
+aliases = ["pbke", "PBKE format", "PBKE"]
+developer = "Vinayak Gupta"
+category = "custom_serialization"
+
+[taxonomy.protocols.proto.god]
+formatted = "GOD (Grounded Object Data)"
+aliases = ["god", "god-format", "GOD format"]
+developer = "Vinayak Gupta"
+category = "custom_serialization"
+
+[taxonomy.soft_skills]
+
+[taxonomy.soft_skills.cognitive_and_learning]
+
+[taxonomy.soft_skills.cognitive_and_learning.first_principles_thinking]
+name = "First-Principles Thinking"
+description = "Dissecting complex engineering challenges into mathematical invariants and physical constraints before selecting runtimes, libraries, or tooling."
+
+[taxonomy.soft_skills.cognitive_and_learning.rapid_polyglot_acquisition]
+name = "Rapid Polyglot Acquisition"
+description = "Ramping up on unfamiliar programming languages, compilers, protocols, and runtimes to production delivery capability within two weeks."
+
+[taxonomy.soft_skills.cognitive_and_learning.mathematical_modeling]
+name = "Mathematical & Algorithmic Modeling"
+description = "Formulating real-world spatial, geometric, and probabilistic dynamics into discrete algorithms (image-to-world ROIs, O(log n) triage queues, recurrence relations)."
+
+[taxonomy.soft_skills.cognitive_and_learning.systems_intuition]
+name = "Low-Level Systems Intuition"
+description = "Holistic mental modeling of memory layouts, cache locality, network transport overhead, hardware-software boundaries, and concurrency race conditions."
+
+[taxonomy.soft_skills.leadership_and_ownership]
+
+[taxonomy.soft_skills.leadership_and_ownership.engineering_leadership]
+name = "Engineering Division Leadership"
+description = "Leading teams of 15–20 developers, decomposing monolithic platforms into decoupled services, and managing sprint velocity across diverse technical squads."
+
+[taxonomy.soft_skills.leadership_and_ownership.product_ownership]
+name = "End-to-End Product Ownership"
+description = "Bridging stakeholder and clinical/industrial requirements with concrete technical architectures, owning full lifecycles from whiteboarding to deployment."
+
+[taxonomy.soft_skills.leadership_and_ownership.autonomous_resilience]
+name = "Autonomous Engineering Resilience"
+description = "Sustaining high-throughput delivery and critical infrastructure maintenance as a solo developer during team restructuring and lean staffing cycles."
+
+[taxonomy.soft_skills.leadership_and_ownership.incident_triage]
+name = "High-Pressure Incident Triage"
+description = "Debugging and resolving critical live factory and clinical system failures within strict SLAs (software hotfixes ≤ 5 hours, ensuring 99.9% uptime on 24/7 lines)."
+
+[taxonomy.soft_skills.communication_and_collaboration]
+
+[taxonomy.soft_skills.communication_and_collaboration.cross_boundary_articulation]
+name = "Cross-Boundary Technical Articulation"
+description = "Explaining low-level systems architectures, compiler pipelines, and cryptographic safety proofs to cross-functional engineers, stakeholders, and non-technical clients."
+
+[taxonomy.soft_skills.communication_and_collaboration.legacy_api_reverse_engineering]
+name = "Legacy API Reverse-Engineering"
+description = "Navigating, deciphering, and building resilient adapters for undocumented or fragmented legacy government API ecosystems (ABHA v3/v4)."
+
+[taxonomy.soft_skills.communication_and_collaboration.field_enablement_and_training]
+name = "On-Site Field Enablement & Training"
+description = "Conducting on-site acceptance testing, calibration, and operational training for 50+ industrial plant operators and factory teams with zero post-handover escalations."
+
+[taxonomy.soft_skills.communication_and_collaboration.multilingual_communication]
+name = "Multilingual Global Communication"
+description = "Navigating diverse technical environments with fluent English (primary medium of education throughout schooling and undergrad), native Hindi, intermediate Japanese, and conversational Urdu."
+
+[taxonomy.soft_skills.ergonomics_and_accessibility]
+
+[taxonomy.soft_skills.ergonomics_and_accessibility.cognitive_load_reduction]
+name = "Cognitive Load Reduction"
+description = "Designing deterministic, predictable software interaction patterns and CLI/GUI workflows that eliminate extraneous user fatigue."
+
+[taxonomy.soft_skills.ergonomics_and_accessibility.neurodiversity_awareness]
+name = "Neurodiversity-Aware Systems Design"
+description = "Independent exploratory focus on autism, sensory processing accommodations, and digital environment architectures tailored for cognitive diversity."
+
+[education]
+
+[education.languages]
+english = "Fluent (Primary medium of instruction from kindergarten through undergraduate degree)"
+hindi = "Native Fluency"
+japanese = "Intermediate (Learning / Conversational)"
+urdu = "Conversational"
+
+[[education.degrees]]
+id = "btech_cse"
+institution = "LNCT University"
+location = "Bhopal, Madhya Pradesh, India"
+degree = "Bachelor of Technology (B.Tech)"
+major = "Computer Science and Engineering"
+start_year = 2021
+end_year = 2025
+graduation_date = "2025-06"
+cgpa = 7.76
+division = "First Division"
+medium_of_instruction = "English"
+coursework = [
+    "Data Structures and Algorithms",
+    "Operating Systems and Systems Programming",
+    "Database Management Systems (Relational & SQL)",
+    "Theory of Computation & Formal Languages",
+    "Compiler Design",
+    "Computer Networks and Distributed Systems",
+    "Object-Oriented Software Design",
+  ]
+highlights = [
+    "Graduated First Division with 7.76 CGPA.",
+    "Conducted independent software engineering and compiler projects alongside academic degree coursework.",
+  ]
+dates = "2021 – 2025"
+path = "./education/btech.toml"
+
+[[education.certifications]]
+id = "cyber_security_igtr"
+title = "Cyber Security and Ethical Hacking"
+issuing_organization = "Indo-German Tool Room (IGTR)"
+location = "Indore, India"
+issue_date = "2025"
+category = "security"
+description = "Practical certification covering network security protocols, vulnerability assessment, ethical penetration testing methodologies, and cryptographic fundamentals."
+
+[work_experience]
+
+[[work_experience.companies]]
+id = "techasoft"
+company_name = "Techasoft Pvt. Ltd."
+short_name = "Techasoft"
+location = "Bangalore, India"
+start_date = "2026-03"
+end_date = "present"
+is_current = true
+work_mode = "in-office"
+tags = [
+    "industrial-automation",
+    "edge-cv",
+    "plc",
+    "modbus",
+    "concurrency",
+    "postgres",
+    "django",
+    "tauri",
+  ]
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/databases.toml",
+    "./taxonomy/protocols.toml",
+  ]
+path = "./work_exp/techasoft.toml"
+
+[[work_experience.companies.roles]]
+id = "techasoft_systems_engineer"
+role = "Systems Engineer (Edge AI & Field Deployment)"
+employment_type = "full-time"
+start_date = "2026-03"
+end_date = "present"
+technologies = [
+    "fw.django",
+    "fw.tauri",
+    "db.postgres",
+    "proto.modbus",
+    "langs.python",
+    "langs.rust",
+    "tools.linux",
+  ]
+bullets = [
+    "Architected the system software stack for an industrial factory automation line, pairing a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.",
+    "Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V Programmable Logic Controllers (PLCs), actuating pneumatic solenoid valves within an 8ms latency budget.",
+    "Developed a mathematical coordinate-transformation pipeline mapping image-space pixel coordinates to real-world millimeter coordinates at 30 FPS, dynamically computing Regions of Interest (ROIs) for automated conveyor inspection.",
+    "Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and raw query optimization, eliminating write-concurrency deadlocks during continuous factory-floor sensor logging.",
+    "Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory production sites, optimizing TensorRT execution to increase detection accuracy from 85% to 95%+.",
+  ]
+
+[[work_experience.companies]]
+id = "medoc"
+company_name = "Medoc Health IT Pvt. Ltd."
+short_name = "Medoc Health IT"
+location = "Remote"
+start_date = "2022-08"
+end_date = "2025-07"
+is_current = false
+work_mode = "remote"
+tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/databases.toml",
+    "./taxonomy/protocols.toml",
+  ]
+path = "./work_exp/medoc.toml"
+
+[[work_experience.companies.roles]]
+id = "medoc_tech_lead"
+role = "Technical Lead"
+employment_type = "full-time"
+start_date = "2025-02"
+end_date = "2025-07"
+technologies = [
+    "langs.go",
+    "fw.echo",
+    "fw.node",
+    "fw.flutter",
+    "tools.aws",
+    "tools.docker",
+    "proto.rest",
+  ]
+bullets = [
+    "Directed an engineering division of 15–20 developers decomposing a monolithic Node.js platform into loosely coupled Go microservices, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
+    "Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98% under 500+ concurrent requests.",
+    "Designed and implemented foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to priority shifts toward high-throughput core services.",
+    "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and containerized microservices to guarantee continuous uptime for hospital clinical workflows.",
+  ]
+
+[[work_experience.companies.roles]]
+id = "medoc_systems_engineer"
+role = "Systems Engineer"
+employment_type = "full-time"
+start_date = "2023-02"
+end_date = "2025-01"
+technologies = ["fw.flutter", "fw.node", "db.postgres", "db.mongodb", "tools.docker"]
+bullets = [
+    "Managed technical product development and engineering architecture for a core patient healthcare product, leading a dedicated squad of 5 developers across Flutter client applications and Node.js backend services.",
+    "Engineered an O(log n) emergency triage priority queue and sparse numerical allocation algorithm in Node.js and MongoDB, processing 150+ clinical admissions/hour without latency degradation.",
+    "Constructed containerized development environments with Docker Compose multi-stage builds, enforcing local-to-production parity and reducing configuration-related bugs by 60%.",
+  ]
+
+[[work_experience.companies.roles]]
+id = "medoc_intern"
+role = "Software Development Intern"
+employment_type = "internship"
+start_date = "2022-08"
+end_date = "2023-01"
+technologies = ["fw.flutter", "langs.javascript", "fw.node", "langs.sql", "tools.docker"]
+bullets = [
+    "Developed modular UI components and responsive clinical screens in Flutter for patient-facing healthcare applications.",
+    "Implemented authenticated REST backend endpoints in Node.js with SQL validation schemas, participating in bug triage and component debugging.",
+  ]
+
+[[work_experience.companies]]
+id = "appable"
+company_name = "Appable Technologies"
+short_name = "Appable"
+location = "Remote"
+start_date = "2023-07"
+end_date = "2024-06"
+is_current = false
+work_mode = "remote"
+tags = [
+    "freelance",
+    "database-architecture",
+    "postgresql",
+    "mptt",
+    "offline-first",
+    "biometrics",
+  ]
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/databases.toml",
+    "./taxonomy/protocols.toml",
+  ]
+path = "./work_exp/appable.toml"
+
+[[work_experience.companies.roles]]
+id = "appable_freelance"
+role = "Freelance Full-Stack Software Developer"
+employment_type = "part-time"
+start_date = "2023-07"
+end_date = "2024-06"
+technologies = [
+    "fw.node",
+    "langs.typescript",
+    "db.postgres",
+    "fw.flutter",
+    "db.mongodb",
+    "proto.rest",
+  ]
+bullets = [
+    "Re-architected legacy client web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65%.",
+    "Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise Human Resource Management System (HRMS) to model arbitrarily nested organizational hierarchies and approval graphs.",
+    "Designed an offline-first workforce attendance system integrating local biometric verification, geographical validation, cryptographic data integrity checks, and transactional background sync queues.",
+    "Engineered a sports venue reservation engine handling multi-variable spatial geometry, dynamic time-dependent pricing tiers, and asynchronous user dispatch pipelines.",
+  ]
+
+[[projects]]
+id = "vks_compiler"
+title = "VKS-LLVM Compiler"
+category = "Compilers & Systems"
+date = "Jul-2026"
+status = "actively maintained"
+repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
+repo_branch = "monorepo"
+deployed_url = ""
+languages = ["langs.ocaml", "langs.rust"]
+technologies = ["tools.llvm"]
+tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/llvm-compiler/refs/heads/monorepo/README.md",
+    "https://raw.githubusercontent.com/vinayakgupta29/llvm-compiler/refs/heads/monorepo/rules.md",
+    "https://raw.githubusercontent.com/vinayakgupta29/compiler_front_end_ocaml/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/llvm-compiler/rules_main.md"
+tags = [
+    "compiler",
+    "llvm",
+    "ast",
+    "lexer",
+    "parser",
+    "menhir",
+    "ocamllex",
+    "rust",
+    "ocaml",
+    "systems-programming",
+  ]
+path = "./projects/vks_compiler.toml"
+
+[projects.readme_summary]
+overview = "A statically typed functional programming language compiler pairing an OCaml frontend (Dune, Menhir, ocamllex) with a high-performance Rust/LLVM backend. Language grammar, formal semantics, and AST specifications were formalized with Gemini Antigravity."
+architecture = """
+┌─────────────────┐
+│  VKS Source     │ (.vks)
+└────────┬────────┘
+         ▼
+┌─────────────────┐
+│ OCaml Frontend  │ (ocamllex Lexer, Menhir Parser, Type Checker, JSON HIR Gen)
+└────────┬────────┘
+         ▼ (JSON HIR via yojson)
+┌─────────────────┐
+│  Rust Backend   │ (LLVM IR Gen, Optimization Passes, Code Gen)
+└────────┬────────┘
+         ▼
+┌─────────────────┐
+│ Native Binary   │ (Standalone x86-64 executable)
+└─────────────────┘
+"""
+grammar_and_syntax = [
+    "Strict distinction between pure functions (func ... => expr) and side-effecting procedures (proc ... returning Nil)",
+    "First-class functions with automatic currying via '_' placeholder, lambda expressions (\\(x) => ...), and composition (f . g)",
+    "Haskell-style pattern matching, guard clauses (| n == 0 => 1), and user-defined infix operators ((+)(infixr 5))",
+    "Algebraic data types (data Vec2i { x: Int, y: Int }) and type classes for extensible polymorphism",
+    "Compile-time type inference (:=) alongside explicit type annotations (:)",
+    "Hierarchical module namespacing with PascalCase types/modules, snakeCase identifiers, and @root resolution directives",
+    "Scope-based value lifetimes with shadow binding support and immutable-by-default name bindings",
+  ]
+key_components = [
+    "OCaml frontend featuring ocamllex tokenizer, Menhir LALR(1) parser, semantic type checker, and JSON HIR generator",
+    "Rust backend ingesting JSON HIR to drive LLVM IR generation and optimization passes",
+    "Native code generator emitting standalone x86-64 machine binaries with zero runtime dependencies",
+    "Tooling suite including CLI compiler (vks), interactive REPL (vksi), and core standard library (std/)",
+  ]
+benchmarks_and_metrics = "Sub-100ms compilation times for multi-module programs; minimal native binary signature."
+bullets = [
+    "Architected a multi-stage functional compiler pairing an OCaml frontend (ocamllex, Menhir parser, type checker, JSON HIR generator) with a high-performance Rust backend emitting LLVM IR.",
+    "Formalized language grammar, type semantics, and AST specifications with Gemini Antigravity, implementing Haskell-like pattern matching, algebraic sum/product types, and polymorphic type classes.",
+    "Engineered LLVM IR code generation and optimization passes in Rust, compiling `.vks` source programs into standalone native x86-64 binaries with zero external runtime dependencies.",
+  ]
+keywords = [
+    "compiler",
+    "llvm",
+    "ast",
+    "lexer",
+    "parser",
+    "menhir",
+    "ocamllex",
+    "type-system",
+    "ocaml",
+    "rust",
+    "functional-programming",
+    "systems-programming",
+  ]
+
+[[projects]]
+id = "bahi_khata"
+title = "Personal Bahi Khata (Embedded Ledger Engine & Mobile Client)"
+category = "Systems & Mobile Engineering"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
+engine_repo_url = "https://github.com/vinayakgupta29/lib_pbke"
+deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
+languages = ["langs.rust", "langs.dart"]
+technologies = ["fw.flutter", "proto.pbke"]
+tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/protocols.toml",
+  ]
+reference_urls = [
+    "https://github.com/vinayakgupta29/personal_bahi_khata",
+    "https://github.com/vinayakgupta29/lib_pbke",
+    "https://play.google.com/store/apps/details?id=com.vins.bahi_khata",
+    "https://vinayakgupta29.github.io/blogs/2024-02-03/personal-bahi-khata/",
+    "https://vinayakgupta29.github.io/blogs/2026-07-27/personal-bahi-khata-rust/",
+  ]
+local_ref_path = "./.tmp-refs/personal_bahi_khata/docs/pbke/index.html"
+tags = [
+    "rust",
+    "flutter",
+    "embedded-database",
+    "cryptography",
+    "aes-256-gcm",
+    "zstd",
+    "compression",
+    "ffi",
+    "wasm",
+    "offline-first",
+    "acid",
+  ]
+path = "./projects/bahi_khata.toml"
+
+[projects.readme_summary]
+overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store."
+architecture = """
+┌──────────────────────────────────────┐
+│  Flutter Mobile Client (Dart / UI)   │ (Play Store: com.vins.bahi_khata)
+└──────────────────┬───────────────────┘
+                   │ C ABI (Null-Safe, Panic-Caught FFI)
+                   ▼
+┌──────────────────────────────────────┐
+│      lib_pbke Core Engine (Rust)     │
+│ ├── FFI Layer (ffi.rs)               │
+│ ├── In-Memory Cache (pbke_db.rs)     │ (Protected by FLUSH_LOCK)
+│ ├── AES-256-GCM Encryption           │ (PBKDF2 Key Derivation)
+│ ├── Zstd Compression (pbke_compress) │ (76% payload reduction)
+│ ├── Crash-Safe Disk IO (pbke_disk)   │ (Atomic temp-file swap)
+│ └── Import/Export (import_export)    │ (Auto-detecting CSV/JSON/PBKE)
+└──────────────────────────────────────┘
+"""
+key_components = [
+    "Embedded ACID-compliant Rust storage engine (lib_pbke) utilizing in-memory caching and FLUSH_LOCK concurrency guards",
+    "Authenticated AES-256-GCM encryption with PBKDF2 key derivation for local zero-knowledge privacy",
+    "Lossless Zstandard (Zstd) compression reducing raw binary size by 76% with sub-1ms decompression overhead",
+    "Crash-resilient atomic disk write pipeline writing to temporary files prior to atomic file-descriptor swaps",
+    "Foreign Function Interface (FFI) exposing a zero-panic, C-compatible ABI across Linux (.so), Android, Windows (.dll), and WebAssembly (.wasm)",
+    "Cross-platform Flutter application featuring banking SMS regex extraction, custom tag tagging, and multi-format (RFC-4180 CSV, JSON, binary PBKE) export",
+  ]
+benchmarks_and_metrics = "76% compression reduction (89,674 -> 21,724 bytes); 2x faster execution than pure Dart equivalents; sub-1ms FFI boundary latency."
+bullets = [
+    "Engineered an ACID-compliant, crash-resilient storage engine in Rust (lib_pbke) featuring authenticated AES-256-GCM encryption, PBKDF2 key derivation, and atomic disk flush locks.",
+    "Integrated native Zstandard (Zstd) compression, slashing encrypted storage footprint by 76% (89KB -> 21KB) with sub-1ms decompression overhead, outperforming previous Dart implementations by 2x.",
+    "Designed a null-safe, panic-caught C ABI Foreign Function Interface (FFI), seamlessly bridging the Rust storage core to a production Flutter mobile application deployed on Google Play.",
+    "Implemented automated banking SMS parsing via regular expressions and an auto-detecting data interchange pipeline supporting RFC-4180 CSV, JSON, and proprietary PBKE binary formats.",
+  ]
+keywords = [
+    "rust",
+    "flutter",
+    "embedded-database",
+    "cryptography",
+    "aes-256-gcm",
+    "zstd",
+    "compression",
+    "ffi",
+    "wasm",
+    "offline-first",
+    "acid",
+    "play-store",
+  ]
+
+[[projects]]
+id = "god_format"
+title = "Grounded Object Data (GOD) Serialization Format"
+category = "Compilers & Serialization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/GOD"
+deployed_url = ""
+languages = ["langs.go"]
+technologies = ["proto.god"]
+tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
+references = ["./taxonomy/languages.toml", "./taxonomy/protocols.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/README.md",
+    "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/GRAMMAR_SPEC.md",
+    "https://raw.githubusercontent.com/vinayakgupta29/GOD/refs/heads/main/grammar_rules.md",
+  ]
+local_ref_path = "./.tmp-refs/GOD/README.md"
+tags = [
+    "go",
+    "serialization",
+    "ebnf",
+    "compiler",
+    "lexer",
+    "parser",
+    "reflection",
+    "performance",
+    "zero-null",
+  ]
+path = "./projects/god_format.toml"
+
+[projects.readme_summary]
+overview = "A human-readable data serialization format designed as a compact, null-safe alternative to JSON. Enforces 'grounded' semantics where every data point corresponds to a concrete zero value (eliminating null-pointer panics) and introduces first-class tabular representations for lists of structured objects."
+formal_grammar_highlights = [
+    "Strict EBNF specification: root elements must be an enclosed object '{ ... }'",
+    "Grounded type safety: omitted or empty fields default to concrete zero values (0, 0.0, false, '') rather than null/undefined",
+    "First-class tabular syntax: '(header:rows)' where column schemas are declared once and shared across rows (e.g. users = (id,name,age:1,'Alice',20;2,'Bob',23;))",
+    "Hand-written lexical scanner and recursive-descent parser in pure Go",
+    "Reflection API integration supporting struct tagging (god:'field_name') and Marshal / MarshalBeautify / Unmarshal pipelines",
+  ]
+benchmarks_and_metrics = "Reduces network payload sizes by 40% to 50% compared to standard JSON when serializing tabular collections."
+bullets = [
+    "Designed a formal EBNF grammar specification for Grounded Object Data (GOD), enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
+    "Engineered a hand-written lexical scanner, recursive-descent parser, and reflection-driven marshaller/unmarshaller in Go, natively supporting struct tags (god:'field_name').",
+    "Implemented first-class tabular structures ((header:rows)) that eliminate repetitive key overhead, slashing structured payload sizes by 40–50% compared to equivalent JSON representations.",
+    "Packaged and published as an open-source Go module (github.com/vinayakgupta29/GOD) with deterministic formatting and error recovery.",
+  ]
+keywords = [
+    "go",
+    "serialization",
+    "ebnf",
+    "compiler",
+    "lexer",
+    "parser",
+    "reflection",
+    "performance",
+    "zero-null",
+  ]
+
+[[projects]]
+id = "zundrath"
+title = "Zundrath Key Management System (KMS)"
+category = "Distributed Systems & Cryptography"
+date = "Aug-2025"
+status = "archived"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/zundrath"
+deployed_url = ""
+languages = ["langs.go"]
+technologies = ["fw.echo", "tools.docker", "proto.rest"]
+tagline = "High-concurrency cryptographic key management service in Go with automated rotation, HMAC client authorization, and sub-2ms retrieval latency"
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/protocols.toml",
+  ]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/zundrath/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/zundrath/README.md"
+tags = [
+    "go",
+    "echo",
+    "cryptography",
+    "kms",
+    "aes-256",
+    "hmac",
+    "pbkdf2",
+    "key-rotation",
+    "docker",
+    "distributed-systems",
+  ]
+path = "./projects/zundrath.toml"
+
+[projects.readme_summary]
+overview = "A lightweight, production-grade Key Management Service (KMS) in Go for generating, storing, rotating, and retrieving symmetric encryption keys. Encrypts key structs into local binary keystore files and exposes high-throughput HMAC-authenticated HTTP endpoints."
+architecture = """
+┌─────────────────────────────────┐
+│   Client Application (X-Client) │
+└────────────────┬────────────────┘
+                 │ POST /create or /get (HMAC-SHA256 Auth Header)
+                 ▼
+┌─────────────────────────────────┐
+│      Zundrath KMS (Go / Echo)   │
+│ ├── HMAC Verification Layer     │
+│ ├── In-Memory Caching (SyncMap) │
+│ ├── PBKDF2 Master Derivation    │
+│ └── AES-GCM Envelope Encryption │
+└────────────────┬────────────────┘
+                 │ Encrypted Binary Persistence
+                 ▼
+┌─────────────────────────────────┐
+│   Local Keystore (/keystore)    │
+└─────────────────────────────────┘
+"""
+key_components = [
+    "High-throughput Go HTTP service utilizing the Echo framework with concurrent request multiplexing",
+    "Per-client HMAC authentication via X-Client and Authorization request headers",
+    "Encrypted binary keystore persistence storing key structs on disk with AES-256 envelope encryption",
+    "Automated key rotation lifecycle preventing key degradation across long-lived services",
+    "Containerized Docker deployment with multi-stage builds for minimal attack surface",
+  ]
+benchmarks_and_metrics = "Achieved sub-2ms key retrieval latency under 500+ concurrent requests; cut cryptographic latency by 98% relative to legacy Node.js services."
+bullets = [
+    "Architected a centralized cryptographic Key Management System (KMS) in Go and Echo handling symmetric key lifecycle, rotation, and distribution across distributed services.",
+    "Engineered a high-concurrency binary keystore utilizing AES-256 envelope encryption, PBKDF2 key derivation, and per-app HMAC-SHA256 client authentication.",
+    "Optimized in-memory caching and lock contention to achieve sub-2ms key retrieval latency under 500+ concurrent requests, reducing latency by 98% compared to legacy services.",
+  ]
+keywords = [
+    "go",
+    "echo",
+    "cryptography",
+    "kms",
+    "aes-256",
+    "hmac",
+    "pbkdf2",
+    "key-rotation",
+    "docker",
+    "distributed-systems",
+  ]
+
+[[projects]]
+id = "http_server_c"
+title = "HTTP Server in Pure C"
+category = "Systems Engineering & Networking"
+date = "Aug-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/http_server_in_C"
+deployed_url = ""
+languages = ["langs.c"]
+technologies = ["tools.linux", "proto.rest"]
+tagline = "Zero-dependency lightweight HTTP/1.1 server implemented in pure C with POSIX sockets, engineered as the foundational network stack prototype for the VKS compiler"
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/protocols.toml",
+  ]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/http_server_in_C/refs/heads/main/README.md",
+  ]
+tags = [
+    "c",
+    "posix",
+    "sockets",
+    "networking",
+    "http",
+    "systems-programming",
+    "tcp",
+    "memory-management",
+  ]
+path = "./projects/http_server_c.toml"
+
+[projects.readme_summary]
+overview = "A minimalist, zero-dependency HTTP server written in C using low-level POSIX socket APIs. Developed without AI generation or external libraries to master raw socket lifecycle, buffer management, and concurrency models as the prototype networking subsystem for the VKS compiler language standard library."
+key_components = [
+    "Raw POSIX socket lifecycle: socket(), bind(), listen(), accept(), and non-blocking I/O multiplexing",
+    "Zero-allocation HTTP request header parsing and method routing",
+    "Static asset streaming with content-type resolution and status code dispatch",
+    "Strict memory management with zero memory leaks verified through valgrind",
+  ]
+bullets = [
+    "Engineered a zero-dependency HTTP/1.1 server in C using raw POSIX socket APIs, managing low-level TCP connection lifecycles and non-blocking socket I/O.",
+    "Constructed custom HTTP request header parsing and stream buffering routines, serving as the foundational prototype for the VKS compiler's native networking standard library.",
+  ]
+keywords = [
+    "c",
+    "posix",
+    "sockets",
+    "networking",
+    "http",
+    "systems-programming",
+    "tcp",
+    "memory-management",
+  ]
+
+[[projects]]
+id = "integer_sequences"
+title = "A Directory of Integer Sequences"
+category = "Mathematics & Algorithms"
+date = "Aug-2023"
+status = "archived"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/A-directory-of-integer-sequences"
+deployed_url = ""
+languages = ["langs.python"]
+technologies = []
+tagline = "Computational mathematics system implementing and analyzing discrete integer sequences and recurrence relations in Python"
+references = ["./taxonomy/languages.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/A-directory-of-integer-sequences/refs/heads/main/README.md",
+  ]
+tags = [
+    "python",
+    "mathematics",
+    "discrete-math",
+    "integer-sequences",
+    "algorithms",
+    "recurrence-relations",
+  ]
+path = "./projects/integer_sequences.toml"
+
+[projects.readme_summary]
+overview = "A computational mathematics repository implementing discrete integer sequence generators, combinatorial recurrence relations, and formal mathematical documentation in Python. Explores algorithmic complexity, closed-form formulas, and generating functions across classical sequence families."
+key_components = [
+    "Python implementations of classical and specialized integer sequence generation algorithms",
+    "Mathematical analysis of recurrence relations, time complexity, and asymptotic bounds",
+    "Automated script execution providing detailed mathematical descriptions and sequence generation",
+  ]
+bullets = [
+    "Constructed algorithmic Python modules to generate, analyze, and model discrete integer sequences and recursive combinatorial relations.",
+    "Documented mathematical properties, generating functions, and asymptotic complexity bounds across foundational sequence families.",
+  ]
+keywords = [
+    "python",
+    "mathematics",
+    "discrete-math",
+    "integer-sequences",
+    "algorithms",
+    "recurrence-relations",
+  ]
+
+[[projects]]
+id = "tism_games"
+title = "Tism Games (C++ / SFML Game Collection)"
+category = "Game Development & Graphics"
+date = "Jul-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/smashers_sfml"
+deployed_url = ""
+languages = ["langs.cpp", "langs.c"]
+technologies = ["tools.linux"]
+tagline = "Collection of real-time 2D desktop arcade games built in C++ with SFML featuring deterministic tick loops and spatial collision physics"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/smashers_sfml/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/smashers_sfml/README.md"
+tags = [
+    "cpp",
+    "c",
+    "sfml",
+    "game-development",
+    "graphics",
+    "event-loop",
+    "linux",
+    "arcade",
+  ]
+path = "./projects/tism_games.toml"
+
+[projects.games_collection]
+
+[[projects.games_collection.games]]
+name = "SFML Smashers"
+genre = "Arcade Clicker"
+repo = "https://github.com/vinayakgupta29/smashers_sfml"
+description = "Reflex destruction game implementing spatial screen-space coordinate transformations and instantaneous mouse hit registration."
+
+[[projects.games_collection.games]]
+name = "SFML Velocity"
+genre = "Space Shooter"
+repo = ""
+description = "Top-down space combat game featuring randomized enemy swarm spawning, dynamic projectile trajectories, and bounding-box collision detection."
+
+[projects.readme_summary]
+overview = "A collection of 2D desktop arcade games engineered in C++ using the Simple and Fast Multimedia Library (SFML). Implements custom 2D coordinate-transformation models, deterministic 60 FPS tick rates, sprite batching, and low-latency event polling."
+key_components = [
+    "C++ game loop engine decoupling rendering from game-state updates to guarantee deterministic 60 FPS execution",
+    "Screen-to-world pixel coordinate mapping for spatial hitboxes and mouse click collision detection",
+    "Kinematic trajectory calculations for particle effects and moving projectile entities",
+    "POSIX Linux native compilation with zero external runtime wrappers",
+  ]
+bullets = [
+    "Engineered a collection of 2D arcade games in C++ using SFML (including SFML Smashers and SFML Velocity), implementing deterministic 60 FPS game loops and spatial collision detection.",
+    "Constructed real-time coordinate-transformation and bounding-box hit registration routines, compiling natively for Linux POSIX environments.",
+  ]
+keywords = [
+    "cpp",
+    "c",
+    "sfml",
+    "game-development",
+    "graphics",
+    "event-loop",
+    "linux",
+    "arcade",
+  ]
+
+[[projects]]
+id = "vichar_abhivyakti"
+title = "Vichar (Real-Time Anonymous Discussion Board)"
+category = "Distributed Systems & Web Platforms"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
+deployed_url = "https://vichar.abhivyakti.space"
+languages = ["langs.go", "langs.html", "langs.css", "langs.javascript", "langs.typescript"]
+technologies = ["tools.html_template", "tools.cloudflare_workers", "db.sqlite", "proto.rest"]
+tagline = "Real-time anonymous discussion board built with Go SSR (html/template), Cloudflare worker threads, WebSockets, and cryptographic tripcodes"
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/databases.toml",
+    "./taxonomy/protocols.toml",
+  ]
+reference_urls = ["https://vichar.abhivyakti.space/"]
+tags = [
+    "go",
+    "ssr",
+    "html-template",
+    "cloudflare-workers",
+    "websockets",
+    "real-time",
+    "cryptography",
+    "tripcodes",
+    "sqlite",
+  ]
+path = "./projects/vichar_abhivyakti.toml"
+
+[projects.readme_summary]
+overview = "A real-time anonymous discussion forum (विचाराङ्गण) built in Go utilizing Server-Side Rendering (SSR) via html/template, coupled with Cloudflare worker threads for edge delivery. Leverages cryptographic tripcodes for persistent zero-registration identity, WebSockets for instantaneous comment updates, and client-side timezone normalization."
+key_components = [
+    "Go-based Server-Side Rendering (SSR) engine utilizing standard html/template for performant, SEO-friendly HTML delivery",
+    "Cloudflare edge deployment utilizing worker threads for low-latency global routing and asset caching",
+    "Concurrent WebSocket broadcast pipeline dispatching live messages to active thread readers without page reloads",
+    "Deterministic cryptographic tripcode generator producing tamper-proof user pseudonyms via one-way cryptographic hashing",
+    "Client-side timezone synchronization via browser cookies and Intl.DateTimeFormat",
+    "Secure Markdown parser with strict XSS sanitization and external link safety wrappers",
+    "Bidirectional discussion hooks connecting to essay publications on Kalam Abhivyakti",
+  ]
+bullets = [
+    "Architected a real-time anonymous discussion board in Go (vichar.abhivyakti.space) using Go Server-Side Rendering (html/template) and WebSockets for low-latency live message broadcasting.",
+    "Engineered a cryptographic tripcode identity system generating deterministic, tamper-resistant pseudonyms via one-way cryptographic hashes, eliminating registration friction while preventing impersonation.",
+    "Deployed on Cloudflare edge using worker threads for global low-latency delivery, integrating dynamic client timezone negotiation and secure Markdown sanitization pipelines.",
+  ]
+keywords = [
+    "go",
+    "html",
+    "css",
+    "javascript",
+    "ssr",
+    "html-template",
+    "cloudflare-workers",
+    "websockets",
+    "real-time",
+    "cryptography",
+    "tripcodes",
+    "sqlite",
+  ]
+
+[[projects]]
+id = "kalam_abhivyakti"
+title = "Kalam (Multilingual Literary & Technical Publishing Platform)"
+category = "Web Engineering & Publishing"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
+deployed_url = "https://kalam.abhivyakti.space"
+languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
+technologies = ["fw.jekyll"]
+tagline = "Multilingual publishing platform for essays, technical literature, and stories built with Ruby and Jekyll, featuring Devanagari and Japanese typography"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = ["https://kalam.abhivyakti.space/"]
+tags = [
+    "jekyll",
+    "ruby",
+    "html",
+    "css",
+    "javascript",
+    "static-site",
+    "publishing",
+    "devanagari",
+    "typography",
+    "literature",
+  ]
+path = "./projects/kalam_abhivyakti.toml"
+
+[projects.readme_summary]
+overview = "A clean, reader-focused publishing platform built on Jekyll and Ruby, supporting technical treatises, philosophical essays, short stories, and poetry across multiple scripts including Devanagari and Japanese. Discussion links lead directly to dedicated threads on Vichar."
+key_components = [
+    "Custom Jekyll static site generation with structured metadata, Atom feeds, and tag classification",
+    "Typographical design integrating Noto Serif, Noto Serif Devanagari, and Noto Serif JP",
+    "Deep integration with vichar.abhivyakti.space to host community discourse on published essays",
+  ]
+bullets = [
+    "Developed a multilingual publishing platform (kalam.abhivyakti.space) using Ruby and Jekyll, optimized for long-form reading with custom typography in Latin, Devanagari, and Japanese scripts.",
+    "Constructed structured taxonomy pipelines for articles, stories, and poetry with integrated discussion redirects to Vichar.",
+  ]
+keywords = [
+    "jekyll",
+    "ruby",
+    "html",
+    "css",
+    "javascript",
+    "static-site",
+    "publishing",
+    "devanagari",
+    "typography",
+    "literature",
+  ]
+
+[[projects]]
+id = "rang_abhivyakti"
+title = "Hṛdayapāṭaḥ (Digital Art & Visual Gallery)"
+category = "Frontend & Creative Technologies"
+date = "Nov-2025"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
+deployed_url = "https://rang.abhivyakti.space"
+languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
+technologies = ["fw.jekyll"]
+tagline = "Responsive digital art gallery and visual narrative portfolio (हृदयपाटः) built with Ruby and Jekyll"
+bullets = [
+    "Engineered a responsive, high-performance visual gallery showcasing curated digital art, sketches, and visual narratives using Ruby, Jekyll, and optimized CSS.",
+  ]
+keywords = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = ["https://rang.abhivyakti.space/"]
+tags = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
+path = "./projects/rang_abhivyakti.toml"
+
+[[projects]]
+id = "public_abhivyakti"
+title = "Abhivyakti Space (Ecosystem Hub & Interactive Portal)"
+category = "Frontend & Creative Technologies"
+date = "Nov-2025"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/public.abhivyakti"
+deployed_url = "https://abhivyakti.space"
+languages = ["langs.html", "langs.css", "langs.javascript"]
+technologies = []
+tagline = "Central portal hub connecting the Abhivyakti creative ecosystem with dynamic interactive DOM physics and card tilting"
+bullets = [
+    "Engineered the central gateway portal (abhivyakti.space) unifying forum, literature, and art subdomains with dynamic CSS transformations, HTML5, and interactive chaos bubbles in vanilla JavaScript.",
+  ]
+keywords = ["portal", "html", "css", "javascript", "interactive-ui", "hub"]
+references = ["./taxonomy/languages.toml"]
+reference_urls = ["https://abhivyakti.space/"]
+tags = ["portal", "html", "css", "javascript", "interactive-ui", "hub"]
+path = "./projects/public_abhivyakti.toml"
+
+[[projects]]
+id = "dotfiles"
+title = "Dotfiles (Arch Linux & Wayland Environment)"
+category = "Linux Systems & Customization"
+date = "Aug-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/dotfiles"
+deployed_url = ""
+languages = ["langs.bash", "langs.lua", "langs.python"]
+technologies = ["tools.linux", "tools.git"]
+tagline = "Modular, reproducible Arch Linux desktop configuration managing Hyprland Wayland compositor, terminal toolchains, and custom keybindings"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/dotfiles/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/dotfiles_README.md"
+tags = ["linux", "arch-linux", "hyprland", "wayland", "bash", "lua", "dotfiles"]
+path = "./projects/dotfiles.toml"
+
+[projects.readme_summary]
+overview = "A fully configured, reproducible Arch Linux developer environment managing Wayland/Hyprland window tiling, POSIX shell automation, custom terminal ergonomics, and system-wide aesthetics."
+key_components = [
+    "Hyprland Wayland compositor configuration with smooth hardware-accelerated animations and multi-monitor workflows",
+    "Automated shell scripts managing package installations, environment variables, and font glyph configurations",
+    "Modular configuration structure allowing rapid deployment onto fresh Arch Linux installations",
+  ]
+bullets = [
+    "Architected a modular and reproducible Arch Linux environment managing Hyprland Wayland window tiling, automated POSIX shell scripting, and terminal ergonomics.",
+  ]
+keywords = ["linux", "arch-linux", "hyprland", "wayland", "bash", "lua", "dotfiles"]
+
+[[projects]]
+id = "noctalia_plugins"
+title = "Noctalia Shell Plugins (Multilingual Input Method Switcher)"
+category = "Linux Systems & Customization"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/noctalia_plugins"
+deployed_url = ""
+languages = ["langs.lua", "langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Desktop status-bar integration plugin for Noctalia Shell enabling instantaneous keyboard input method switching via Fcitx5"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/noctalia_plugins/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/noctalia_plugins_README.md"
+tags = ["lua", "linux", "fcitx5", "multilingual", "desktop-tools", "input-methods"]
+path = "./projects/noctalia_plugins.toml"
+
+[projects.readme_summary]
+overview = "A lightweight status-bar extension for Noctalia Shell designed to streamline multilingual computing workflows. Integrates directly with the Fcitx5 input method daemon via shell hooks to provide fast, status-bar toggling between US English, ITRANS Hindi, Japanese (Mozc), and Sanskrit without needing heavy graphical configuration tools."
+key_components = [
+    "Luau/Shell plugin architecture interfacing with Fcitx5 DBus/CLI interfaces",
+    "Real-time visual indicator on the status bar displaying active language engine",
+    "Zero-overhead input switching designed for polyglot computing and developer ergonomics",
+  ]
+bullets = [
+    "Engineered a status-bar plugin in Lua and Shell for Noctalia desktop environments, interfacing with Fcitx5 to enable low-latency switching across English, Hindi, Japanese, and Sanskrit input methods.",
+  ]
+keywords = ["lua", "linux", "fcitx5", "multilingual", "desktop-tools", "input-methods"]
+
+[[projects]]
+id = "sauce_nvim"
+title = "sauce.nvim (Custom Neovim Linter Plugin)"
+category = "Developer Tooling & Editors"
+date = "Sep-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/sauce.nvim"
+deployed_url = ""
+languages = ["langs.lua", "langs.javascript"]
+technologies = ["tools.linux", "tools.git"]
+tagline = "Neovim plugin with Tree-sitter integration functioning as a real-time syntax highlighter and linter for structured personal data formats"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/sauce.nvim/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/sauce_nvim_README.md"
+tags = [
+    "neovim",
+    "lua",
+    "tree-sitter",
+    "linter",
+    "editor-tools",
+    "developer-ergonomics",
+  ]
+path = "./projects/sauce_nvim.toml"
+
+[projects.readme_summary]
+overview = "A specialized Neovim plugin written in Lua with Tree-sitter queries. Provides real-time syntax highlighting, AST parsing, and validation diagnostic warnings for custom text-based record formats."
+key_components = [
+    "Lua-based Neovim buffer integration using Neovim's native LSP diagnostic namespace",
+    "Custom Tree-sitter queries for incremental parsing and precise syntax color tokens",
+    "Asynchronous buffer linting executing on text change events without editor frame drops",
+  ]
+bullets = [
+    "Developed a custom Neovim plugin in Lua and Tree-sitter, implementing real-time syntax parsing, token highlighting, and diagnostic linting for custom record formats.",
+  ]
+keywords = [
+    "neovim",
+    "lua",
+    "tree-sitter",
+    "linter",
+    "editor-tools",
+    "developer-ergonomics",
+  ]
+
+[[projects]]
+id = "sddm_slayer"
+title = "SDDM Slayer (Qt/QML Display Manager Theme)"
+category = "Linux Systems & Customization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/sddm-slayer"
+deployed_url = ""
+languages = ["langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Modern, responsive graphical login screen theme for the Simple Desktop Display Manager (SDDM) crafted in Qt/QML"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/sddm-slayer/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/sddm_slayer_README.md"
+tags = ["qml", "qt", "sddm", "display-manager", "linux", "desktop-theming"]
+path = "./projects/sddm_slayer.toml"
+
+[projects.readme_summary]
+overview = "A custom display manager theme for SDDM (Simple Desktop Display Manager) on Linux desktop systems. Engineered using Qt Quick / QML to deliver responsive UI scaling, keyboard-driven user selection, and polished aesthetic transitions upon system boot."
+key_components = [
+    "Declarative UI layout in Qt Quick (QML) handling variable display resolutions and aspect ratios",
+    "Smooth input focus and password field masking with responsive feedback indicators",
+    "Integrated session selector allowing switching between Wayland and X11 compositors",
+  ]
+bullets = [
+    "Engineered a responsive Linux desktop display manager theme in Qt/QML for SDDM, managing dynamic screen scaling, user authentication UI, and session switching.",
+  ]
+keywords = ["qml", "qt", "sddm", "display-manager", "linux", "desktop-theming"]
+
+[[projects]]
+id = "albedo_grub_theme"
+title = "Albedo GRUB Theme"
+category = "Linux Systems & Customization"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/albedo-grub-theme"
+deployed_url = ""
+languages = []
+technologies = ["tools.linux"]
+tagline = "Minimalist, high-DPI bootloader theme for GNU GRUB featuring custom typography and icon sets"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/albedo-grub-theme/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/albedo_grub_README.md"
+tags = ["grub", "bootloader", "theming", "linux", "systems-customization"]
+path = "./projects/albedo_grub_theme.toml"
+
+[projects.readme_summary]
+overview = "A clean, minimalist visual theme designed for the GNU GRUB bootloader. Configured with high-DPI font rendering, custom OS distribution icons, and refined progress bars for multi-boot Linux systems."
+key_components = [
+    "Custom GRUB theme configuration managing coordinate positioning, font scaling, and palette colors",
+    "High-resolution icon assets for popular Linux distributions and kernel options",
+    "Automated bash installation script verifying boot directory permissions and updating grub.cfg",
+  ]
+bullets = [
+    "Designed a minimalist, high-DPI bootloader theme for GNU GRUB with automated installation scripts and multi-OS icon sets.",
+  ]
+keywords = ["grub", "bootloader", "theming", "linux", "systems-customization"]
+
+[[projects]]
+id = "plymouth_themes"
+title = "Plymouth Boot Splash Themes"
+category = "Linux Systems & Customization"
+date = "Jul-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/plymouth_themes"
+deployed_url = ""
+languages = ["langs.bash"]
+technologies = ["tools.linux"]
+tagline = "Flicker-free graphical boot splash animations and themes for the Linux Plymouth boot subsystem"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/plymouth_themes/refs/heads/main/README.md",
+  ]
+local_ref_path = "./.tmp-refs/linux-diy/plymouth_themes_README.md"
+tags = ["plymouth", "boot-splash", "linux", "kernel", "systems-customization"]
+path = "./projects/plymouth_themes.toml"
+
+[projects.readme_summary]
+overview = "A collection of smooth, flicker-free boot splash animations crafted for Plymouth on Linux. Integrates direct kernel modesetting (KMS) for seamless visual transitions from UEFI firmware to the display manager."
+key_components = [
+    "Plymouth script configuration defining frame timing, sprite rotation, and alpha blending",
+    "Automated initramfs regeneration hooks ensuring theme packaging into the early boot image",
+    "Optimized lightweight sprite assets ensuring minimal impact on boot execution times",
+  ]
+bullets = [
+    "Engineered lightweight, flicker-free Plymouth boot splash themes for Linux with automated initramfs packaging scripts.",
+  ]
+keywords = ["plymouth", "boot-splash", "linux", "kernel", "systems-customization"]
+
+[[projects]]
+id = "poke_dex"
+title = "Poke-Dex Mobile Application"
+category = "Mobile Engineering"
+date = "Apr-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/Poke-Dex"
+deployed_url = ""
+is_complete = false
+languages = ["langs.dart"]
+technologies = ["fw.flutter"]
+tagline = "Cross-platform mobile Pokédex application built in Flutter (Documentation in progress)"
+bullets = [
+    "Developed a cross-platform mobile Pokédex application using Flutter and Dart, integrating external REST APIs for Pokémon statistics and type visualization.",
+  ]
+keywords = ["flutter", "dart", "mobile", "rest-api"]
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+tags = ["flutter", "dart", "mobile", "rest-api"]
+path = "./projects/poke_dex.toml"
+
+[[projects]]
+id = "py_ocr"
+title = "py_ocr (Desktop Optical Character Recognition Tool)"
+category = "Automation & Computer Vision"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/py_ocr"
+deployed_url = ""
+is_minor = true
+languages = ["langs.python", "langs.html"]
+technologies = ["tools.docker"]
+tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
+references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
+reference_urls = [
+    "https://raw.githubusercontent.com/vinayakgupta29/py_ocr/refs/heads/main/README.md",
+  ]
+tags = ["python", "ocr", "computer-vision", "automation", "docker"]
+path = "./projects/py_ocr.toml"
+
+[projects.readme_summary]
+overview = "A lightweight optical character recognition (OCR) utility written in Python. Processes image inputs to extract text strings, packaged with automated builds for Windows (.exe) and Linux environments."
+key_components = [
+    "Python OCR processing pipeline with image pre-filtering and contrast enhancement",
+    "Containerized Docker packaging ensuring reproducible OCR engine dependencies",
+    "Standalone release builds for quick local execution",
+  ]
+bullets = [
+    "Developed a desktop OCR text extraction tool in Python with containerized Docker packaging and cross-platform executable builds.",
+  ]
+keywords = ["python", "ocr", "computer-vision", "automation", "docker"]
+
+[[projects]]
+id = "accounting_inventory"
+title = "Complete Accounting & Inventory Management System"
+category = "Enterprise Systems & Financial Engineering"
+date = "Jan-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/accounting-node.TS"
+deployed_url = ""
+languages = [
+    "langs.typescript",
+    "langs.javascript",
+    "langs.dart",
+    "langs.sql",
+    "langs.html",
+  ]
+technologies = [
+    "fw.node",
+    "fw.express",
+    "fw.flutter",
+    "db.postgres",
+    "tools.docker",
+    "proto.rest",
+  ]
+tagline = "Full-stack enterprise accounting and stock control system with real-time financial reporting, role-based access control, and containerized backend"
+references = [
+    "./taxonomy/languages.toml",
+    "./taxonomy/frameworks_and_tools.toml",
+    "./taxonomy/databases.toml",
+    "./taxonomy/protocols.toml",
+  ]
+tags = [
+    "typescript",
+    "node",
+    "postgresql",
+    "docker",
+    "flutter",
+    "accounting",
+    "inventory",
+    "rbac",
+    "rest-api",
+  ]
+path = "./projects/accounting_inventory.toml"
+
+[projects.readme_summary]
+overview = "A comprehensive double-entry accounting and inventory control platform engineered with a TypeScript/Node.js backend and PostgreSQL database, paired with cross-platform desktop/mobile client views. Built to provide businesses with real-time financial ledger auditing, stock flow tracking, purchase order lifecycles, and automated financial statements."
+key_components = [
+    "Modular REST API engine in TypeScript/Node.js handling transaction ledgers, inventory valuation (FIFO/average cost), and billing",
+    "Normalized relational PostgreSQL schema enforcing transactional consistency across multi-warehouse stock movements and double-entry journals",
+    "Role-based access control (RBAC) separating administrative, auditing, and operational permissions",
+    "Containerized deployment configuration via multi-stage Docker builds ensuring continuous test/production parity",
+  ]
+benchmarks_and_metrics = "Zero transactional race conditions during concurrent stock decrements; automated generation of real-time balance sheets and P&L statements."
+bullets = [
+    "Architected an enterprise double-entry accounting and inventory management platform using TypeScript, Node.js, and PostgreSQL, providing real-time ledger auditing and stock control.",
+    "Designed a normalized relational database schema with row-level constraints and atomic transactions, eliminating inventory discrepancies and double-spend errors across multi-warehouse transfers.",
+    "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via containerized REST microservices in Docker.",
+  ]
+keywords = [
+    "accounting",
+    "inventory-management",
+    "typescript",
+    "node",
+    "postgresql",
+    "docker",
+    "financial-engineering",
+    "rbac",
+    "rest-api",
+  ]
+
+[publications]
+
+[[publications.books]]
+id = "book_life"
+title = "Life"
+category = "book"
+type = "Poetry Collection"
+author = "Vinayak Gupta"
+publisher = "Sangam Publications"
+year = 2023
+language = "English"
+status = "published"
+description = "Published collection of poetry and philosophical literature exploring human experience, introspective perception, and existential observation."
+tags = ["poetry", "literature", "book", "sangam-publications"]
+path = "./publications/book_life.toml"
+
+[[publications.patents]]
+id = "patent_cooking"
+title = "System for Cooking"
+category = "patent"
+co_author = "Vinayak Gupta"
+application_id = "202521070227"
+issuing_office = "Indian Patent Office"
+status = "published"
+publication_year = 2025
+description = "Automated cooking apparatus and control system integrating thermal sensor feedback loops, actuator regulation, and deterministic process sequencing."
+tags = ["patent", "hardware", "control-systems", "automation", "sensors"]
+inventor = "Vinayak Gupta (Co-author)"
+office = "Indian Patent Office"
+year = 2025
+path = "./publications/patent_cooking.toml"
+
+[[publications.manuscripts]]
+id = "draft_encryption"
+title = "A Novel approach to Encryption for Data Security in Mobile Applications"
+category = "manuscript_draft"
+author = "Vinayak Gupta"
+status = "manuscript_draft_under_preparation"
+area = "Backend systems / cryptography / Secure Systems design"
+description = "Investigates zero-knowledge authenticated symmetric encryption (AES-256-GCM) combined with authenticated key derivation and local-first SQLite/WAL storage engines for high-assurance mobile financial databases."
+tags = ["cryptography", "mobile-security", "aes-256-gcm", "pbke", "embedded-storage"]
+path = "./publications/draft_encryption.toml"
+
+[[publications.manuscripts]]
+id = "stats_masters_research_draft_0"
+title = "Applied Statistics & Mathematical Concepts in Real-World AI Systems"
+author = "Vinayak Gupta"
+status = "Exploratory research draft"
+area = "Applied Mathematics & Machine Learning Theory"
+path = "./research_interests.toml"
+
+[schemas]
+
+[schemas.education]
+
+[schemas.education.index_entry]
+description = "Summary record in education/index.toml"
+degree_fields = ["id", "institution", "location", "degree", "dates", "cgpa", "path"]
+certification_fields = ["id", "title", "organization", "year", "path"]
+
+[schemas.education.degree_child]
+description = "Detailed degree record in education/<id>.toml"
+required_fields = [
+    "education.id",
+    "education.institution",
+    "education.location",
+    "education.degree",
+    "education.major",
+    "education.start_year",
+    "education.end_year",
+    "education.graduation_date",
+    "education.cgpa",
+    "education.division",
+    "education.medium_of_instruction",
+    "education.coursework",
+    "education.highlights",
+  ]
+
+[schemas.education.certifications_child]
+description = "Certifications and language proficiencies in education/certifications.toml"
+cert_required_fields = [
+    "id",
+    "title",
+    "issuing_organization",
+    "location",
+    "issue_date",
+    "category",
+    "description",
+  ]
+languages_required_fields = ["english", "hindi", "japanese", "urdu"]
+
+[schemas.formatting]
+
+[schemas.formatting.root]
+required_tables = ["ats", "profiles.resume", "profiles.cv"]
+
+[schemas.formatting.ats]
+required_fields = [
+    "target_score",
+    "layout",
+    "bullet_formula",
+    "min_bullets_per_role",
+    "max_bullets_per_role",
+    "standard_section_headings",
+    "prohibited_elements",
+    "date_format",
+    "max_reading_time_seconds",
+  ]
+
+[schemas.formatting.profile_spec]
+description = "Common formatting attributes for LaTeX generation targets"
+required_fields = [
+    "page_count",
+    "page_size",
+    "font_family",
+    "base_font_size",
+    "line_spacing",
+    "section_spacing_before",
+    "section_spacing_after",
+    "section_header_size",
+    "section_header_style",
+    "bullet_top_sep",
+    "bullet_item_sep",
+  ]
+required_subtables = ["margins", "colors"]
+
+[schemas.profile]
+
+[schemas.profile.profile]
+description = "Core candidate identity, contact information, engineering philosophy, strengths, and targeted summary archetypes"
+required_tables = ["identity", "links", "philosophy", "strengths", "summaries"]
+
+[schemas.profile.identity]
+required_fields = ["name", "location", "phone", "email"]
+
+[schemas.profile.links]
+required_fields = ["github", "linkedin", "portfolio", "blog"]
+
+[schemas.profile.philosophy]
+required_fields = ["statement"]
+
+[schemas.profile.strengths]
+required_fields = ["keywords", "bullets"]
+
+[schemas.profile.summaries]
+description = "Role-targeted executive summaries tailored for distinct career archetypes"
+required_fields = [
+    "backend_systems",
+    "systems_compiler",
+    "fullstack_agentic",
+    "academic_masters",
+  ]
+
+[schemas.project]
+
+[schemas.project.index_entry]
+description = "Summary record in projects/index.toml"
+required_fields = [
+    "id",
+    "title",
+    "category",
+    "tagline",
+    "date",
+    "status",
+    "languages",
+    "tags",
+    "repo_url",
+    "deployed_url",
+    "path",
+  ]
+
+[schemas.project.child_file]
+description = "Detailed project record in projects/<id>.toml"
+required_fields = [
+    "references",
+    "project.id",
+    "project.title",
+    "project.category",
+    "project.date",
+    "project.status",
+    "project.tagline",
+    "project.repo_url",
+    "project.deployed_url",
+    "project.languages",
+    "project.technologies",
+    "project.bullets",
+    "project.keywords",
+  ]
+optional_fields = [
+    "reference_urls",
+    "local_ref_path",
+    "project.author",
+    "project.repo_branch",
+    "project.status",
+    "project.is_complete",
+    "project.readme_summary",
+    "project.readme_summary.overview",
+    "project.readme_summary.architecture",
+    "project.readme_summary.key_components",
+    "project.readme_summary.benchmarks_and_metrics",
+    "project.readme_summary.grammar_and_syntax",
+  ]
+
+[schemas.publication]
+
+[schemas.publication.index_entry]
+description = "Summary records in publications/index.toml"
+book_fields = ["id", "title", "type", "author", "publisher", "year", "status", "path"]
+patent_fields = [
+    "id",
+    "title",
+    "inventor",
+    "application_id",
+    "office",
+    "year",
+    "status",
+    "path",
+  ]
+manuscript_fields = ["id", "title", "author", "status", "area", "path"]
+
+[schemas.research_interests]
+
+[schemas.research_interests.root]
+description = "Contains exploratory research domains Vinayak intends to pursue in graduate research or specialized engineering roles."
+required_tables = ["interests"]
+
+[schemas.research_interests.interest_entry]
+description = "Record defining a prospective research domain"
+required_fields = ["id", "title", "category", "focus_statement", "key_themes"]
+optional_fields = ["draft_reference"]
+
+[schemas.work_exp]
+
+[schemas.work_exp.index_entry]
+description = "Summary record in work_exp/index.toml"
+required_fields = [
+    "id",
+    "company_name",
+    "location",
+    "start_date",
+    "end_date",
+    "is_current",
+    "work_mode",
+    "roles",
+    "tags",
+    "path",
+  ]
+
+[schemas.work_exp.child_file]
+description = "Complete work experience record in work_exp/<id>.toml"
+required_fields = [
+    "references",
+    "company.id",
+    "company.company_name",
+    "company.short_name",
+    "company.location",
+    "company.start_date",
+    "company.end_date",
+    "company.is_current",
+    "company.work_mode",
+    "company.tags",
+    "company.roles",
+  ]
+
+[schemas.work_exp.role_entry]
+description = "Role record inside company.roles array"
+required_fields = [
+    "id",
+    "role",
+    "employment_type",
+    "start_date",
+    "end_date",
+    "technologies",
+    "bullets",
+  ]
