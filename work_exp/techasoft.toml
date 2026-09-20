@@ -16,7 +16,7 @@ start_date = "2026-03"
 end_date = "present"
 is_current = true
 work_mode = "in-office"
-tags = ["industrial-automation", "edge-cv", "plc", "modbus", "concurrency", "postgres", "django", "tauri"]
+tags = ["field-deployment", "systems-integration", "edge-ai", "vendor-coordination", "troubleshooting", "linux"]
 
 [[company.roles]]
 id = "techasoft_systems_engineer"
@@ -25,18 +25,12 @@ employment_type = "full-time"
 start_date = "2026-03"
 end_date = "present"
 technologies = [
-  "fw.django",
-  "fw.tauri",
-  "db.postgres",
-  "proto.modbus",
   "langs.python",
-  "langs.rust",
   "tools.linux"
 ]
 bullets = [
-  "Architected the system software stack for an industrial factory automation line, pairing a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.",
-  "Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V Programmable Logic Controllers (PLCs), actuating pneumatic solenoid valves within an 8ms latency budget.",
-  "Developed a mathematical coordinate-transformation pipeline mapping image-space pixel coordinates to real-world millimeter coordinates at 30 FPS, dynamically computing Regions of Interest (ROIs) for automated conveyor inspection.",
-  "Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and raw query optimization, eliminating write-concurrency deadlocks during continuous factory-floor sensor logging.",
-  "Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory production sites, optimizing TensorRT execution to increase detection accuracy from 85% to 95%+."
+  "Managed field deployment and on-site implementation of pre-built industrial edge AI inspection systems across 12+ factory production lines, ensuring operational stability in harsh physical plant environments.",
+  "Coordinated directly with third-party conveyor PLC programmers to align machine interfaces, configuring bare-wire relay output pulses from the Techasoft panel to reliably trigger pneumatic rejection of defective packets.",
+  "Diagnosed and resolved plant-specific environmental failures, troubleshooting on-site anomalies caused by machine vibrations, power supply fluctuations, proximity sensor timing, and camera calibration without rewriting core application codebases.",
+  "Facilitated cross-functional collaboration between plant operators and equipment vendors, diagnosing edge cases in handed-down software stacks and adapting pre-made enterprise systems to local plant constraints."
 ]

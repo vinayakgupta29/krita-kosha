@@ -8,7 +8,8 @@ references = [
 ]
 
 reference_urls = [
-  "https://vichar.abhivyakti.space/"
+  "https://vichar-abhivyakti.vinayakg236.workers.dev/",
+  # [Domain Expired] "https://vichar.abhivyakti.space/"
 ]
 
 [project]
@@ -19,7 +20,7 @@ date = "Jun-2026"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
-deployed_url = "https://vichar.abhivyakti.space"
+deployed_url = "https://vichar-abhivyakti.vinayakg236.workers.dev/" #[Domain Expired] "https://vichar.abhivyakti.space"
 languages = [
   "langs.go",
   "langs.html",

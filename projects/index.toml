@@ -102,7 +102,7 @@ status = "actively maintained"
 languages = ["langs.go", "langs.html", "langs.css", "langs.javascript", "langs.typescript"]
 tags = ["go", "ssr", "html-template", "cloudflare-workers", "websockets", "real-time", "cryptography", "tripcodes", "sqlite"]
 repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
-deployed_url = "https://vichar.abhivyakti.space"
+deployed_url = "https://vichar-abhivyakti.vinayakg236.workers.dev/" #[Domain Expired] "https://vichar.abhivyakti.space"
 path = "./projects/vichar_abhivyakti.toml"
 
 [[projects]]
@@ -115,7 +115,7 @@ status = "actively maintained"
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
 tags = ["jekyll", "ruby", "html", "css", "javascript", "static-site", "publishing", "devanagari", "typography", "literature"]
 repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
-deployed_url = "https://kalam.abhivyakti.space"
+deployed_url = "kalamabhivyakti.netlify.app" # [Domain Expired] "https://kalam.abhivyakti.space"
 path = "./projects/kalam_abhivyakti.toml"
 
 [[projects]]
@@ -128,7 +128,7 @@ status = "actively maintained"
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
 tags = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
 repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
-deployed_url = "https://rang.abhivyakti.space"
+deployed_url = "rangabhivyakti.netlify.app" # [Domain Expired]"https://rang.abhivyakti.space"
 path = "./projects/rang_abhivyakti.toml"
 
 [[projects]]

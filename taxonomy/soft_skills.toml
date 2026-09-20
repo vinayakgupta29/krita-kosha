@@ -2,6 +2,7 @@
 
 [cognitive_and_learning]
 first_principles_thinking = { name = "First-Principles Thinking", description = "Dissecting complex engineering challenges into mathematical invariants and physical constraints before selecting runtimes, libraries, or tooling." }
+fast_learner = { name = "Fast Learner", description = "Exceptional velocity in assimilating complex technical specifications, new programming paradigms, and unfamiliar domain codebases to independent production delivery status." }
 rapid_polyglot_acquisition = { name = "Rapid Polyglot Acquisition", description = "Ramping up on unfamiliar programming languages, compilers, protocols, and runtimes to production delivery capability within two weeks." }
 mathematical_modeling = { name = "Mathematical & Algorithmic Modeling", description = "Formulating real-world spatial, geometric, and probabilistic dynamics into discrete algorithms (image-to-world ROIs, O(log n) triage queues, recurrence relations)." }
 systems_intuition = { name = "Low-Level Systems Intuition", description = "Holistic mental modeling of memory layouts, cache locality, network transport overhead, hardware-software boundaries, and concurrency race conditions." }

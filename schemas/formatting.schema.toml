@@ -18,7 +18,9 @@ required_fields = [
   "standard_section_headings",
   "prohibited_elements",
   "date_format",
-  "max_reading_time_seconds"
+  "max_reading_time_seconds",
+  "mandatory_summary_keywords",
+  "summary_requirement"
 ]
 
 [profile_spec]

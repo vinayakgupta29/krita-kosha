@@ -16,7 +16,7 @@ start_date = "2022-08"
 end_date = "2025-07"
 is_current = false
 work_mode = "remote"
-tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+tags = ["healthcare", "distributed-systems", "backend", "go", "flutter", "aws"]
 
 # --- Stage 3: Technical Lead ---
 [[company.roles]]
@@ -35,10 +35,10 @@ technologies = [
   "proto.rest"
 ]
 bullets = [
-  "Directed an engineering division of 15–20 developers decomposing a monolithic Node.js platform into loosely coupled Go microservices, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
+  "Directed an engineering division of 15 to 20 developers managing dedicated Node.js monolithic backends across distinct hospital apps while engineering a focused Go service following the Unix philosophy for core performance, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
   "Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98% under 500+ concurrent requests.",
   "Designed and implemented foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to priority shifts toward high-throughput core services.",
-  "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and containerized microservices to guarantee continuous uptime for hospital clinical workflows."
+  "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and Docker containers for both Node.js monolithic backends and the Go service to guarantee continuous uptime for hospital clinical workflows."
 ]
 
 # --- Stage 2: Systems Engineer ---

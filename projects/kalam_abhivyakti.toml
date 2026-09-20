@@ -6,7 +6,8 @@ references = [
 ]
 
 reference_urls = [
-  "https://kalam.abhivyakti.space/"
+  "kalamabhivyakti.netlify.app",
+  # [Domain Expired] "https://kalam.abhivyakti.space/"
 ]
 
 [project]
@@ -17,7 +18,7 @@ date = "Sep-2026"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
-deployed_url = "https://kalam.abhivyakti.space"
+deployed_url = "kalamabhivyakti.netlify.app" # [Domain Expired] "https://kalam.abhivyakti.space"
 languages = [
   "langs.ruby",
   "langs.html",
@@ -53,3 +54,5 @@ keywords = [
   "typography",
   "literature"
 ]
+[project.comments]
+comment="The Domain [kalam.abhivyakti.space, vichar.abhivyakti.space] is expired as for now and is deplyed on the netlify url"

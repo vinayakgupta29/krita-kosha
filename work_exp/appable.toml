@@ -33,7 +33,7 @@ technologies = [
   "proto.rest"
 ]
 bullets = [
-  "Re-architected legacy client web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65%.",
+  "Re-architected client web and mobile applications, originally envisioned on Firebase, to a dedicated Node.js/TypeScript monolithic backend and PostgreSQL to reduce database expenses, slashing cloud infrastructure costs by up to 65%.",
   "Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise Human Resource Management System (HRMS) to model arbitrarily nested organizational hierarchies and approval graphs.",
   "Designed an offline-first workforce attendance system integrating local biometric verification, geographical validation, cryptographic data integrity checks, and transactional background sync queues.",
   "Engineered a sports venue reservation engine handling multi-variable spatial geometry, dynamic time-dependent pricing tiers, and asynchronous user dispatch pipelines."

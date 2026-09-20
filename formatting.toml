@@ -23,6 +23,9 @@ prohibited_elements = [
 ]
 date_format = "Month YYYY"
 max_reading_time_seconds = 10
+mandatory_summary_keywords = ["Fast Learner"]
+summary_requirement = "Every resume and CV profile summary MUST explicitly incorporate the keyword 'Fast Learner' to reflect candidate velocity and polyglot ramp-up capability."
+
 
 # -----------------------------------------------------------------------------
 # 1-Page Industry Resume Profile

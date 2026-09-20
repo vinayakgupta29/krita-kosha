@@ -51,7 +51,7 @@ benchmarks_and_metrics = "Zero transactional race conditions during concurrent s
 bullets = [
   "Architected an enterprise double-entry accounting and inventory management platform using TypeScript, Node.js, and PostgreSQL, providing real-time ledger auditing and stock control.",
   "Designed a normalized relational database schema with row-level constraints and atomic transactions, eliminating inventory discrepancies and double-spend errors across multi-warehouse transfers.",
-  "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via containerized REST microservices in Docker."
+  "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via a containerized Node.js/TypeScript monolithic backend in Docker to prevent environment and version conflicts."
 ]
 
 keywords = [

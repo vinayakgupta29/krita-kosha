@@ -6,7 +6,8 @@ references = [
 ]
 
 reference_urls = [
-  "https://rang.abhivyakti.space/"
+ "rangabhivyakti.netlify.app",
+ #[Domain Expired] "https://rang.abhivyakti.space/"
 ]
 
 [project]
@@ -17,7 +18,7 @@ date = "Nov-2025"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
-deployed_url = "https://rang.abhivyakti.space"
+deployed_url = "rangabhivyakti.netlify.app" # [Domain Expired] "https://rang.abhivyakti.space"
 languages = [
   "langs.ruby",
   "langs.html",

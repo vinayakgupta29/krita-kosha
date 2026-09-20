@@ -11,7 +11,7 @@ end_date = "present"
 is_current = true
 work_mode = "in-office"
 roles = ["Systems Engineer (Edge AI & Field Deployment)"]
-tags = ["industrial-automation", "edge-cv", "plc", "modbus", "concurrency", "postgres", "django", "tauri"]
+tags = ["field-deployment", "systems-integration", "edge-ai", "vendor-coordination", "troubleshooting", "linux"]
 path = "./work_exp/techasoft.toml"
 
 [[companies]]
@@ -28,7 +28,7 @@ roles = [
   "Systems Engineer",
   "Software Development Intern"
 ]
-tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+tags = ["healthcare", "distributed-systems", "backend", "go", "flutter", "aws"]
 path = "./work_exp/medoc.toml"
 
 [[companies]]
