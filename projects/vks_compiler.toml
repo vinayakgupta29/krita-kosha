@@ -23,7 +23,7 @@ repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
 repo_branch = "monorepo"
 deployed_url = ""
 languages = ["langs.ocaml", "langs.rust"]
-technologies = ["tools.llvm"]
+technologies = ["tools.llvm", "tools.gemini_antigravity"]
 tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
 
 [project.readme_summary]

@@ -93,3 +93,9 @@ category = "templating"
 formatted = "Cloudflare Workers"
 aliases = ["cloudflare", "workers", "worker-threads", "Cloudflare"]
 category = "edge_deployment"
+
+[tools.gemini_antigravity]
+formatted = "Gemini Antigravity"
+aliases = ["gemini", "antigravity", "Gemini Antigravity", "gemini-antigravity"]
+category = "ai_tooling"
+

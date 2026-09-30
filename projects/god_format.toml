@@ -23,12 +23,13 @@ author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/GOD"
 deployed_url = ""
 languages = ["langs.go"]
-technologies = ["proto.god"]
+technologies = ["proto.god", "tools.gemini_antigravity"]
 tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
 
 [project.readme_summary]
 overview = "A human-readable data serialization format designed as a compact, null-safe alternative to JSON. Enforces 'grounded' semantics where every data point corresponds to a concrete zero value (eliminating null-pointer panics) and introduces first-class tabular representations for lists of structured objects."
 formal_grammar_highlights = [
+  "Formalized grammar rules and tabular specification with Gemini Antigravity",
   "Strict EBNF specification: root elements must be an enclosed object '{ ... }'",
   "Grounded type safety: omitted or empty fields default to concrete zero values (0, 0.0, false, '') rather than null/undefined",
   "First-class tabular syntax: '(header:rows)' where column schemas are declared once and shared across rows (e.g. users = (id,name,age:1,'Alice',20;2,'Bob',23;))",
@@ -38,7 +39,7 @@ formal_grammar_highlights = [
 benchmarks_and_metrics = "Reduces network payload sizes by 40% to 50% compared to standard JSON when serializing tabular collections."
 
 bullets = [
-  "Designed a formal EBNF grammar specification for Grounded Object Data (GOD), enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
+  "Designed a formal EBNF grammar specification for Grounded Object Data (GOD) with Gemini Antigravity, enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
   "Engineered a hand-written lexical scanner, recursive-descent parser, and reflection-driven marshaller/unmarshaller in Go, natively supporting struct tags (god:'field_name').",
   "Implemented first-class tabular structures ((header:rows)) that eliminate repetitive key overhead, slashing structured payload sizes by 40–50% compared to equivalent JSON representations.",
   "Packaged and published as an open-source Go module (github.com/vinayakgupta29/GOD) with deterministic formatting and error recovery."

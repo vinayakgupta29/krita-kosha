@@ -63,6 +63,7 @@ When the user asks to generate a resume or CV for a specific job description:
   - `systems_compiler`
   - `fullstack_agentic`
   - `academic_masters`
+- **Mandatory Summary Keyword Invariant**: Regardless of the target archetype, industry, or role, the `Professional Summary` in every generated resume or CV MUST explicitly incorporate the keyword **`Fast Learner`**.
 
 ### Step 2: Score & Select Projects
 - Read `projects/index.toml`.
@@ -74,22 +75,23 @@ When the user asks to generate a resume or CV for a specific job description:
   - For **Creative / Web / Publishing**: Select `kalam_abhivyakti`, `rang_abhivyakti`, `public_abhivyakti`.
 
 ### Step 3: Work Experience Bullet Selection
-- Always include all primary professional companies (`techasoft`, `medoc`, `appable`).
-- For a **1-page resume**: Select 2–3 highest-impact bullets per role that reflect the target JD's required competencies.
-- For a **multi-page CV**: Include all 3–5 bullets per role.
+- Always include all primary verified professional companies (`techasoft`, `medoc`).
+- **Appable Exclusion Note**: **Ignore `appable`** in resumes and CVs. The company refused to provide experience/relieving certificates, meaning no official proof of employment can be provided. Unless the user explicitly directs otherwise, omit Appable from all production resumes and CVs.
+- For a **1-page resume**: Select 3–4 highest-impact bullets per role across the two verified companies (`techasoft` and `medoc`) that reflect the target JD's required competencies.
+- For a **multi-page CV**: Include all bullets for verified roles.
 
 ### Step 4: Strict Vertical Line Budgeting (1-Page Resume)
 To guarantee that a 1-page resume never overflows onto page 2:
 
 | Resume Section | Allocated Line Count | Notes |
 | :--- | :--- | :--- |
-| **Header** | 3–4 lines | Name, Location, Phone, Email, GitHub, LinkedIn |
-| **Professional Summary** | 3–4 lines | Direct from `profile.toml` tailored archetype |
+| **Header** | 3–4 lines | Name, Location, Phone, Email, GitHub, LinkedIn, Portfolio |
+| **Professional Summary** | 3–4 lines | Direct from `profile.toml` tailored archetype (must include **Fast Learner**) |
 | **Technical Skills** | 4–5 lines | Languages, Frameworks, Developer Tools, Databases, Protocols |
-| **Work Experience** | 15–18 lines | 3 companies; Techasoft (4-5 lines), Medoc (6-7 lines), Appable (3-4 lines) |
-| **Key Projects** | 8–10 lines | 2–3 selected projects with 1–2 bullets each |
+| **Work Experience** | 12–15 lines | 2 verified companies; Techasoft (5-6 lines), Medoc (7-9 lines). Appable omitted |
+| **Key Projects** | 10–12 lines | 2–3 selected projects with 1–2 bullets each (e.g. VKS, GOD, PBKE/Bahi Khata) |
 | **Education** | 2–3 lines | Degree, University, CGPA, Graduation Year |
-| **Total Body Lines** | **≤ 40 lines** | Fits comfortably on 1 page with 1.2cm margins at 10pt |
+| **Total Body Lines** | **≤ 40 lines** | Fits comfortably on 1 page with 1.15cm margins at 10pt |
 
 ---
 
@@ -106,6 +108,8 @@ To guarantee that a 1-page resume never overflows onto page 2:
 3. **No Embedded Graphics or Tables for Body Text**: Avoid `tabular` environments for descriptions and bullet items. Use standard `itemize` with zero label indentation.
 4. **Searchable Plain Text**: Always compile with standard Type-1/OTF fonts (`lmodern`, `Computer Modern`, or `TeX Gyre Heros`) with valid unicode mapping.
 5. **No Visual Progress Bars or Star Ratings**: Represent skill levels through years of experience, production deployments, or specific certifications.
+6. **Mandatory "Fast Learner" Keyword**: Every `Professional Summary` must prominently feature the exact keyword **`Fast Learner`** to signal candidate adaptability and rapid technical ramp-up.
+
 
 ---
 
@@ -123,6 +127,30 @@ When emitting LaTeX from the database:
    - `^` $\rightarrow$ `\textasciicircum{}`
    - `~` $\rightarrow$ `\textasciitilde{}`
 4. Ensure hyperlinks use `\href{url}{display_text}` and remain clean and clickable in PDF output.
+
+### 5.1. Local Compilation Protocol (`build-latex`)
+
+To compile LaTeX documents to PDF locally, always execute the user's custom `build-latex` CLI tool. **Never** run `pdflatex` or raw compiler commands directly, and do not attempt to read the script source code.
+
+#### Syntax & Commands:
+```bash
+build-latex [SOURCE] [OPTIONS]
+```
+- `build-latex .` : Compiles using the default source (`main.tex`).
+- `build-latex clean` : Cleans temporary build artifacts (`.latex-build/`).
+- `build-latex <file>.tex` : Compiles the designated `.tex` file.
+- `build-latex <file>.tex -o <output>.pdf` : Compiles to a custom output PDF filename.
+- `build-latex -h` / `build-latex --help` : Displays CLI help.
+
+#### Default Behaviors & Constraints:
+- **Default File Selection**: Looks for `main.tex` first. If absent, finds the first `.tex` file containing `\documentclass` in the current directory (non-recursive).
+- **Naming**: Without `-o`, the generated PDF is automatically named after the project directory (e.g., `vinayak_gupta_resume_ai_executive.pdf`).
+- **Artifact Management**: Build artifacts are stored in `.latex-build/` and automatically cleaned up upon successful compilation. If compilation fails, artifacts and logs are preserved for inspection.
+- **One-Shot Compilation & Verification Chain**: Always chain `build-latex` with `pdfinfo` and `pdftotext` using `&&` to verify both page constraints and text extraction in a single command execution:
+  ```bash
+  build-latex . && pdfinfo <output_file>.pdf | grep "Pages:" && pdftotext <output_file>.pdf -
+  ```
+  This ensures that if compilation fails, downstream commands abort immediately, preventing unnecessary command runs.
 
 ---
 

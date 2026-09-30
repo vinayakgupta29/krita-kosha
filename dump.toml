@@ -1,7 +1,7 @@
 [meta]
 title = "Krita Kosha - Consolidated Master Resume & Portfolio Knowledge Base"
 generator = "dump_data.py (Krita Kosha Data Consolidation Engine)"
-generated_at = "2026-09-09T18:45:17.953676+00:00"
+generated_at = "2026-09-29T17:03:48.264313+00:00"
 version = "1.0.0"
 author = "Vinayak Gupta"
 source_repository = "vinayakgupta29/krita-kosha"
@@ -38,6 +38,7 @@ statement = "Language-agnostic systems engineer driven by first principles and a
 keywords = [
     "Language-Agnostic Engineering",
     "First-Principles Problem Solving",
+    "Fast Learner",
     "Rapid Polyglot Ramp-Up (< 2 Weeks)",
     "Low-Level Systems to Full-Stack Verticality",
     "Sub-Millisecond Concurrency & Performance Tuning",
@@ -45,21 +46,21 @@ keywords = [
     "Compiler & Grammar Construction",
     "Cross-Functional Technical Leadership",
     "Legacy API Reverse Engineering",
-    "Industrial Edge AI & Hardware-Software Interfacing",
+    "Industrial Edge AI & Field Systems Integration",
   ]
 bullets = [
     "Language-Agnostic First-Principles Mastery: Solves core problem mechanics and theoretical invariants before selecting runtimes; demonstrates verified production capability across Go, Rust, OCaml, C/C++, Python, TypeScript, Dart, and Lua, mastering unfamiliar stacks and specifications within two weeks.",
-    "Unbroken Vertical Systems Fluency: Bridges the entire computing spectrum from bare-metal 24V PLC hardware loops under 8ms deadlines and POSIX socket networking, to high-concurrency cloud microservices and cross-platform desktop/mobile interfaces.",
-    "Extreme Latency & Concurrency Optimization: Engineered sub-2ms cryptographic microservices (Go Echo KMS), eliminated database write-concurrency deadlocks in continuous manufacturing telemetry, and authored custom serialization formats (GOD) cutting payload sizes by up to 50%.",
+    "Unbroken Vertical Systems Fluency: Bridges the computing spectrum from industrial edge hardware deployment and on-site sensor troubleshooting, to high-concurrency cloud backend services and cross-platform desktop/mobile interfaces.",
+    "Extreme Latency & Concurrency Optimization: Engineered sub-2ms cryptographic backend services (Go Echo KMS), eliminated query bottlenecks in continuous telemetry, and authored custom serialization formats (GOD) cutting payload sizes by up to 50%.",
     "Cryptographic Data Persistence & Integrity: Architected embedded ACID storage engines, write-ahead logging (WAL), authenticated AES-256-GCM encryption, PBKDF2 key derivation, and multi-phase zero-downtime key rotation protocols.",
-    "High-Stakes Technical Leadership & Delivery: Directed engineering teams of 15–20 developers, onboarded 3 multi-specialty hospitals serving 40,000+ active patients, reverse-engineered legacy national health APIs (ABHA), and coordinated edge AI deployments across 12+ factory sites with zero post-handover escalations.",
+    "High-Stakes Technical Leadership & Delivery: Directed engineering teams of 15 to 20 developers, onboarded 3 multi-specialty hospitals serving 40,000+ active patients, reverse-engineered legacy national health APIs (ABHA), and coordinated edge AI deployments across 12+ factory sites with zero post-handover escalations.",
   ]
 
 [profile.summaries]
-backend_systems = "Versatile, systems-oriented Software Engineer with ~3 years of experience engineering high-concurrency backend architectures, distributed services, and data persistence pipelines using Go, Node.js, and PostgreSQL. Proven track record designing sub-2ms cryptographic microservices, scaling healthcare platforms for 40,000+ active patients across 3 multi-specialty hospitals, and migrating heavy production databases to eliminate write deadlocks. Adept at navigating legacy API specifications and building resilient, decoupled distributed systems."
-systems_compiler = "Systems and Compiler Engineer specializing in formal programming language design, high-performance runtimes, and hardware-software interfacing. Author of the VKS-LLVM functional compiler (OCaml Menhir frontend, Rust/LLVM IR backend) and custom serialization engines (GOD format, lib_pbke). Experienced in deterministic PLC control loops under 8ms latency constraints, native POSIX Linux desktop clients, and memory-safe systems software in Rust and Go."
-fullstack_agentic = "Multi-disciplinary Software Engineer combining low-level systems backend engineering (Go, Rust, Python, C/C++) with cross-platform client development (Flutter, React/TS) and autonomous AI agent workflows. Experienced in constructing deterministic LLM reasoning loops, tool-calling pipelines, and production systems that bridge application software, low-level serializations, and edge hardware execution."
-academic_masters = "Computer Science graduate with deep research interest in programming language semantics, formal grammar design, and distributed systems reliability. Demonstrated independent capability in compiler construction (LLVM IR, affine type systems, LALR parsing), custom mathematical sequence modeling, and cryptographic persistence engines. Seeking advanced academic study to investigate autonomous systems, formal language theory, and high-assurance distributed runtimes."
+backend_systems = "Fast Learner and versatile, systems-oriented Software Engineer with ~3 years of experience engineering high-concurrency backend architectures, distributed services, and data persistence pipelines using Go, Node.js, and PostgreSQL. Proven track record designing sub-2ms cryptographic backend services, scaling healthcare platforms for 40,000+ active patients across 3 multi-specialty hospitals, and optimizing heavy production databases. Adept at navigating legacy API specifications and building resilient, decoupled backend architectures."
+systems_compiler = "Fast Learner and Systems/Compiler Engineer specializing in formal programming language design, high-performance runtimes, and hardware-software interfacing. Author of the VKS-LLVM functional compiler (OCaml Menhir frontend, Rust/LLVM IR backend) and custom serialization engines (GOD format, lib_pbke). Experienced in on-site industrial edge deployment, native POSIX Linux desktop clients, and memory-safe systems software in Rust and Go."
+fullstack_agentic = "Fast Learner and multi-disciplinary Software Engineer combining low-level systems backend engineering (Go, Rust, Python, C/C++) with cross-platform client development (Flutter, React/TS) and autonomous AI agent workflows. Experienced in constructing deterministic LLM reasoning loops, tool-calling pipelines, and production systems that bridge application software, low-level serializations, and edge hardware execution."
+academic_masters = "Fast Learner and Computer Science graduate with deep research interest in programming language semantics, formal grammar design, and distributed systems reliability. Demonstrated independent capability in compiler construction (LLVM IR, affine type systems, LALR parsing), custom mathematical sequence modeling, and cryptographic persistence engines. Seeking advanced academic study to investigate autonomous systems, formal language theory, and high-assurance distributed runtimes."
 
 [research_interests]
 
@@ -125,6 +126,8 @@ prohibited_elements = [
   ]
 date_format = "Month YYYY"
 max_reading_time_seconds = 10
+mandatory_summary_keywords = ["Fast Learner"]
+summary_requirement = "Every resume and CV profile summary MUST explicitly incorporate the keyword 'Fast Learner' to reflect candidate velocity and polyglot ramp-up capability."
 
 [formatting.profiles]
 
@@ -293,6 +296,11 @@ formatted = "Cloudflare Workers"
 aliases = ["cloudflare", "workers", "worker-threads", "Cloudflare"]
 category = "edge_deployment"
 
+[taxonomy.frameworks_and_tools.tools.gemini_antigravity]
+formatted = "Gemini Antigravity"
+aliases = ["gemini", "antigravity", "Gemini Antigravity", "gemini-antigravity"]
+category = "ai_tooling"
+
 [taxonomy.languages]
 
 [taxonomy.languages.langs]
@@ -421,6 +429,10 @@ category = "custom_serialization"
 name = "First-Principles Thinking"
 description = "Dissecting complex engineering challenges into mathematical invariants and physical constraints before selecting runtimes, libraries, or tooling."
 
+[taxonomy.soft_skills.cognitive_and_learning.fast_learner]
+name = "Fast Learner"
+description = "Exceptional velocity in assimilating complex technical specifications, new programming paradigms, and unfamiliar domain codebases to independent production delivery status."
+
 [taxonomy.soft_skills.cognitive_and_learning.rapid_polyglot_acquisition]
 name = "Rapid Polyglot Acquisition"
 description = "Ramping up on unfamiliar programming languages, compilers, protocols, and runtimes to production delivery capability within two weeks."
@@ -536,14 +548,12 @@ end_date = "present"
 is_current = true
 work_mode = "in-office"
 tags = [
-    "industrial-automation",
-    "edge-cv",
-    "plc",
-    "modbus",
-    "concurrency",
-    "postgres",
-    "django",
-    "tauri",
+    "field-deployment",
+    "systems-integration",
+    "edge-ai",
+    "vendor-coordination",
+    "troubleshooting",
+    "linux",
   ]
 references = [
     "./taxonomy/languages.toml",
@@ -559,21 +569,12 @@ role = "Systems Engineer (Edge AI & Field Deployment)"
 employment_type = "full-time"
 start_date = "2026-03"
 end_date = "present"
-technologies = [
-    "fw.django",
-    "fw.tauri",
-    "db.postgres",
-    "proto.modbus",
-    "langs.python",
-    "langs.rust",
-    "tools.linux",
-  ]
+technologies = ["langs.python", "tools.linux"]
 bullets = [
-    "Architected the system software stack for an industrial factory automation line, pairing a Django backend with a native multithreaded Tauri client compiled for bare-metal Linux POSIX environments.",
-    "Engineered deterministic hardware-software control loops via Python and Modbus TCP to interface with 24V Programmable Logic Controllers (PLCs), actuating pneumatic solenoid valves within an 8ms latency budget.",
-    "Developed a mathematical coordinate-transformation pipeline mapping image-space pixel coordinates to real-world millimeter coordinates at 30 FPS, dynamically computing Regions of Interest (ROIs) for automated conveyor inspection.",
-    "Migrated production telemetry storage from file-based SQLite to PostgreSQL with connection pooling and raw query optimization, eliminating write-concurrency deadlocks during continuous factory-floor sensor logging.",
-    "Deployed YOLO models on NVIDIA Jetson Nano edge units across 12+ factory production sites, optimizing TensorRT execution to increase detection accuracy from 85% to 95%+.",
+    "Managed field deployment and on-site implementation of pre-built industrial edge AI inspection systems across 12+ factory production lines, ensuring operational stability in harsh physical plant environments.",
+    "Coordinated directly with third-party conveyor PLC programmers to align machine interfaces, configuring bare-wire relay output pulses from the Techasoft panel to reliably trigger pneumatic rejection of defective packets.",
+    "Diagnosed and resolved plant-specific environmental failures, troubleshooting on-site anomalies caused by machine vibrations, power supply fluctuations, proximity sensor timing, and camera calibration without rewriting core application codebases.",
+    "Facilitated cross-functional collaboration between plant operators and equipment vendors, diagnosing edge cases in handed-down software stacks and adapting pre-made enterprise systems to local plant constraints.",
   ]
 
 [[work_experience.companies]]
@@ -585,7 +586,7 @@ start_date = "2022-08"
 end_date = "2025-07"
 is_current = false
 work_mode = "remote"
-tags = ["healthcare", "distributed-systems", "microservices", "go", "flutter", "aws"]
+tags = ["healthcare", "distributed-systems", "backend", "go", "flutter", "aws"]
 references = [
     "./taxonomy/languages.toml",
     "./taxonomy/frameworks_and_tools.toml",
@@ -610,10 +611,10 @@ technologies = [
     "proto.rest",
   ]
 bullets = [
-    "Directed an engineering division of 15–20 developers decomposing a monolithic Node.js platform into loosely coupled Go microservices, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
+    "Directed an engineering division of 15 to 20 developers managing dedicated Node.js monolithic backends across distinct hospital apps while engineering a focused Go service following the Unix philosophy for core performance, accelerating deployment frequency to daily releases and scaling throughput for 40,000+ patients across 3 multi-specialty hospitals.",
     "Architected and implemented a sub-2ms cryptographic Key Management System (KMS) in Go (Echo) with in-memory caching, cutting key retrieval latency by 98% under 500+ concurrent requests.",
     "Designed and implemented foundational REST integration workflows and interface adapters for India's National Health Authority (NHA) ABHA v3 specifications prior to priority shifts toward high-throughput core services.",
-    "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and containerized microservices to guarantee continuous uptime for hospital clinical workflows.",
+    "Engineered and maintained CI/CD automation pipelines across AWS EC2, S3, and Docker containers for both Node.js monolithic backends and the Go service to guarantee continuous uptime for hospital clinical workflows.",
   ]
 
 [[work_experience.companies.roles]]
@@ -658,6 +659,9 @@ tags = [
     "offline-first",
     "biometrics",
   ]
+ignore = true
+verification_status = "unverified"
+note = "Company refused to issue experience/relieving certificates; no official proof of employment exists. Ignore this engagement in resumes/CVs requiring verifiable background."
 references = [
     "./taxonomy/languages.toml",
     "./taxonomy/frameworks_and_tools.toml",
@@ -681,7 +685,7 @@ technologies = [
     "proto.rest",
   ]
 bullets = [
-    "Re-architected legacy client web and mobile applications from tightly coupled Firebase backends to independently managed Node.js/TypeScript microservices and PostgreSQL, slashing cloud infrastructure costs by up to 65%.",
+    "Re-architected client web and mobile applications, originally envisioned on Firebase, to a dedicated Node.js/TypeScript monolithic backend and PostgreSQL to reduce database expenses, slashing cloud infrastructure costs by up to 65%.",
     "Formulated recursive PostgreSQL queries and Modified Preorder Tree Traversal (MPTT) algorithms for an enterprise Human Resource Management System (HRMS) to model arbitrarily nested organizational hierarchies and approval graphs.",
     "Designed an offline-first workforce attendance system integrating local biometric verification, geographical validation, cryptographic data integrity checks, and transactional background sync queues.",
     "Engineered a sports venue reservation engine handling multi-variable spatial geometry, dynamic time-dependent pricing tiers, and asynchronous user dispatch pipelines.",
@@ -697,7 +701,7 @@ repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
 repo_branch = "monorepo"
 deployed_url = ""
 languages = ["langs.ocaml", "langs.rust"]
-technologies = ["tools.llvm"]
+technologies = ["tools.llvm", "tools.gemini_antigravity"]
 tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
 references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
 reference_urls = [
@@ -786,7 +790,7 @@ repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
 engine_repo_url = "https://github.com/vinayakgupta29/lib_pbke"
 deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
 languages = ["langs.rust", "langs.dart"]
-technologies = ["fw.flutter", "proto.pbke"]
+technologies = ["fw.flutter", "proto.pbke", "tools.gemini_antigravity"]
 tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
 references = [
     "./taxonomy/languages.toml",
@@ -817,7 +821,7 @@ tags = [
 path = "./projects/bahi_khata.toml"
 
 [projects.readme_summary]
-overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store."
+overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store. Gemini Antigravity was leveraged to assist in porting core engine logic to Rust and generating robust Dart FFI bindings."
 architecture = """
 ┌──────────────────────────────────────┐
 │  Flutter Mobile Client (Dart / UI)   │ (Play Store: com.vins.bahi_khata)
@@ -846,7 +850,7 @@ benchmarks_and_metrics = "76% compression reduction (89,674 -> 21,724 bytes); 2x
 bullets = [
     "Engineered an ACID-compliant, crash-resilient storage engine in Rust (lib_pbke) featuring authenticated AES-256-GCM encryption, PBKDF2 key derivation, and atomic disk flush locks.",
     "Integrated native Zstandard (Zstd) compression, slashing encrypted storage footprint by 76% (89KB -> 21KB) with sub-1ms decompression overhead, outperforming previous Dart implementations by 2x.",
-    "Designed a null-safe, panic-caught C ABI Foreign Function Interface (FFI), seamlessly bridging the Rust storage core to a production Flutter mobile application deployed on Google Play.",
+    "Leveraged Gemini Antigravity to port core storage logic to Rust and engineer null-safe, panic-caught C ABI Dart FFI bindings, seamlessly bridging the lib_pbke engine to a production Flutter mobile application deployed on Google Play.",
     "Implemented automated banking SMS parsing via regular expressions and an auto-detecting data interchange pipeline supporting RFC-4180 CSV, JSON, and proprietary PBKE binary formats.",
   ]
 keywords = [
@@ -874,7 +878,7 @@ author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/GOD"
 deployed_url = ""
 languages = ["langs.go"]
-technologies = ["proto.god"]
+technologies = ["proto.god", "tools.gemini_antigravity"]
 tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
 references = ["./taxonomy/languages.toml", "./taxonomy/protocols.toml"]
 reference_urls = [
@@ -899,6 +903,7 @@ path = "./projects/god_format.toml"
 [projects.readme_summary]
 overview = "A human-readable data serialization format designed as a compact, null-safe alternative to JSON. Enforces 'grounded' semantics where every data point corresponds to a concrete zero value (eliminating null-pointer panics) and introduces first-class tabular representations for lists of structured objects."
 formal_grammar_highlights = [
+    "Formalized grammar rules and tabular specification with Gemini Antigravity",
     "Strict EBNF specification: root elements must be an enclosed object '{ ... }'",
     "Grounded type safety: omitted or empty fields default to concrete zero values (0, 0.0, false, '') rather than null/undefined",
     "First-class tabular syntax: '(header:rows)' where column schemas are declared once and shared across rows (e.g. users = (id,name,age:1,'Alice',20;2,'Bob',23;))",
@@ -907,7 +912,7 @@ formal_grammar_highlights = [
   ]
 benchmarks_and_metrics = "Reduces network payload sizes by 40% to 50% compared to standard JSON when serializing tabular collections."
 bullets = [
-    "Designed a formal EBNF grammar specification for Grounded Object Data (GOD), enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
+    "Designed a formal EBNF grammar specification for Grounded Object Data (GOD) with Gemini Antigravity, enforcing zero-value type grounding to eliminate null-pointer exceptions at the protocol layer.",
     "Engineered a hand-written lexical scanner, recursive-descent parser, and reflection-driven marshaller/unmarshaller in Go, natively supporting struct tags (god:'field_name').",
     "Implemented first-class tabular structures ((header:rows)) that eliminate repetitive key overhead, slashing structured payload sizes by 40–50% compared to equivalent JSON representations.",
     "Packaged and published as an open-source Go module (github.com/vinayakgupta29/GOD) with deterministic formatting and error recovery.",
@@ -1181,7 +1186,7 @@ date = "Jun-2026"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
-deployed_url = "https://vichar.abhivyakti.space"
+deployed_url = "https://vichar-abhivyakti.vinayakg236.workers.dev/"
 languages = ["langs.go", "langs.html", "langs.css", "langs.javascript", "langs.typescript"]
 technologies = ["tools.html_template", "tools.cloudflare_workers", "db.sqlite", "proto.rest"]
 tagline = "Real-time anonymous discussion board built with Go SSR (html/template), Cloudflare worker threads, WebSockets, and cryptographic tripcodes"
@@ -1191,7 +1196,7 @@ references = [
     "./taxonomy/databases.toml",
     "./taxonomy/protocols.toml",
   ]
-reference_urls = ["https://vichar.abhivyakti.space/"]
+reference_urls = ["https://vichar-abhivyakti.vinayakg236.workers.dev/"]
 tags = [
     "go",
     "ssr",
@@ -1244,12 +1249,12 @@ date = "Sep-2026"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
-deployed_url = "https://kalam.abhivyakti.space"
+deployed_url = "kalamabhivyakti.netlify.app"
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
 technologies = ["fw.jekyll"]
 tagline = "Multilingual publishing platform for essays, technical literature, and stories built with Ruby and Jekyll, featuring Devanagari and Japanese typography"
 references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
-reference_urls = ["https://kalam.abhivyakti.space/"]
+reference_urls = ["kalamabhivyakti.netlify.app"]
 tags = [
     "jekyll",
     "ruby",
@@ -1288,6 +1293,9 @@ keywords = [
     "literature",
   ]
 
+[projects.comments]
+comment = "The Domain [kalam.abhivyakti.space, vichar.abhivyakti.space] is expired as for now and is deplyed on the netlify url"
+
 [[projects]]
 id = "rang_abhivyakti"
 title = "Hṛdayapāṭaḥ (Digital Art & Visual Gallery)"
@@ -1296,7 +1304,7 @@ date = "Nov-2025"
 status = "actively maintained"
 author = "Vinayak Gupta"
 repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
-deployed_url = "https://rang.abhivyakti.space"
+deployed_url = "rangabhivyakti.netlify.app"
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
 technologies = ["fw.jekyll"]
 tagline = "Responsive digital art gallery and visual narrative portfolio (हृदयपाटः) built with Ruby and Jekyll"
@@ -1305,7 +1313,7 @@ bullets = [
   ]
 keywords = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
 references = ["./taxonomy/languages.toml", "./taxonomy/frameworks_and_tools.toml"]
-reference_urls = ["https://rang.abhivyakti.space/"]
+reference_urls = ["rangabhivyakti.netlify.app"]
 tags = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
 path = "./projects/rang_abhivyakti.toml"
 
@@ -1645,7 +1653,7 @@ benchmarks_and_metrics = "Zero transactional race conditions during concurrent s
 bullets = [
     "Architected an enterprise double-entry accounting and inventory management platform using TypeScript, Node.js, and PostgreSQL, providing real-time ledger auditing and stock control.",
     "Designed a normalized relational database schema with row-level constraints and atomic transactions, eliminating inventory discrepancies and double-spend errors across multi-warehouse transfers.",
-    "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via containerized REST microservices in Docker.",
+    "Engineered role-based access control (RBAC) and real-time financial reporting pipelines (P&L, balance sheets, inventory valuation) served via a containerized Node.js/TypeScript monolithic backend in Docker to prevent environment and version conflicts.",
   ]
 keywords = [
     "accounting",
@@ -1766,6 +1774,8 @@ required_fields = [
     "prohibited_elements",
     "date_format",
     "max_reading_time_seconds",
+    "mandatory_summary_keywords",
+    "summary_requirement",
   ]
 
 [schemas.formatting.profile_spec]

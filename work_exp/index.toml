@@ -43,3 +43,7 @@ work_mode = "remote"
 roles = ["Freelance Full-Stack Software Developer"]
 tags = ["freelance", "database-architecture", "postgresql", "mptt", "offline-first", "biometrics"]
 path = "./work_exp/appable.toml"
+ignore = true
+verification_status = "unverified"
+note = "Company refused to issue experience/relieving certificates; no official proof of employment exists. Ignore this engagement in resumes/CVs requiring verifiable background."
+

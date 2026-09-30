@@ -1,0 +1,549 @@
+.TH JOB_SEARCH_FILTERS 7 "2026-09-27" "Krita Kosha" "Career & Job Search Specification"
+.SH NAME
+job_search_filters \- Target job profiles, search keywords, qualifications,
+and rejection pitfalls for Vinayak Gupta
+
+.SH SYNOPSIS
+.B man ./job_search_filters.txt
+.PP
+.B man ./job_search.txt
+.PP
+.B mandoc \-man ./job_search_filters.txt | less
+.PP
+.B groff \-man \-Tutf8 ./job_search_filters.txt | less
+
+.SH DESCRIPTION
+This document defines the strict filtering criteria, qualification boundaries,
+and target job archetypes for
+.B Vinayak Gupta
+derived from the canonical master repository
+.IR Krita\~Kosha\~(dump.toml) .
+.PP
+Its primary objective is to prevent wasted job applications, minimize burnout,
+bypass automated ATS (Applicant Tracking System) rejection filters, and target
+engineering roles matching verified technical strengths.
+
+.SH SECTION 1: PITFALLS & REJECTION ROOT CAUSES
+Analyzing past rejections and interview risks reveals six structural failure
+modes where candidates get eliminated:
+
+.TP
+.B 1. The Graduation Year and YOE Hard Filter
+.B Root Cause:
+B.Tech completion date is
+.B June 2025
+(LNCT University). While technical engineering output spans ~3 calendar years
+(combining internship and full-time delivery across Medoc, Techasoft, and
+Appable), commercial ATS parsers compute:
+.RS
+.IP \(bu 2
+.IR "Years Since Graduation" " = 1 to 2 Years."
+.IP \(bu 2
+Applying for roles titled
+.IR "Senior Software Engineer" " (5+ YOE),"
+.IR "Staff Engineer" " (8+ YOE), or"
+.IR "Engineering / Technical Lead" " (5 to 8+ YOE)"
+triggers an immediate automated discard based on numerical cutoffs.
+.RE
+
+.TP
+.B 2. The Microservices Interview Trap
+.B Root Cause:
+Claiming microservices experience when your actual hands-on production systems
+were robust modular monoliths (Node.js/TypeScript) and single-purpose Unix-style
+services (Go KMS) creates severe interview vulnerability.
+.RS
+.IP \(bu 2
+Microservice interview loops aggressively grill candidates on distributed saga
+patterns, two-phase commits (2PC), Kafka event streaming, distributed tracing
+(Jaeger/OpenTelemetry), and service meshes (Istio/Envoy).
+.IP \(bu 2
+.B The Winning Pitch:
+Be honest and proud of building well-architected modular monoliths with Docker
+container isolation. High-performing engineering teams actively prefer engineers
+who choose modular monoliths over premature, unnecessary microservice complexity.
+.IP \(bu 2
+.B Actionable Bridge:
+To genuinely unlock microservice roles, port
+.B accounting-node.TS
+or
+.B zundrath
+to gRPC and Protocol Buffers, creating demonstrable proof of RPC communication.
+.RE
+
+.TP
+.B 3. Techasoft Framing: Deployment vs. PLC Development
+.B Root Cause:
+Claiming to have engineered PLC control loops or internal database migrations
+at Techasoft when you were part of the on-site deployment team.
+.RS
+.IP \(bu 2
+If an interviewer asks about ladder logic, Modbus register maps, or scan cycle
+timing, a developer who did not build the PLC firmware will struggle.
+.IP \(bu 2
+.B The Real Strength:
+Frame your Techasoft work around
+.B Field Deployment and Systems Integration.
+Highlight your ability to take a handed-down stack, debug physical plant
+anomalies (power fluctuations, mechanical vibrations, sensor jitter), and
+coordinate directly with third-party conveyor PLC programmers over bare-wire
+electrical relay pulses to trigger pneumatic rejection.
+.RE
+
+.TP
+.B 4. The Polyglot Generalist Dilution Trap
+.B Root Cause:
+Demonstrating mastery across OCaml compiler frontends, Rust storage engines,
+Flutter mobile apps, Go backend services, and Arch Linux desktop theming
+creates recruiter confusion when presented on a single generalist resume.
+.RS
+.IP \(bu 2
+Recruiters hiring for a
+.B Backend Go Engineer
+look for microservice patterns, SQL tuning, and API resilience. Seeing Plymouth
+boot splashes and OCaml parsers leads recruiters to assume an unfocused hobbyist.
+.IP \(bu 2
+.B Remedy:
+Deploy strictly segmented 1-page resumes tailored to one of the four defined
+archetypes below.
+.RE
+
+.TP
+.B 5. Domain and Enterprise Stack Mismatches
+.B Root Cause:
+Applying to generic "Full-Stack Developer" listings requiring 3+ years of
+React.js, Next.js, and Redux/Zustand ecosystem familiarity.
+.RS
+.IP \(bu 2
+Frontend recruiters test CSS layout nuances, complex React hooks, and web
+performance profiling, where low-level systems fluency offers zero competitive
+advantage.
+.IP \(bu 2
+Similarly, enterprise listings demanding Spring Boot (Java) or .NET Core (C#)
+reject polyglot candidates on raw keyword matching.
+.RE
+
+.TP
+.B 6. The Standalone "Technical Lead" Title Anomaly
+.B Root Cause:
+Listing "Technical Lead" as a standalone title for a 2025 graduate triggers
+skepticism from corporate HR screeners or flags overqualification for SDE-1
+or SDE-2 bands.
+.RS
+.IP \(bu 2
+.B Remedy:
+Frame the Medoc experience as
+.B "Software Development Engineer / Squad Lead"
+or
+.B "Systems Engineer & Technical Lead"
+to communicate leadership and concurrency ownership without triggering
+automated gatekeeping.
+.RE
+
+.SH SECTION 2: QUALIFIED JOB ARCHETYPES
+
+.SS ARCHETYPE 1: BACKEND SYSTEMS & MODULAR MONOLITHS
+.B Market Volume:
+Extremely High (Primary volume pipeline).
+.PP
+.B Target Experience Required:
+1 to 4 Years (SDE-1, SDE-2, Associate / Mid-Level Backend Engineer).
+.PP
+.B Exact Job Titles to Search:
+.RS
+.IP \(bu 2
+Backend Software Engineer / Backend Developer
+.IP \(bu 2
+Software Development Engineer II (SDE-2) \- Backend
+.IP \(bu 2
+Go / Golang Backend Engineer
+.IP \(bu 2
+Node.js / TypeScript Backend Engineer
+.IP \(bu 2
+API Platform Engineer
+.RE
+.PP
+.B Core Responsibilities Matched:
+.RS
+.IP \(bu 2
+Architecting high-concurrency, modular monolithic backends and single-purpose
+Go services following the Unix philosophy.
+.IP \(bu 2
+Designing high-throughput RESTful endpoints and service contracts.
+.IP \(bu 2
+Relational schema normalization, complex SQL queries, and optimizing heavy
+database read/write workloads in PostgreSQL.
+.IP \(bu 2
+Building sub-2ms cryptographic key management, authentication, and zero-trust
+storage.
+.IP \(bu 2
+Deploying containerized backends via Docker to eliminate version and environment
+conflicts, maintaining CI/CD on AWS (EC2, S3).
+.RE
+.PP
+.B Mandatory Keywords & ATS Terms:
+.RS
+.B Languages:
+Go (Golang), Node.js, TypeScript, Python, SQL (PL/pgSQL).
+.br
+.B Frameworks:
+Echo, Express, Django.
+.br
+.B Databases:
+PostgreSQL, MongoDB, SQLite, Redis.
+.br
+.B Systems & DevOps:
+Docker, Docker Compose, AWS (EC2, S3), CI/CD, REST APIs, Concurrency, ACID,
+Connection Pooling, Key Management System (KMS), Modular Architecture.
+.RE
+.PP
+.B Core Dump Projects to Feature:
+.RS
+.IP \(bu 2
+.B Zundrath KMS:
+Go, Echo, sub-2ms key retrieval under 500+ concurrent requests, PBKDF2,
+AES-256 envelope encryption.
+.IP \(bu 2
+.B Medoc Backend Services:
+Managed dedicated Node.js monoliths per app while building a high-throughput
+Go service for 40,000+ patients across 3 hospitals.
+.IP \(bu 2
+.B Accounting & Inventory Management:
+Node.js/TypeScript, PostgreSQL relational schema, atomic double-entry
+journals, RBAC, containerized in Docker to prevent version conflicts.
+.IP \(bu 2
+.B Vichar Discussion Platform:
+Go SSR, WebSockets, real-time message broadcasting, Cloudflare edge workers.
+.RE
+
+.SS ARCHETYPE 2: SYSTEMS SOFTWARE, COMPILERS & RUNTIMES
+.B Market Volume:
+Medium-Low (High prestige, high compensation, low candidate competition).
+.PP
+.B Target Experience Required:
+0 to 3 Years (Systems Engineer, Infrastructure Engineer, Core Runtimes).
+.PP
+.B Exact Job Titles to Search:
+.RS
+.IP \(bu 2
+Systems Software Engineer
+.IP \(bu 2
+Rust Systems Engineer / Rust Developer
+.IP \(bu 2
+C / C++ Systems Programmer
+.IP \(bu 2
+Compiler Engineer / DevTools Engineer
+.IP \(bu 2
+Core Infrastructure / Platform Engineer
+.IP \(bu 2
+Storage Engine / Database Internals Engineer
+.RE
+.PP
+.B Core Responsibilities Matched:
+.RS
+.IP \(bu 2
+Designing formal language grammars (EBNF), AST data structures, lexical
+scanners, and parsers.
+.IP \(bu 2
+Compiling high-level intermediate representations (HIR) to LLVM IR and
+emitting native x86-64 machine binaries.
+.IP \(bu 2
+Developing crash-safe ACID embedded storage engines with Write-Ahead Logging
+(WAL) and atomic file swaps.
+.IP \(bu 2
+Implementing custom data serialization formats with first-class memory
+grounding and compression.
+.IP \(bu 2
+Constructing low-level networking prototypes in pure C using POSIX socket APIs
+(socket, bind, accept).
+.IP \(bu 2
+Bridging multi-language boundaries via panic-safe C Foreign Function
+Interfaces (FFI).
+.RE
+.PP
+.B Mandatory Keywords & ATS Terms:
+.RS
+.B Languages:
+Rust, C (C99/C11), C++ (C++17/20), OCaml, Go, POSIX Shell.
+.br
+.B Compilers & Grammars:
+LLVM IR, Menhir, ocamllex, Abstract Syntax Tree (AST), Lexer/Parser, EBNF,
+LALR(1), Type Systems, Intermediate Representation.
+.br
+.B Systems Concepts:
+Memory Safety, Zero-Cost Abstractions, C ABI / FFI, POSIX Sockets,
+Zstandard (Zstd), AES-256-GCM, Atomic Disk IO, Valgrind, Linux Systems.
+.RE
+.PP
+.B Core Dump Projects to Feature:
+.RS
+.IP \(bu 2
+.B VKS-LLVM Compiler:
+OCaml Menhir frontend + Rust backend emitting LLVM IR for standalone x86-64
+binaries; zero runtime dependencies.
+.IP \(bu 2
+.B lib_pbke (Personal Bahi Khata):
+ACID storage engine in Rust, FLUSH_LOCK concurrency, Zstd compression (76%
+reduction), panic-caught C ABI FFI.
+.IP \(bu 2
+.B Grounded Object Data (GOD):
+Custom serialization format in Go, EBNF grammar, reflection engine, 40 to 50%
+payload cut vs JSON.
+.IP \(bu 2
+.B HTTP Server in Pure C:
+Zero-dependency HTTP/1.1 server using raw POSIX sockets, connection lifecycles,
+non-blocking I/O.
+.RE
+
+.SS ARCHETYPE 3: FIELD DEPLOYMENT & SYSTEMS INTEGRATION
+.B Market Volume:
+Medium-High (Edge AI, industrial inspection, smart factory automation).
+.PP
+.B Target Experience Required:
+1 to 3 Years (Field Deployment Engineer, Systems Integration Engineer,
+Edge AI Deployment Specialist).
+.PP
+.B Exact Job Titles to Search:
+.RS
+.IP \(bu 2
+Field Deployment Engineer (Edge AI / Vision)
+.IP \(bu 2
+Systems Integration Engineer
+.IP \(bu 2
+Edge AI Deployment Specialist
+.IP \(bu 2
+Computer Vision Field Engineer
+.IP \(bu 2
+Technical Implementation Engineer
+.RE
+.PP
+.B Core Responsibilities Matched:
+.RS
+.IP \(bu 2
+Managing on-site rollout, verification, and commissioning of pre-built edge AI
+inspection systems across live factory lines.
+.IP \(bu 2
+Coordinating machine signal interfaces between vendor equipment, configuring
+bare-wire electrical pulse relays to trigger pneumatic ejection of defective
+products.
+.IP \(bu 2
+Diagnosing and resolving physical plant anomalies, including power supply
+fluctuations, machine vibrations, proximity sensor timing, and camera calibration.
+.IP \(bu 2
+Bridging communication between plant operators and external technical teams,
+adapting pre-made legacy stacks to operational constraints without code rewrites.
+.IP \(bu 2
+Deploying and verifying pre-built computer vision models (YOLO) on NVIDIA
+Jetson edge devices in native Linux environments.
+.RE
+.PP
+.B Mandatory Keywords & ATS Terms:
+.RS
+.B Integration & Hardware:
+Field Deployment, Systems Integration, Edge AI, NVIDIA Jetson, Hardware Signal
+Interfacing, Relay Outputs, Electrical Pulse Triggering, Sensor Calibration.
+.br
+.B Troubleshooting & Environment:
+On-Site Commissioning, Vibration Damping, Power Stability Troubleshooting,
+Proximity Sensors, Factory Automation, Legacy Stack Adaptation.
+.br
+.B Software Tools:
+Python, Linux / POSIX, Bash, Docker, Edge Computing.
+.RE
+.PP
+.B Core Dump Experience to Feature:
+.RS
+.IP \(bu 2
+.B Techasoft Field Deployment:
+On-site implementation across 12+ factory lines; inter-vendor PLC pulse relay
+coordination over bare wire; environmental troubleshooting of plant vibrations,
+power drops, and proximity sensors.
+.IP \(bu 2
+.B System for Cooking (Patent):
+Sensor feedback loops, actuator regulation, deterministic process sequencing
+(Indian Patent Office 202521070227).
+.RE
+
+.SS ARCHETYPE 4: CROSS-PLATFORM MOBILE & NATIVE SYSTEMS
+.B Market Volume:
+Medium (Fintech, offline-first mobile applications, secure personal tools).
+.PP
+.B Target Experience Required:
+1 to 3 Years (Mobile Software Engineer, Flutter Developer).
+.PP
+.B Exact Job Titles to Search:
+.RS
+.IP \(bu 2
+Flutter / Mobile Software Engineer
+.IP \(bu 2
+Cross-Platform Mobile Application Developer
+.IP \(bu 2
+Mobile Systems Engineer (Native FFI / Offline-First)
+.RE
+.PP
+.B Core Responsibilities Matched:
+.RS
+.IP \(bu 2
+Developing responsive, cross-platform mobile applications in Flutter/Dart
+published to Google Play.
+.IP \(bu 2
+Binding high-performance native Rust/C libraries to Dart through C FFI.
+.IP \(bu 2
+Architecting local-first, offline-first databases with zero-knowledge
+AES-256-GCM encryption.
+.IP \(bu 2
+Building automated background SMS transaction parsers, ledger calculations,
+and export pipelines.
+.RE
+.PP
+.B Mandatory Keywords & ATS Terms:
+Flutter, Dart, Rust FFI, C ABI, AES-256-GCM, Zstandard (Zstd), SQLite,
+Mobile Security, Google Play Store, REST APIs, Offline-First.
+.PP
+.B Core Dump Projects to Feature:
+.RS
+.IP \(bu 2
+.B Personal Bahi Khata:
+Live on Google Play Store (com.vins.bahi_khata); Flutter UI bound to Rust
+lib_pbke via C FFI; AES-256-GCM; Zstd; banking SMS regex extraction.
+.IP \(bu 2
+.B Medoc Clinical Mobile Client:
+Flutter clinical screens, responsive triage workflows, local cache sync.
+.RE
+
+.SH SECTION 3: ROLES TO IMMEDIATELY EXCLUDE (RED FLAG FILTERS)
+To preserve search velocity and avoid automatic rejection, apply strict
+negative filters against the following roles:
+
+.TP
+.B 1. Roles Demanding 5+ Years of Experience
+Exclude: "Senior Software Engineer", "Staff Engineer", "Principal Engineer",
+"Engineering Manager", "Technical Director".
+.br
+.B Rationale:
+Automated ATS filters flag graduation year (2025) and reject before human
+engineering review.
+
+.TP
+.B 2. Dedicated Web Frontend Roles
+Exclude: "React Developer", "Next.js Engineer", "Angular Developer",
+"Frontend UI/UX Engineer".
+.br
+.B Rationale:
+Interviews focus on CSS animations, DOM hydration, and state management
+nuances, where your low-level systems strength provides zero competitive edge.
+
+.TP
+.B 3. Enterprise Legacy Stacks
+Exclude: "Java / Spring Boot Developer", "C# / .NET Developer",
+"SAP / Salesforce Consultant".
+.br
+.B Rationale:
+Corporate banks and enterprise consultancies use strict keyword filters for
+3+ years of Spring/Hibernate or .NET runtime maintenance.
+
+.TP
+.B 4. Theoretical AI Research / Data Science
+Exclude: "Data Scientist", "Machine Learning Researcher", "NLP Scientist",
+"AI Research Scientist".
+.br
+.B Rationale:
+Requires post-graduate academic research in model loss curves, backpropagation
+mathematics, or PyTorch architecture training, rather than your edge inference
+and systems interfacing capability.
+
+.TP
+.B 5. Dedicated PLC Firmware / Automation Developer
+Exclude: "PLC Programmer", "Automation Control Engineer", "SCADA Developer".
+.br
+.B Rationale:
+These roles require deep expertise in PLC ladder logic, structured text, and
+industrial bus architectures rather than software deployment and integration.
+
+.SH SECTION 4: PLATFORM SEARCH FILTERS & BOOLEAN QUERIES
+
+.SS PORTAL CONFIGURATION
+.IP \(bu 2
+.B Experience Level:
+Select "Entry Level" (0 to 2 years) and "Associate / Mid Level" (2 to 4 years).
+NEVER select "Senior", "Lead", or "Executive".
+.IP \(bu 2
+.B Locations:
+Bangalore, Remote (Global / India), Hybrid.
+
+.SS COPY-PASTE BOOLEAN SEARCH STRINGS
+.TP
+.B For Backend Go / API Platform Roles:
+.nf
+("Golang" OR "Go") AND ("PostgreSQL" OR "Postgres")
+  AND ("Backend" OR "API") AND ("Docker" OR "Linux")
+.fi
+
+.TP
+.B For Systems / Rust / Low-Level Roles:
+.nf
+("Rust" OR "C++" OR "Systems Engineer") AND ("Linux" OR "POSIX")
+  AND ("Concurrency" OR "Low-Level" OR "Storage" OR "Compiler")
+.fi
+
+.TP
+.B For Field Deployment / Systems Integration Roles:
+.nf
+("Deployment Engineer" OR "Systems Integration" OR "Field Engineer")
+  AND ("Edge AI" OR "Linux" OR "Computer Vision" OR "IoT")
+.fi
+
+.TP
+.B For Node.js / TypeScript Backend Roles:
+.nf
+("Node.js" OR "TypeScript") AND ("PostgreSQL" OR "SQL")
+  AND ("Backend" OR "API" OR "Docker") NOT ("React" AND "Next.js")
+.fi
+
+.SH SECTION 5: RESUME TAILORING SPECIFICATION (KRITA KOSHA)
+When generating resumes via Krita Kosha for a target job description:
+
+.IP 1. 4
+.B Select Canonical Summary Archetype:
+.RS
+.IP \(bu 2
+For Go/Backend: Use
+.IR backend_systems " from profile.toml."
+.IP \(bu 2
+For Rust/Compilers: Use
+.IR systems_compiler " from profile.toml."
+.IP \(bu 2
+For Field Deployment: Place
+.IR Techasoft " and deployment soft skills prominently."
+.RE
+
+.IP 2. 4
+.B Mandatory Keyword Invariant:
+Every Professional Summary MUST explicitly incorporate the phrase
+.B "Fast Learner"
+to reinforce polyglot ramp-up velocity.
+
+.IP 3. 4
+.B Title Formatting on Resume:
+Format Medoc experience as:
+.B "Systems Engineer / Squad Lead"
+or
+.B "Software Development Engineer & Tech Lead"
+to communicate leadership while bypassing senior-years automated screens.
+
+.IP 4. 4
+.B Vertical Line Budgeting:
+Maintain total body lines <= 40 lines (1 page, single column, margins 1.2cm,
+10pt lmodern font) adhering to ATS standard section headings.
+
+.SH SEE ALSO
+.BR dump.toml (5),
+.BR AGENT.md (7),
+.BR profile.toml (5)
+
+.SH AUTHOR
+Vinayak Gupta <vinayakg236@gmail.com>
+.br
+Portfolio: https://vinayakgupta29.github.io/portfolio
+.br
+Master Repository: vinayakgupta29/krita-kosha

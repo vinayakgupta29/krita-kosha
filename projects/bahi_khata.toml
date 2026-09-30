@@ -27,11 +27,11 @@ repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
 engine_repo_url = "https://github.com/vinayakgupta29/lib_pbke"
 deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
 languages = ["langs.rust", "langs.dart"]
-technologies = ["fw.flutter", "proto.pbke"]
+technologies = ["fw.flutter", "proto.pbke", "tools.gemini_antigravity"]
 tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
 
 [project.readme_summary]
-overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store."
+overview = "An offline-first, privacy-centric personal accounting system combining an ACID-compliant embedded storage engine written in Rust (lib_pbke) with a cross-platform mobile client built in Flutter, live on the Google Play Store. Gemini Antigravity was leveraged to assist in porting core engine logic to Rust and generating robust Dart FFI bindings."
 architecture = """
 ┌──────────────────────────────────────┐
 │  Flutter Mobile Client (Dart / UI)   │ (Play Store: com.vins.bahi_khata)
@@ -61,7 +61,7 @@ benchmarks_and_metrics = "76% compression reduction (89,674 -> 21,724 bytes); 2x
 bullets = [
   "Engineered an ACID-compliant, crash-resilient storage engine in Rust (lib_pbke) featuring authenticated AES-256-GCM encryption, PBKDF2 key derivation, and atomic disk flush locks.",
   "Integrated native Zstandard (Zstd) compression, slashing encrypted storage footprint by 76% (89KB -> 21KB) with sub-1ms decompression overhead, outperforming previous Dart implementations by 2x.",
-  "Designed a null-safe, panic-caught C ABI Foreign Function Interface (FFI), seamlessly bridging the Rust storage core to a production Flutter mobile application deployed on Google Play.",
+  "Leveraged Gemini Antigravity to port core storage logic to Rust and engineer null-safe, panic-caught C ABI Dart FFI bindings, seamlessly bridging the lib_pbke engine to a production Flutter mobile application deployed on Google Play.",
   "Implemented automated banking SMS parsing via regular expressions and an auto-detecting data interchange pipeline supporting RFC-4180 CSV, JSON, and proprietary PBKE binary formats."
 ]
 keywords = [

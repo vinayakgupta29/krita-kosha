@@ -17,6 +17,9 @@ end_date = "2024-06"
 is_current = false
 work_mode = "remote"
 tags = ["freelance", "database-architecture", "postgresql", "mptt", "offline-first", "biometrics"]
+ignore = true
+verification_status = "unverified"
+note = "Company refused to issue experience/relieving certificates; no official proof of employment exists. Ignore this engagement in resumes/CVs requiring verifiable background."
 
 [[company.roles]]
 id = "appable_freelance"
