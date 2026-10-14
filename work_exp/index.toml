@@ -1,5 +1,6 @@
 # Work Experience Index Catalog
-# Glanced at by agents to cherry-pick relevant companies & roles
+# Scanned by agents to assess professional engineering track records,
+# demonstrated responsibilities, technical leadership, and production scale.
 
 [[companies]]
 id = "techasoft"
@@ -10,8 +11,50 @@ start_date = "2026-03"
 end_date = "present"
 is_current = true
 work_mode = "in-office"
+lifecycle = "actively-employed"
 roles = ["Systems Engineer (Edge AI & Field Deployment)"]
-tags = ["field-deployment", "systems-integration", "edge-ai", "vendor-coordination", "troubleshooting", "linux"]
+
+domains = [
+    "industrial-automation",
+    "edge-ai",
+    "systems-integration",
+    "field-engineering",
+  ]
+competencies = [
+    "field-deployment-management",
+    "systems-integration",
+    "plc-pneumatic-rejection-interfacing",
+    "relay-pulse-configuration",
+    "sensor-timing-and-camera-calibration",
+    "hardware-anomaly-troubleshooting",
+    "cross-functional-vendor-coordination",
+  ]
+languages = ["langs.python"]
+technologies = ["langs.python", "tools.linux"]
+target_roles = [
+    "systems-engineer",
+    "field-deployment-engineer",
+    "systems-integration-engineer",
+    "edge-ai-engineer",
+  ]
+
+evidence = { ownership = "field-deployment-lead", depth = "on-site-industrial-automation", scale = "12-plus-factory-production-lines", outcomes = [
+    "12-plus-factory-production-lines-deployed",
+    "bare-wire-relay-pneumatic-rejection-configured",
+    "on-site-hardware-and-sensor-troubleshooting",
+  ] }
+academic_applicability = { subject_areas = ["cyber-physical-systems", "systems-integration"], theoretical_foundations = [
+    "hardware-software-interfacing",
+    "sensor-calibration-under-environmental-noise",
+  ] }
+tags = [
+    "field-deployment",
+    "systems-integration",
+    "edge-ai",
+    "vendor-coordination",
+    "troubleshooting",
+    "linux",
+  ]
 path = "./work_exp/techasoft.toml"
 
 [[companies]]
@@ -23,12 +66,68 @@ start_date = "2022-08"
 end_date = "2025-07"
 is_current = false
 work_mode = "remote"
-roles = [
-  "Technical Lead",
-  "Systems Engineer",
-  "Software Development Intern"
-]
-tags = ["healthcare", "distributed-systems", "backend", "go", "flutter", "aws"]
+lifecycle = "completed"
+roles = ["Technical Lead", "Systems Engineer", "Software Development Intern"]
+
+domains = [
+    "healthcare-systems",
+    "distributed-systems",
+    "backend-engineering",
+    "health-informatics",
+  ]
+competencies = [
+    "engineering-division-leadership",
+    "monolith-to-microservices-migration",
+    "cryptographic-kms-design",
+    "legacy-api-reverse-engineering",
+    "national-health-api-integration",
+    "emergency-triage-algorithms",
+    "aws-docker-ci-cd-pipelines",
+  ]
+languages = ["langs.go", "langs.javascript", "langs.sql"]
+technologies = [
+    "langs.go",
+    "fw.echo",
+    "fw.node",
+    "fw.flutter",
+    "db.postgres",
+    "db.mongodb",
+    "tools.aws",
+    "tools.docker",
+    "proto.rest",
+  ]
+target_roles = [
+    "technical-lead",
+    "backend-systems-engineer",
+    "distributed-systems-engineer",
+    "cloud-infrastructure-engineer",
+    "full-stack-engineer",
+  ]
+
+evidence = { ownership = "technical-lead-and-systems-architect", depth = "monolith-decomposition-and-microservices", scale = "40000-active-patients-across-3-hospitals", outcomes = [
+    "sub-2ms-kms-retrieval",
+    "abha-v3-integration",
+    "15-to-20-engineer-division-led",
+    "o-log-n-triage-queue-optimization",
+  ] }
+academic_applicability = { subject_areas = ["health-informatics", "distributed-systems", "applied-cryptography"], theoretical_foundations = [
+    "priority-queue-triage-algorithms",
+    "envelope-encryption-and-kms",
+    "microservices-decoupling-patterns",
+  ] }
+tags = [
+    "healthcare",
+    "distributed-systems",
+    "backend",
+    "go",
+    "flutter",
+    "aws",
+    "kms",
+    "cryptography",
+    "abha",
+    "rest-api",
+    "technical-leadership",
+  ]
 path = "./work_exp/medoc.toml"
 
 [[companies]]
@@ -40,10 +139,55 @@ start_date = "2023-07"
 end_date = "2024-06"
 is_current = false
 work_mode = "remote"
+lifecycle = "completed"
 roles = ["Freelance Full-Stack Software Developer"]
-tags = ["freelance", "database-architecture", "postgresql", "mptt", "offline-first", "biometrics"]
-path = "./work_exp/appable.toml"
 ignore = true
 verification_status = "unverified"
 note = "Company refused to issue experience/relieving certificates; no official proof of employment exists. Ignore this engagement in resumes/CVs requiring verifiable background."
 
+domains = ["full-stack-engineering", "database-architecture", "offline-first-systems"]
+competencies = [
+    "firebase-to-relational-migration",
+    "hierarchical-mptt-query-optimization",
+    "offline-first-biometric-sync",
+    "multi-variable-spatial-scheduling",
+    "cross-platform-client-development",
+  ]
+languages = ["langs.typescript"]
+technologies = [
+    "fw.node",
+    "langs.typescript",
+    "db.postgres",
+    "fw.flutter",
+    "db.mongodb",
+    "proto.rest",
+  ]
+target_roles = [
+    "full-stack-engineer",
+    "database-architect",
+    "freelance-developer",
+    "backend-engineer",
+  ]
+
+evidence = { ownership = "solo-freelance-architect", depth = "database-re-architecture-and-client-development", outcomes = [
+    "up-to-65-percent-cloud-cost-reduction",
+    "offline-first-biometric-attendance",
+    "mptt-hierarchical-query-optimization",
+    "production-postgresql-migration",
+  ] }
+academic_applicability = { subject_areas = ["database-systems", "spatial-indexing"], theoretical_foundations = ["modified-preorder-tree-traversal", "spatial-geometry-scheduling"] }
+tags = [
+    "freelance",
+    "database-architecture",
+    "postgresql",
+    "mptt",
+    "offline-first",
+    "biometrics",
+    "typescript",
+    "node",
+    "flutter",
+    "mongodb",
+    "rest-api",
+    "spatial-geometry",
+  ]
+path = "./work_exp/appable.toml"

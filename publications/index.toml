@@ -1,4 +1,6 @@
 # Publications, Patents, and Working Papers Index
+# Scanned by agents to match intellectual property, published literature,
+# and ongoing theoretical research against advanced roles and graduate programs.
 
 [[books]]
 id = "book_life"
@@ -8,6 +10,31 @@ author = "Vinayak Gupta"
 publisher = "Sangam Publications"
 year = 2023
 status = "published"
+lifecycle = "published"
+
+domains = ["creative-writing", "philosophy", "literary-arts"]
+competencies = [
+    "literary-composition",
+    "existential-analysis",
+    "philosophical-inquiry",
+    "long-form-editorial-publishing",
+  ]
+target_roles = [
+    "technical-writer",
+    "academic-writer",
+    "creative-technologist",
+    "editorial-contributor",
+  ]
+evidence = { status = "published-book", publisher = "Sangam Publications", ownership = "solo-author" }
+tags = [
+    "poetry",
+    "literature",
+    "book",
+    "sangam-publications",
+    "philosophy",
+    "editorial",
+    "creative-writing",
+  ]
 path = "./publications/book_life.toml"
 
 [[patents]]
@@ -18,6 +45,34 @@ application_id = "202521070227"
 office = "Indian Patent Office"
 year = 2025
 status = "published"
+lifecycle = "published-application"
+
+domains = ["embedded-control-systems", "automation-engineering", "cyber-physical-systems"]
+competencies = [
+    "closed-loop-thermal-control",
+    "sensor-actuator-sequencing",
+    "deterministic-hardware-sequencing",
+    "automation-system-design",
+  ]
+technologies = ["control-systems", "automation", "thermal-sensors", "actuators"]
+target_roles = [
+    "automation-engineer",
+    "embedded-systems-engineer",
+    "hardware-integration-engineer",
+    "ip-researcher",
+  ]
+evidence = { status = "published-patent-application", authority = "Indian Patent Office", application_id = "202521070227", ownership = "co-author" }
+academic_applicability = { subject_areas = ["control-theory", "cyber-physical-systems"], theoretical_foundations = ["sensor-feedback-regulation", "deterministic-actuation-sequencing"] }
+tags = [
+    "patent",
+    "hardware",
+    "control-systems",
+    "automation",
+    "sensors",
+    "thermal-regulation",
+    "actuators",
+    "indian-patent-office",
+  ]
 path = "./publications/patent_cooking.toml"
 
 [[manuscripts]]
@@ -25,7 +80,40 @@ id = "draft_encryption"
 title = "A Novel approach to Encryption for Data Security in Mobile Applications"
 author = "Vinayak Gupta"
 status = "Manuscript draft under preparation"
+lifecycle = "draft-in-progress"
 area = "Backend systems / cryptography / Secure Systems design"
+
+domains = ["applied-cryptography", "mobile-security", "database-internals"]
+competencies = [
+    "zero-knowledge-authenticated-encryption",
+    "aes-256-gcm-design",
+    "pbkdf2-key-derivation",
+    "embedded-sqlite-wal-persistence",
+  ]
+technologies = ["proto.pbke", "db.sqlite"]
+target_roles = [
+    "security-researcher",
+    "cryptography-engineer",
+    "backend-security-engineer",
+    "graduate-researcher",
+  ]
+evidence = { status = "manuscript-under-preparation", scope = "independent-research-paper", empirical_basis = "tested-in-lib_pbke-storage-engine" }
+academic_applicability = { subject_areas = ["applied-cryptography", "information-security", "embedded-systems"], theoretical_foundations = [
+    "authenticated-symmetric-encryption",
+    "pbkdf2-key-stretching",
+    "wal-crash-resilience",
+  ] }
+tags = [
+    "cryptography",
+    "mobile-security",
+    "aes-256-gcm",
+    "pbke",
+    "embedded-storage",
+    "zero-knowledge",
+    "wal",
+    "sqlite",
+    "key-derivation",
+  ]
 path = "./publications/draft_encryption.toml"
 
 [[manuscripts]]
@@ -33,5 +121,36 @@ id = "stats_masters_research_draft_0"
 title = "Applied Statistics & Mathematical Concepts in Real-World AI Systems"
 author = "Vinayak Gupta"
 status = "Exploratory research draft"
+lifecycle = "exploratory-draft"
 area = "Applied Mathematics & Machine Learning Theory"
+
+domains = ["applied-statistics", "machine-learning-theory", "computational-mathematics"]
+competencies = [
+    "probabilistic-modeling",
+    "statistical-foundations-of-deep-learning",
+    "sequence-recurrence-analysis",
+    "mathematical-evaluation-methods",
+  ]
+technologies = ["langs.python"]
+target_roles = [
+    "machine-learning-researcher",
+    "applied-mathematician",
+    "ai-theory-graduate-student",
+    "data-scientist",
+  ]
+evidence = { status = "exploratory-research-draft", scope = "graduate-research-proposal-and-working-paper", empirical_basis = "grounded-in-integer-sequences-and-ai-systems" }
+academic_applicability = { subject_areas = ["applied-statistics", "machine-learning-theory", "discrete-mathematics"], theoretical_foundations = [
+    "probabilistic-inference",
+    "data-distribution-modeling",
+    "asymptotic-recurrence-relations",
+  ] }
+tags = [
+    "applied-statistics",
+    "machine-learning",
+    "mathematics",
+    "deep-learning-theory",
+    "recurrence-relations",
+    "probabilistic-modeling",
+    "ai-foundations",
+  ]
 path = "./research_interests.toml"

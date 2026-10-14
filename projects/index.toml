@@ -1,5 +1,6 @@
 # Project Catalog Index
-# Scanned by agents to cherry-pick matching projects against target JDs
+# Scanned by agents to discover, score, and cherry-pick candidate projects
+# against target Job Descriptions, research proposals, and academic applications.
 
 [[projects]]
 id = "vks_compiler"
@@ -8,8 +9,54 @@ category = "Compilers & Systems"
 tagline = "Statically typed functional systems language with OCaml frontend (Menhir), Rust backend, and native x86-64 code generation via LLVM"
 date = "Jul-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["compilers", "systems-programming", "programming-languages"]
+competencies = [
+    "lalr-parsing",
+    "lexer-generator",
+    "semantic-type-checking",
+    "intermediate-representation",
+    "llvm-ir-generation",
+    "algebraic-data-types",
+    "pattern-matching",
+    "native-code-generation",
+  ]
 languages = ["langs.ocaml", "langs.rust"]
-tags = ["compiler", "llvm", "ast", "lexer", "parser", "menhir", "ocamllex", "rust", "ocaml", "systems-programming"]
+technologies = ["tools.llvm", "tools.gemini_antigravity"]
+target_roles = [
+    "compiler-engineer",
+    "systems-software-engineer",
+    "llvm-backend-developer",
+    "programming-languages-researcher",
+  ]
+
+evidence = { ownership = "sole-architect", depth = "multi-stage-compiler-pipeline", outcomes = [
+    "standalone-x86-64-binaries",
+    "zero-external-runtime-dependencies",
+    "cli-and-repl-tooling",
+  ] }
+academic_applicability = { subject_areas = ["programming-language-theory", "compiler-construction", "formal-semantics"], theoretical_foundations = [
+    "lalr-parsing",
+    "type-inference",
+    "pattern-matching-compilation",
+    "llvm-intermediate-representation",
+  ] }
+tags = [
+    "compiler",
+    "llvm",
+    "ast",
+    "lexer",
+    "parser",
+    "menhir",
+    "ocamllex",
+    "rust",
+    "ocaml",
+    "systems-programming",
+    "type-systems",
+    "functional-programming",
+    "x86-64",
+  ]
 repo_url = "https://github.com/vinayakgupta29/llvm-compiler"
 deployed_url = ""
 path = "./projects/vks_compiler.toml"
@@ -21,8 +68,60 @@ category = "Systems & Mobile Engineering"
 tagline = "Offline-first financial ledger featuring an ACID-compliant embedded storage engine in Rust and cross-platform Flutter client deployed on Google Play"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = [
+    "embedded-systems",
+    "database-internals",
+    "mobile-engineering",
+    "applied-cryptography",
+  ]
+competencies = [
+    "acid-storage-engine",
+    "write-ahead-logging",
+    "authenticated-encryption",
+    "ffi-data-marshaling",
+    "offline-first-architecture",
+    "mobile-ui-engineering",
+  ]
 languages = ["langs.rust", "langs.dart"]
-tags = ["rust", "flutter", "embedded-database", "cryptography", "aes-256-gcm", "zstd", "compression", "ffi", "wasm", "offline-first", "acid"]
+technologies = ["fw.flutter", "proto.pbke", "tools.gemini_antigravity"]
+target_roles = [
+    "systems-engineer",
+    "mobile-software-engineer",
+    "rust-engineer",
+    "database-engineer",
+    "security-engineer",
+  ]
+
+evidence = { ownership = "sole-architect", depth = "cross-platform-engine-and-client", deployment = "google-play-store", outcomes = [
+    "acid-crash-resilience",
+    "aes-256-gcm-zero-knowledge",
+    "76-percent-zstd-compression",
+    "sub-1ms-ffi-boundary-latency",
+    "published-android-app",
+  ] }
+academic_applicability = { subject_areas = ["database-systems", "applied-cryptography"], theoretical_foundations = [
+    "acid-transactions",
+    "write-ahead-logging",
+    "authenticated-symmetric-encryption",
+    "pbkdf2-key-derivation",
+  ] }
+tags = [
+    "rust",
+    "flutter",
+    "embedded-database",
+    "cryptography",
+    "aes-256-gcm",
+    "zstd",
+    "compression",
+    "ffi",
+    "wasm",
+    "offline-first",
+    "acid",
+    "ledger",
+    "mobile",
+  ]
 repo_url = "https://github.com/vinayakgupta29/personal_bahi_khata"
 deployed_url = "https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
 path = "./projects/bahi_khata.toml"
@@ -34,8 +133,50 @@ category = "Compilers & Serialization"
 tagline = "Lightweight, null-safe data serialization format with native tabular syntax, EBNF grammar, and Go reflection engine reducing payload sizes by up to 50%"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["serialization", "compiler-theory", "systems-software"]
+competencies = [
+    "formal-ebnf-grammar",
+    "lexer-parser-architecture",
+    "reflection-engine",
+    "zero-null-enforcement",
+    "data-compactness-optimization",
+  ]
 languages = ["langs.go"]
-tags = ["go", "serialization", "ebnf", "compiler", "lexer", "parser", "reflection", "performance", "zero-null"]
+technologies = ["proto.god", "tools.gemini_antigravity"]
+target_roles = [
+    "systems-engineer",
+    "backend-engineer",
+    "compiler-engineer",
+    "distributed-systems-engineer",
+  ]
+
+evidence = { ownership = "sole-author", depth = "formal-grammar-and-runtime-library", outcomes = [
+    "50-percent-payload-reduction-vs-json",
+    "zero-null-guarantee",
+    "reflection-based-marshaler",
+    "grammar-specification",
+  ] }
+academic_applicability = { subject_areas = ["formal-languages", "data-representation-theory"], theoretical_foundations = [
+    "ebnf-grammars",
+    "deterministic-parsing",
+    "type-introspection",
+    "canonical-serialization",
+  ] }
+tags = [
+    "go",
+    "serialization",
+    "ebnf",
+    "compiler",
+    "lexer",
+    "parser",
+    "reflection",
+    "performance",
+    "zero-null",
+    "tabular-syntax",
+    "data-interchange",
+  ]
 repo_url = "https://github.com/vinayakgupta29/GOD"
 deployed_url = ""
 path = "./projects/god_format.toml"
@@ -47,8 +188,57 @@ category = "Distributed Systems & Cryptography"
 tagline = "High-concurrency cryptographic key management service in Go with automated rotation, HMAC client authorization, and sub-2ms retrieval latency"
 date = "Aug-2025"
 status = "archived"
+lifecycle = "completed-archived"
+
+domains = [
+    "distributed-systems",
+    "applied-cryptography",
+    "backend-security",
+    "cloud-services",
+  ]
+competencies = [
+    "high-throughput-http-service",
+    "symmetric-key-lifecycle",
+    "automated-key-rotation",
+    "hmac-authentication",
+    "envelope-encryption",
+    "containerized-deployment",
+  ]
 languages = ["langs.go"]
-tags = ["go", "echo", "cryptography", "kms", "aes-256", "hmac", "pbkdf2", "key-rotation", "docker", "distributed-systems"]
+technologies = ["fw.echo", "tools.docker", "proto.rest"]
+target_roles = [
+    "backend-engineer",
+    "security-engineer",
+    "distributed-systems-engineer",
+    "go-developer",
+  ]
+
+evidence = { ownership = "sole-architect", depth = "complete-microservice", outcomes = [
+    "sub-2ms-key-retrieval",
+    "zero-downtime-rotation",
+    "tamper-proof-hmac",
+    "containerized-docker-image",
+  ] }
+academic_applicability = { subject_areas = ["computer-security", "distributed-systems"], theoretical_foundations = [
+    "envelope-encryption",
+    "pbkdf2-key-derivation",
+    "hmac-message-authentication",
+    "cryptographic-key-lifecycles",
+  ] }
+tags = [
+    "go",
+    "echo",
+    "cryptography",
+    "kms",
+    "aes-256",
+    "hmac",
+    "pbkdf2",
+    "key-rotation",
+    "docker",
+    "distributed-systems",
+    "microservices",
+    "zero-trust",
+  ]
 repo_url = "https://github.com/vinayakgupta29/zundrath"
 deployed_url = ""
 path = "./projects/zundrath.toml"
@@ -60,8 +250,51 @@ category = "Systems Engineering & Networking"
 tagline = "Zero-dependency lightweight HTTP/1.1 server implemented in pure C with POSIX sockets, engineered as the foundational network stack prototype for the VKS compiler"
 date = "Aug-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["systems-programming", "computer-networking", "operating-systems"]
+competencies = [
+    "posix-socket-apis",
+    "tcp-connection-lifecycle",
+    "http-protocol-parsing",
+    "mime-type-routing",
+    "manual-memory-management",
+    "zero-dependency-architecture",
+  ]
 languages = ["langs.c"]
-tags = ["c", "posix", "sockets", "networking", "http", "systems-programming", "tcp", "memory-management"]
+technologies = ["tools.linux", "proto.rest"]
+target_roles = [
+    "systems-software-engineer",
+    "embedded-systems-engineer",
+    "network-engineer",
+    "c-developer",
+  ]
+
+evidence = { ownership = "sole-author", depth = "scratch-posix-implementation", outcomes = [
+    "zero-external-dependencies",
+    "rfc-compliant-http-1-1",
+    "clean-valgrind-memory",
+    "foundation-for-vks-network-stack",
+  ] }
+academic_applicability = { subject_areas = ["computer-networks", "operating-systems"], theoretical_foundations = [
+    "posix-socket-semantics",
+    "stream-buffering",
+    "stateless-protocol-state-machines",
+    "tcp-ip-stack-interaction",
+  ] }
+tags = [
+    "c",
+    "posix",
+    "sockets",
+    "networking",
+    "http",
+    "systems-programming",
+    "tcp",
+    "memory-management",
+    "low-level",
+    "zero-dependency",
+    "rfc-compliant",
+  ]
 repo_url = "https://github.com/vinayakgupta29/http_server_in_C"
 deployed_url = ""
 path = "./projects/http_server_c.toml"
@@ -73,8 +306,46 @@ category = "Mathematics & Algorithms"
 tagline = "Computational mathematics system implementing and analyzing discrete integer sequences and recurrence relations in Python"
 date = "Aug-2023"
 status = "archived"
+lifecycle = "completed-archived"
+
+domains = ["computational-mathematics", "discrete-mathematics", "algorithm-analysis"]
+competencies = [
+    "recurrence-relation-modeling",
+    "combinatorial-sequence-generation",
+    "memoization-dynamic-programming",
+    "asymptotic-complexity-analysis",
+  ]
 languages = ["langs.python"]
-tags = ["python", "mathematics", "discrete-math", "integer-sequences", "algorithms", "recurrence-relations"]
+technologies = []
+target_roles = [
+    "algorithm-engineer",
+    "applied-mathematician",
+    "computational-science-researcher",
+    "python-developer",
+  ]
+
+evidence = { ownership = "sole-author", depth = "algorithmic-library", outcomes = [
+    "analytical-sequence-directory",
+    "recursive-and-iterative-implementations",
+    "combinatorial-computation-models",
+  ] }
+academic_applicability = { subject_areas = ["discrete-mathematics", "combinatorics", "number-theory"], theoretical_foundations = [
+    "linear-recurrence-relations",
+    "generating-functions",
+    "integer-sequence-enumeration",
+    "computational-complexity",
+  ] }
+tags = [
+    "python",
+    "mathematics",
+    "discrete-math",
+    "integer-sequences",
+    "algorithms",
+    "recurrence-relations",
+    "combinatorics",
+    "memoization",
+    "number-theory",
+  ]
 repo_url = "https://github.com/vinayakgupta29/A-directory-of-integer-sequences"
 deployed_url = ""
 path = "./projects/integer_sequences.toml"
@@ -86,8 +357,49 @@ category = "Game Development & Graphics"
 tagline = "Collection of real-time 2D desktop arcade games built in C++ with SFML featuring deterministic tick loops and spatial collision physics"
 date = "Jul-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["game-engine-development", "computer-graphics", "simulation"]
+competencies = [
+    "deterministic-game-loops",
+    "spatial-collision-physics",
+    "screen-to-world-coordinate-mapping",
+    "kinematic-trajectory-math",
+    "event-driven-input-handling",
+    "posix-native-compilation",
+  ]
 languages = ["langs.cpp", "langs.c"]
-tags = ["cpp", "c", "sfml", "game-development", "graphics", "event-loop", "linux", "arcade"]
+technologies = ["tools.linux"]
+target_roles = [
+    "graphics-engineer",
+    "game-developer",
+    "systems-engineer",
+    "c-plus-plus-software-engineer",
+  ]
+
+evidence = { ownership = "sole-developer", depth = "playable-multi-game-suite", outcomes = [
+    "deterministic-60-fps-rendering",
+    "zero-wrapper-posix-binaries",
+    "spatial-hitbox-collision-engine",
+  ] }
+academic_applicability = { subject_areas = ["computer-graphics", "real-time-simulation"], theoretical_foundations = [
+    "fixed-timestep-integration",
+    "euclidean-collision-geometry",
+    "kinematics-and-particle-dynamics",
+  ] }
+tags = [
+    "cpp",
+    "c",
+    "sfml",
+    "game-development",
+    "graphics",
+    "event-loop",
+    "linux",
+    "arcade",
+    "physics-simulation",
+    "collision-detection",
+    "deterministic-loop",
+  ]
 repo_url = "https://github.com/vinayakgupta29/smashers_sfml"
 deployed_url = ""
 path = "./projects/tism_games.toml"
@@ -99,10 +411,58 @@ category = "Distributed Systems & Web Platforms"
 tagline = "Real-time anonymous discussion board built with Go SSR (html/template), Cloudflare worker threads, WebSockets, and cryptographic tripcodes"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = [
+    "web-platforms",
+    "distributed-systems",
+    "edge-computing",
+    "real-time-communications",
+  ]
+competencies = [
+    "server-side-rendering",
+    "edge-worker-routing",
+    "websocket-broadcast-pipelines",
+    "cryptographic-tripcode-generation",
+    "xss-sanitization-pipeline",
+    "cookie-timezone-sync",
+  ]
 languages = ["langs.go", "langs.html", "langs.css", "langs.javascript", "langs.typescript"]
-tags = ["go", "ssr", "html-template", "cloudflare-workers", "websockets", "real-time", "cryptography", "tripcodes", "sqlite"]
+technologies = ["tools.html_template", "tools.cloudflare_workers", "db.sqlite", "proto.rest"]
+target_roles = [
+    "fullstack-engineer",
+    "backend-engineer",
+    "distributed-systems-engineer",
+    "web-infrastructure-engineer",
+  ]
+
+evidence = { ownership = "sole-architect", depth = "full-stack-edge-application", deployment = "public-web-deployment", outcomes = [
+    "cloudflare-edge-worker-deployment",
+    "tamper-proof-cryptographic-tripcodes",
+    "websocket-live-broadcasts",
+    "markdown-xss-sanitization",
+  ] }
+academic_applicability = { subject_areas = ["distributed-systems", "web-security"], theoretical_foundations = [
+    "one-way-cryptographic-hashing",
+    "edge-caching-hierarchies",
+    "publish-subscribe-architectures",
+  ] }
+tags = [
+    "go",
+    "ssr",
+    "html-template",
+    "cloudflare-workers",
+    "websockets",
+    "real-time",
+    "cryptography",
+    "tripcodes",
+    "sqlite",
+    "full-stack",
+    "edge-deployment",
+    "content-security",
+  ]
 repo_url = "https://github.com/vinayakgupta29/vichar.abhivyakti"
-deployed_url = "https://vichar-abhivyakti.vinayakg236.workers.dev/" #[Domain Expired] "https://vichar.abhivyakti.space"
+deployed_url = "https://vichar-abhivyakti.vinayakg236.workers.dev/"
 path = "./projects/vichar_abhivyakti.toml"
 
 [[projects]]
@@ -112,10 +472,46 @@ category = "Web Engineering & Publishing"
 tagline = "Multilingual publishing platform for essays, technical literature, and stories built with Ruby and Jekyll, featuring Devanagari and Japanese typography"
 date = "Sep-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = [
+    "static-site-generation",
+    "typography-engineering",
+    "digital-publishing",
+    "internationalization",
+  ]
+competencies = [
+    "static-site-architecture",
+    "multilingual-font-hierarchy",
+    "devanagari-vertical-rhythm",
+    "responsive-editorial-design",
+    "jekyll-liquid-templating",
+  ]
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
-tags = ["jekyll", "ruby", "html", "css", "javascript", "static-site", "publishing", "devanagari", "typography", "literature"]
+technologies = ["fw.jekyll"]
+target_roles = ["frontend-engineer", "web-developer", "technical-writer", "creative-technologist"]
+
+evidence = { ownership = "sole-developer", depth = "production-editorial-platform", deployment = "public-web-deployment", outcomes = [
+    "multilingual-typography-hierarchy",
+    "structured-metadata-and-atom-feeds",
+    "discussion-integration-with-vichar",
+  ] }
+tags = [
+    "jekyll",
+    "ruby",
+    "html",
+    "css",
+    "javascript",
+    "static-site",
+    "publishing",
+    "devanagari",
+    "typography",
+    "literature",
+    "internationalization",
+    "performance",
+  ]
 repo_url = "https://github.com/vinayakgupta29/kalam.abhivyakti"
-deployed_url = "kalamabhivyakti.netlify.app" # [Domain Expired] "https://kalam.abhivyakti.space"
+deployed_url = "kalamabhivyakti.netlify.app"
 path = "./projects/kalam_abhivyakti.toml"
 
 [[projects]]
@@ -125,10 +521,34 @@ category = "Frontend & Creative Technologies"
 tagline = "Responsive digital art gallery and visual narrative portfolio (हृदयपाटः) built with Ruby and Jekyll"
 date = "Nov-2025"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["frontend-engineering", "creative-technologies", "digital-arts"]
+competencies = [
+    "responsive-grid-layouts",
+    "image-optimization-pipelines",
+    "cross-browser-css-rendering",
+    "visual-storytelling-ui",
+  ]
 languages = ["langs.ruby", "langs.html", "langs.css", "langs.javascript"]
-tags = ["jekyll", "ruby", "html", "css", "javascript", "art-gallery", "portfolio"]
+technologies = ["fw.jekyll"]
+target_roles = ["frontend-developer", "creative-technologist", "ui-ux-engineer", "web-developer"]
+
+evidence = { ownership = "sole-developer", depth = "curated-visual-gallery", deployment = "public-web-deployment", outcomes = ["responsive-high-dpi-art-showcase", "fast-asset-delivery"] }
+tags = [
+    "jekyll",
+    "ruby",
+    "html",
+    "css",
+    "javascript",
+    "art-gallery",
+    "portfolio",
+    "creative-tech",
+    "responsive-design",
+    "digital-art",
+  ]
 repo_url = "https://github.com/vinayakgupta29/rang.abhivyakti"
-deployed_url = "rangabhivyakti.netlify.app" # [Domain Expired]"https://rang.abhivyakti.space"
+deployed_url = "rangabhivyakti.netlify.app"
 path = "./projects/rang_abhivyakti.toml"
 
 [[projects]]
@@ -138,8 +558,35 @@ category = "Frontend & Creative Technologies"
 tagline = "Central portal hub connecting the Abhivyakti creative ecosystem with dynamic interactive DOM physics and card tilting"
 date = "Nov-2025"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["frontend-engineering", "interactive-web", "ui-physics"]
+competencies = [
+    "dom-physics-manipulation",
+    "interactive-card-tilt-algorithms",
+    "responsive-portal-architecture",
+    "vanilla-js-performance",
+  ]
 languages = ["langs.html", "langs.css", "langs.javascript"]
-tags = ["portal", "html", "css", "javascript", "interactive-ui", "hub"]
+technologies = []
+target_roles = ["frontend-engineer", "web-developer", "ui-engineer"]
+
+evidence = { ownership = "sole-developer", depth = "ecosystem-gateway-hub", deployment = "public-web-deployment", outcomes = [
+    "unified-ecosystem-gateway",
+    "dynamic-css-transformations",
+    "vanilla-js-chaos-bubbles",
+  ] }
+tags = [
+    "portal",
+    "html",
+    "css",
+    "javascript",
+    "interactive-ui",
+    "hub",
+    "dom-physics",
+    "creative-web",
+    "ecosystem-gateway",
+  ]
 repo_url = "https://github.com/vinayakgupta29/public.abhivyakti"
 deployed_url = "https://abhivyakti.space"
 path = "./projects/public_abhivyakti.toml"
@@ -151,8 +598,43 @@ category = "Linux Systems & Customization"
 tagline = "Modular, reproducible Arch Linux desktop configuration managing Hyprland Wayland compositor, terminal toolchains, and custom keybindings"
 date = "Aug-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["linux-systems", "desktop-environments", "automation-tooling"]
+competencies = [
+    "wayland-compositor-configuration",
+    "shell-automation-scripting",
+    "declarative-environment-provisioning",
+    "modal-terminal-toolchains",
+    "custom-window-rules",
+  ]
 languages = ["langs.bash", "langs.lua", "langs.python"]
-tags = ["linux", "arch-linux", "hyprland", "wayland", "bash", "lua", "dotfiles"]
+technologies = ["tools.linux", "tools.git"]
+target_roles = [
+    "linux-systems-administrator",
+    "devops-engineer",
+    "tools-engineer",
+    "systems-engineer",
+  ]
+
+evidence = { ownership = "sole-author", depth = "full-desktop-configuration", outcomes = [
+    "reproducible-arch-linux-workstation",
+    "hyprland-wayland-compositor-setup",
+    "modular-symlink-deployment",
+  ] }
+tags = [
+    "linux",
+    "arch-linux",
+    "hyprland",
+    "wayland",
+    "bash",
+    "lua",
+    "dotfiles",
+    "posix",
+    "automation",
+    "system-administration",
+    "developer-ergonomics",
+  ]
 repo_url = "https://github.com/vinayakgupta29/dotfiles"
 deployed_url = ""
 path = "./projects/dotfiles.toml"
@@ -164,8 +646,35 @@ category = "Linux Systems & Customization"
 tagline = "Desktop status-bar integration plugin for Noctalia Shell enabling instantaneous keyboard input method switching via Fcitx5"
 date = "Sep-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["desktop-integration", "linux-systems", "input-method-frameworks"]
+competencies = [
+    "fcitx5-dbus-ipc-interfacing",
+    "shell-plugin-architecture",
+    "asynchronous-state-synchronization",
+    "desktop-widget-scripting",
+  ]
 languages = ["langs.lua", "langs.bash"]
-tags = ["lua", "linux", "fcitx5", "multilingual", "desktop-tools", "input-methods"]
+technologies = ["tools.linux"]
+target_roles = ["systems-engineer", "linux-tools-developer", "desktop-software-engineer"]
+
+evidence = { ownership = "sole-developer", depth = "desktop-status-bar-plugin", outcomes = [
+    "status-bar-fcitx5-switcher",
+    "low-latency-input-method-toggling",
+    "multilingual-keyboard-support",
+  ] }
+tags = [
+    "lua",
+    "linux",
+    "fcitx5",
+    "multilingual",
+    "desktop-tools",
+    "input-methods",
+    "status-bar",
+    "dbus",
+    "shell-integration",
+  ]
 repo_url = "https://github.com/vinayakgupta29/noctalia_plugins"
 deployed_url = ""
 path = "./projects/noctalia_plugins.toml"
@@ -177,8 +686,36 @@ category = "Developer Tooling & Editors"
 tagline = "Neovim plugin with Tree-sitter integration functioning as a real-time syntax highlighter and linter for structured personal data formats"
 date = "Sep-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["developer-tooling", "editor-infrastructure", "syntax-analysis"]
+competencies = [
+    "tree-sitter-cst-queries",
+    "asynchronous-buffer-linting",
+    "neovim-lsp-diagnostic-namespaces",
+    "editor-extension-architecture",
+  ]
 languages = ["langs.lua", "langs.javascript"]
-tags = ["neovim", "lua", "tree-sitter", "linter", "editor-tools", "developer-ergonomics"]
+technologies = ["tools.linux", "tools.git"]
+target_roles = ["developer-tools-engineer", "systems-engineer", "infrastructure-engineer"]
+
+evidence = { ownership = "sole-author", depth = "editor-plugin", outcomes = [
+    "real-time-ast-token-highlighting",
+    "async-buffer-diagnostic-linting",
+    "tree-sitter-grammars-integrated",
+  ] }
+academic_applicability = { subject_areas = ["programming-environments", "parsing-algorithms"], theoretical_foundations = ["concrete-syntax-trees", "incremental-parsing-theory"] }
+tags = [
+    "neovim",
+    "lua",
+    "tree-sitter",
+    "linter",
+    "editor-tools",
+    "developer-ergonomics",
+    "ast",
+    "syntax-highlighting",
+    "incremental-parsing",
+  ]
 repo_url = "https://github.com/vinayakgupta29/sauce.nvim"
 deployed_url = ""
 path = "./projects/sauce_nvim.toml"
@@ -190,8 +727,35 @@ category = "Linux Systems & Customization"
 tagline = "Modern, responsive graphical login screen theme for the Simple Desktop Display Manager (SDDM) crafted in Qt/QML"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["gui-engineering", "linux-systems", "desktop-customization"]
+competencies = [
+    "declarative-qml-ui-design",
+    "multi-dpi-resolution-handling",
+    "pam-authentication-ui-flow",
+    "display-manager-theming",
+  ]
 languages = ["langs.bash"]
-tags = ["qml", "qt", "sddm", "display-manager", "linux", "desktop-theming"]
+technologies = ["tools.linux"]
+target_roles = ["frontend-engineer", "gui-developer", "linux-desktop-engineer"]
+
+evidence = { ownership = "sole-author", depth = "login-theme-and-automation", outcomes = [
+    "multi-resolution-responsive-layout",
+    "wayland-x11-session-switching",
+    "automated-deploy-scripts",
+  ] }
+tags = [
+    "qml",
+    "qt",
+    "sddm",
+    "display-manager",
+    "linux",
+    "desktop-theming",
+    "login-screen",
+    "wayland",
+    "gui",
+  ]
 repo_url = "https://github.com/vinayakgupta29/sddm-slayer"
 deployed_url = ""
 path = "./projects/sddm_slayer.toml"
@@ -203,8 +767,33 @@ category = "Linux Systems & Customization"
 tagline = "Minimalist, high-DPI bootloader theme for GNU GRUB featuring custom typography and icon sets"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["boot-subsystems", "linux-systems", "visual-design"]
+competencies = [
+    "grub2-theme-specification",
+    "high-dpi-boot-scaling",
+    "automated-shell-installation",
+    "multi-os-icon-mapping",
+  ]
 languages = []
-tags = ["grub", "bootloader", "theming", "linux", "systems-customization"]
+technologies = ["tools.linux"]
+target_roles = ["linux-systems-engineer", "devops-engineer"]
+
+evidence = { ownership = "sole-author", depth = "bootloader-theme-package", outcomes = [
+    "high-dpi-boot-display-support",
+    "multi-os-detection-icons",
+    "automated-installer-script",
+  ] }
+tags = [
+    "grub",
+    "bootloader",
+    "theming",
+    "linux",
+    "systems-customization",
+    "high-dpi",
+    "boot-environment",
+  ]
 repo_url = "https://github.com/vinayakgupta29/albedo-grub-theme"
 deployed_url = ""
 path = "./projects/albedo_grub_theme.toml"
@@ -216,8 +805,34 @@ category = "Linux Systems & Customization"
 tagline = "Flicker-free graphical boot splash animations and themes for the Linux Plymouth boot subsystem"
 date = "Jul-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["boot-subsystems", "linux-systems", "graphics-animation"]
+competencies = [
+    "plymouth-script-animation",
+    "initramfs-integration",
+    "framebuffer-rendering",
+    "flicker-free-boot-sequencing",
+  ]
 languages = ["langs.bash"]
-tags = ["plymouth", "boot-splash", "linux", "kernel", "systems-customization"]
+technologies = ["tools.linux"]
+target_roles = ["linux-systems-engineer", "embedded-linux-engineer"]
+
+evidence = { ownership = "sole-author", depth = "kernel-boot-splash-suite", outcomes = [
+    "flicker-free-boot-transitions",
+    "dracut-mkinitcpio-compatibility",
+    "automated-system-installer",
+  ] }
+tags = [
+    "plymouth",
+    "boot-splash",
+    "linux",
+    "kernel",
+    "systems-customization",
+    "framebuffer",
+    "initramfs",
+    "drm-kms",
+  ]
 repo_url = "https://github.com/vinayakgupta29/plymouth_themes"
 deployed_url = ""
 path = "./projects/plymouth_themes.toml"
@@ -229,8 +844,21 @@ category = "Mobile Engineering"
 tagline = "Cross-platform mobile Pokédex application built in Flutter (Documentation in progress)"
 date = "Apr-2026"
 status = "actively maintained"
+lifecycle = "in-progress"
+
+domains = ["mobile-engineering", "cross-platform-ui"]
+competencies = [
+    "flutter-state-management",
+    "rest-api-consumption",
+    "responsive-mobile-ui",
+    "client-side-caching",
+  ]
 languages = ["langs.dart"]
-tags = ["flutter", "dart", "mobile", "rest-api"]
+technologies = ["fw.flutter"]
+target_roles = ["mobile-developer", "flutter-developer", "frontend-engineer"]
+
+evidence = { ownership = "sole-developer", depth = "mobile-client-in-progress", outcomes = ["cross-platform-flutter-app", "rest-data-consumption"] }
+tags = ["flutter", "dart", "mobile", "rest-api", "cross-platform", "client-app"]
 repo_url = "https://github.com/vinayakgupta29/Poke-Dex"
 deployed_url = ""
 path = "./projects/poke_dex.toml"
@@ -242,8 +870,34 @@ category = "Automation & Computer Vision"
 tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
 date = "Jun-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["computer-vision", "document-processing", "desktop-automation"]
+competencies = [
+    "optical-character-recognition",
+    "image-preprocessing-pipeline",
+    "containerized-packaging",
+    "standalone-executable-builds",
+  ]
 languages = ["langs.python", "langs.html"]
-tags = ["python", "ocr", "computer-vision", "automation", "docker"]
+technologies = ["tools.docker"]
+target_roles = ["python-developer", "automation-engineer", "computer-vision-engineer"]
+
+evidence = { ownership = "sole-developer", depth = "desktop-ocr-pipeline", outcomes = [
+    "containerized-docker-image",
+    "standalone-executable-release",
+    "image-pre-filtering-pipeline",
+  ] }
+academic_applicability = { subject_areas = ["computer-vision", "document-image-analysis"], theoretical_foundations = ["image-binarization", "feature-extraction-and-ocr-matching"] }
+tags = [
+    "python",
+    "ocr",
+    "computer-vision",
+    "automation",
+    "docker",
+    "image-processing",
+    "desktop-tool",
+  ]
 repo_url = "https://github.com/vinayakgupta29/py_ocr"
 deployed_url = ""
 path = "./projects/py_ocr.toml"
@@ -255,9 +909,50 @@ category = "Enterprise Systems & Financial Engineering"
 tagline = "Full-stack enterprise accounting and stock control system with real-time financial reporting, role-based access control, and containerized backend"
 date = "Jan-2026"
 status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = ["enterprise-software", "financial-systems", "full-stack-web", "mobile-engineering"]
+competencies = [
+    "double-entry-ledger-accounting",
+    "inventory-fifo-valuation",
+    "role-based-access-control",
+    "relational-schema-design",
+    "cross-platform-flutter-client",
+    "containerized-backend-services",
+  ]
 languages = ["langs.typescript", "langs.javascript", "langs.dart", "langs.sql", "langs.html"]
-tags = ["typescript", "node", "postgresql", "docker", "flutter", "accounting", "inventory", "rbac", "rest-api"]
+technologies = ["fw.node", "fw.express", "fw.flutter", "db.postgres", "tools.docker", "proto.rest"]
+target_roles = [
+    "full-stack-engineer",
+    "backend-engineer",
+    "enterprise-software-engineer",
+    "database-engineer",
+  ]
+
+evidence = { ownership = "full-stack-architect", depth = "multi-tier-enterprise-system", outcomes = [
+    "double-entry-financial-reporting",
+    "dockerized-multi-service-backend",
+    "cross-platform-admin-and-mobile-client",
+  ] }
+academic_applicability = { subject_areas = ["information-systems", "database-theory"], theoretical_foundations = [
+    "relational-algebra",
+    "double-entry-accounting-invariants",
+    "role-based-access-control-models",
+  ] }
+tags = [
+    "typescript",
+    "node",
+    "postgresql",
+    "docker",
+    "flutter",
+    "accounting",
+    "inventory",
+    "rbac",
+    "rest-api",
+    "financial-ledger",
+    "double-entry",
+    "enterprise",
+  ]
 repo_url = "https://github.com/vinayakgupta29/accounting-node.TS"
 deployed_url = ""
 path = "./projects/accounting_inventory.toml"
-

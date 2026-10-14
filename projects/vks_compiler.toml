@@ -60,7 +60,7 @@ key_components = [
   "Native code generator emitting standalone x86-64 machine binaries with zero runtime dependencies",
   "Tooling suite including CLI compiler (vks), interactive REPL (vksi), and core standard library (std/)"
 ]
-benchmarks_and_metrics = "Sub-100ms compilation times for multi-module programs; minimal native binary signature."
+benchmarks_and_metrics = "Native x86-64 binary emitted with zero external runtime dependencies; minimal native binary signature."
 
 bullets = [
   "Architected a multi-stage functional compiler pairing an OCaml frontend (ocamllex, Menhir parser, type checker, JSON HIR generator) with a high-performance Rust backend emitting LLVM IR.",

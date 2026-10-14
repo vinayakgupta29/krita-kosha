@@ -1,12 +1,61 @@
 # Education and Certifications Index
+# Scanned by agents to match academic foundations, coursework, and formal certifications
+# against industry requirements and graduate admissions criteria.
 
 [[degrees]]
 id = "btech_cse"
 institution = "LNCT University"
 location = "Bhopal, India"
 degree = "B.Tech in Computer Science and Engineering"
+major = "Computer Science and Engineering"
 dates = "2021 – 2025"
 cgpa = "7.76 (First Division)"
+division = "First Division"
+medium_of_instruction = "English"
+
+domains = [
+    "computer-science",
+    "software-engineering",
+    "systems-programming",
+    "theory-of-computation",
+  ]
+academic_disciplines = ["computer-science", "systems-engineering", "theoretical-computer-science"]
+competencies = [
+    "data-structures-and-algorithms",
+    "systems-programming-posix",
+    "relational-database-design",
+    "formal-languages-and-automata",
+    "compiler-design-and-codegen",
+    "computer-networks",
+    "object-oriented-software-design",
+  ]
+coursework = [
+    "Data Structures and Algorithms",
+    "Operating Systems and Systems Programming",
+    "Database Management Systems (Relational & SQL)",
+    "Theory of Computation & Formal Languages",
+    "Compiler Design",
+    "Computer Networks and Distributed Systems",
+    "Object-Oriented Software Design",
+  ]
+target_roles = [
+    "software-engineer",
+    "systems-engineer",
+    "graduate-researcher",
+    "compiler-engineer",
+  ]
+evidence = { performance = "First Division (7.76 CGPA)", scope = "4-year-undergraduate-degree", practical_depth = "independent-compilers-and-systems-projects-alongside-degree" }
+tags = [
+    "btech",
+    "computer-science",
+    "lnct-university",
+    "systems-programming",
+    "algorithms",
+    "compilers",
+    "databases",
+    "networks",
+    "first-division",
+  ]
 path = "./education/btech.toml"
 
 [[certifications]]
@@ -14,4 +63,24 @@ id = "cyber_security_igtr"
 title = "Cyber Security and Ethical Hacking"
 organization = "IGTR, Indore"
 year = "2025"
+category = "security"
+
+domains = ["cyber-security", "network-security", "applied-cryptography"]
+competencies = [
+    "network-security-protocols",
+    "vulnerability-assessment",
+    "ethical-penetration-testing",
+    "cryptographic-fundamentals",
+  ]
+target_roles = ["security-engineer", "systems-engineer", "infrastructure-engineer"]
+evidence = { issuing_body = "Indo-German Tool Room (IGTR)", practical_scope = "hands-on-ethical-hacking-and-network-defense" }
+tags = [
+    "cyber-security",
+    "ethical-hacking",
+    "network-security",
+    "cryptography",
+    "igtr",
+    "penetration-testing",
+    "vulnerability-assessment",
+  ]
 path = "./education/certifications.toml"
