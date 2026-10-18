@@ -30,7 +30,7 @@ krita-kosha/
 │   └── appable.toml             # Freelance Full-Stack Developer — Appable Technologies
 │
 ├── projects/                    # Independent engineering projects and software artifacts
-│   ├── index.toml               # 19-project catalog index for rapid candidate matching
+│   ├── index.toml               # 22-project catalog index for rapid candidate matching
 │   ├── vks_compiler.toml        # VKS-LLVM Compiler (OCaml Menhir frontend, Rust/LLVM backend)
 │   ├── bahi_khata.toml          # Personal Bahi Khata (Embedded ACID Rust engine + Flutter client)
 │   ├── god_format.toml          # Grounded Object Data (GOD) null-safe serialization engine
@@ -49,8 +49,10 @@ krita-kosha/
 │   ├── albedo_grub_theme.toml   # Minimalist high-DPI bootloader theme for GNU GRUB
 │   ├── plymouth_themes.toml     # Flicker-free boot splash animations for Linux Plymouth subsystem
 │   ├── poke_dex.toml            # Cross-platform mobile Pokédex in Flutter (Dart)
-│   ├── py_ocr.toml              # Desktop OCR pipeline in Python with standalone containerization
-│   └── accounting_inventory.toml# Complete Accounting & Inventory System (Node.js/TS, Flutter, Postgres)
+│   ├── saras_ocr.toml           # SarasOCR desktop OCR pipeline in Python with standalone containerization
+│   ├── accounting_inventory.toml# Complete Accounting & Inventory System (Node.js/TS, Flutter, Postgres)
+│   ├── findecision.toml         # FinDecision financial sentiment analysis platform (FastAPI, PyTorch CPU, FinBERT)
+│   └── tabcrate.toml            # Tab Crate local-first multi-browser tab manager (WebExtensions, MV2/MV3)
 │
 ├── publications/                # Books, patents, and research working papers
 │   ├── index.toml               # Publications, patents, and manuscripts index
@@ -88,8 +90,8 @@ When specifying technologies across `work_exp/` and `projects/`, agents MUST ref
 | Namespace | Source File | Description | Examples |
 | :--- | :--- | :--- | :--- |
 | `langs.*` | `taxonomy/languages.toml` | Programming & markup languages | `langs.go`, `langs.rust`, `langs.c`, `langs.cpp`, `langs.ocaml`, `langs.python`, `langs.dart`, `langs.typescript`, `langs.javascript`, `langs.html`, `langs.css`, `langs.ruby`, `langs.lua`, `langs.bash`, `langs.sql` |
-| `fw.*` | `taxonomy/frameworks_and_tools.toml` | Application frameworks & runtime libs | `fw.django`, `fw.echo`, `fw.tauri`, `fw.flutter`, `fw.node`, `fw.express`, `fw.react`, `fw.jekyll` |
-| `tools.*` | `taxonomy/frameworks_and_tools.toml` | Tools, platforms, compilers & systems | `tools.llvm`, `tools.docker`, `tools.aws`, `tools.git`, `tools.linux`, `tools.ci_cd`, `tools.html_templating`, `tools.cloudflare_workers` |
+| `fw.*` | `taxonomy/frameworks_and_tools.toml` | Application frameworks & runtime libs | `fw.fastapi`, `fw.pytorch`, `fw.transformers`, `fw.django`, `fw.echo`, `fw.tauri`, `fw.flutter`, `fw.node`, `fw.express`, `fw.react`, `fw.jekyll` |
+| `tools.*` | `taxonomy/frameworks_and_tools.toml` | Tools, platforms, compilers & systems | `tools.llvm`, `tools.docker`, `tools.aws`, `tools.git`, `tools.linux`, `tools.cicd`, `tools.html_template`, `tools.cloudflare_workers` |
 | `db.*` | `taxonomy/databases.toml` | Persistence & caching engines | `db.postgres`, `db.sqlite`, `db.mongodb`, `db.redis` |
 | `proto.*` | `taxonomy/protocols.toml` | Protocols, network & data formats | `proto.modbus`, `proto.rest`, `proto.grpc`, `proto.pbke`, `proto.god` |
 

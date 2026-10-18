@@ -8,7 +8,7 @@ This document is the operational contract for AI assistants (Antigravity, Gemini
 
 1. **Single Source of Truth**: The database files within `krita-kosha/` represent the canonical truth of Vinayak Gupta's career. Never fabricate unrecorded employment dates, metrics, degrees, or publications.
 2. **LLM-Native Generation**: No Python generator script or external build runner is required. The AI agent acts as the compiler—reading TOML files, applying tailoring algorithms, budgeting vertical lines, and emitting production-grade LaTeX directly into target files.
-3. **Strict Sandboxing**: Do not traverse directories outside `krita-kosha/` unless the user explicitly provides an external repository path.
+3. **Strict Sandboxing & Clean Database Invariant**: Strictly **NEVER** write generated resumes, CVs, cover letters, or build artifacts inside the `krita-kosha/` directory unless explicitly specified by the user. `krita-kosha/` is the canonical database and template repository; it MUST remain pristine. All generated documents must be written to their designated external target directories (`../${COMPANY_NAME}/` or `../schools/${SCHOOL_OR_UNI_NAME}/`).
 4. **Zero-Null & Canonical Taxonomy**: All technical skills must reference canonical IDs from `taxonomy/` (`langs.*`, `fw.*`, `tools.*`, `db.*`, `proto.*`). If a new technology is introduced, add it to `taxonomy/` first.
 
 ---
@@ -113,7 +113,27 @@ To guarantee that a 1-page resume never overflows onto page 2:
 
 ---
 
-## 5. LaTeX Generation Instructions
+## 5. Document Generation & Directory Architecture
+
+### 5.1. Target Output Directories & Strict Sandboxing
+**STRICT RULE**: AI agents must **NEVER** write generated `.tex`, `.pdf`, `.txt` files, or build artifacts inside the canonical `krita-kosha/` directory unless the user explicitly instructs otherwise. All generated artifacts must be written into their designated external peer directories:
+
+| Document Type | Target Directory Pattern | Source LaTeX / Text File | Compiled PDF Name |
+| :--- | :--- | :--- | :--- |
+| **Industry Resume** | `../${COMPANY_NAME}/` | `vinayak_gupta_${JOB_TITLE}.tex` | `vinayak_gupta_${JOB_TITLE}.pdf` |
+| **Cover Letter** | `../${COMPANY_NAME}/` | `vinayak_gupta_cover_letter_${JOB_TITLE}.txt` | N/A (Plaintext) |
+| **Academic CV** | `../schools/${SCHOOL_OR_UNI_NAME}/` | `${DEPARTMENT}_${COURSE}_cv.tex` | `${DEPARTMENT}_${COURSE}_cv.pdf` |
+| **Academic Statement** | `../schools/${SCHOOL_OR_UNI_NAME}/` | `vinayak_gupta_cover_letter_${COURSE}.txt` | N/A (Plaintext) |
+
+#### Variable Semantic Tokens
+AI agents (Gemini, Claude, Codex, etc.) should parse and populate variables using these canonical definitions:
+- `${COMPANY_NAME}` (or `{{COMPANY_NAME}}`): Slugified lowercase name of the target company (e.g. `shebaz`, `techasoft`, `google`).
+- `${JOB_TITLE}` (or `{{JOB_TITLE}}`): Slugified lowercase job title (e.g. `sr_node_js_engineer`, `backend_developer`, `full_stack_developer`).
+- `${SCHOOL_OR_UNI_NAME}` (or `{{SCHOOL_OR_UNI_NAME}}`): Slugified lowercase university or school name (e.g. `cmu`, `stanford`, `tum`).
+- `${DEPARTMENT}` (or `{{DEPARTMENT}}`): Slugified academic department (e.g. `cs`, `eecs`, `mathematics`).
+- `${COURSE}` (or `{{COURSE}}`): Slugified degree or program name (e.g. `ms_cs`, `phd_systems`).
+
+### 5.2. LaTeX Generation Instructions
 
 When emitting LaTeX from the database:
 1. Use `templates/resume_template.tex` or `templates/cv_template.tex` as structural reference.
@@ -128,9 +148,9 @@ When emitting LaTeX from the database:
    - `~` $\rightarrow$ `\textasciitilde{}`
 4. Ensure hyperlinks use `\href{url}{display_text}` and remain clean and clickable in PDF output.
 
-### 5.1. Local Compilation Protocol (`build-latex`)
+### 5.3. Local Compilation Protocol (`build-latex`) & Mandatory Cleanup
 
-To compile LaTeX documents to PDF locally, always execute the user's custom `build-latex` CLI tool. **Never** run `pdflatex` or raw compiler commands directly, and do not attempt to read the script source code.
+To compile LaTeX documents to PDF locally, always execute the user's custom `build-latex` CLI tool within the target document's directory. **Never** run `pdflatex` or raw compiler commands directly, and do not attempt to read the script source code.
 
 #### Syntax & Commands:
 ```bash
@@ -142,15 +162,17 @@ build-latex [SOURCE] [OPTIONS]
 - `build-latex <file>.tex -o <output>.pdf` : Compiles to a custom output PDF filename.
 - `build-latex -h` / `build-latex --help` : Displays CLI help.
 
-#### Default Behaviors & Constraints:
-- **Default File Selection**: Looks for `main.tex` first. If absent, finds the first `.tex` file containing `\documentclass` in the current directory (non-recursive).
-- **Naming**: Without `-o`, the generated PDF is automatically named after the project directory (e.g., `vinayak_gupta_resume_ai_executive.pdf`).
-- **Artifact Management**: Build artifacts are stored in `.latex-build/` and automatically cleaned up upon successful compilation. If compilation fails, artifacts and logs are preserved for inspection.
-- **One-Shot Compilation & Verification Chain**: Always chain `build-latex` with `pdfinfo` and `pdftotext` using `&&` to verify both page constraints and text extraction in a single command execution:
-  ```bash
-  build-latex . && pdfinfo <output_file>.pdf | grep "Pages:" && pdftotext <output_file>.pdf -
-  ```
-  This ensures that if compilation fails, downstream commands abort immediately, preventing unnecessary command runs.
+#### Compilation & Verification Workflow:
+1. Navigate to the document directory (e.g. `../${COMPANY_NAME}`).
+2. Compile and verify page constraints in a single chained command execution:
+   ```bash
+   build-latex vinayak_gupta_${JOB_TITLE}.tex -o vinayak_gupta_${JOB_TITLE}.pdf && pdfinfo vinayak_gupta_${JOB_TITLE}.pdf | grep "Pages:"
+   ```
+3. **Mandatory Post-Build Artifact Cleanup**: Immediately after successful compilation, the agent **MUST** run:
+   ```bash
+   build-latex clean
+   ```
+   This ensures that `.latex-build/` and transient files are eradicated, preserving a pristine directory containing only the finalized `.tex`, `.pdf`, and `.txt` files.
 
 ---
 
@@ -192,7 +214,7 @@ The generated `dump.toml` file contains the following primary sections:
 - `[taxonomy]`: Standardized programming languages, frameworks, developer tools, databases, protocols, and soft skills.
 - `[education]`: Degree records, professional certifications, and language fluencies.
 - `[work_experience]`: Companies and comprehensive role records with achievement impact bullets.
-- `[[projects]]`: Complete catalog of 20 engineered projects with repo links, tags, and detailed architectural README summaries.
+- `[[projects]]`: Complete catalog of 22 engineered projects with repo links, tags, and detailed architectural README summaries.
 - `[publications]`: Books, industrial patents, and manuscript research drafts.
 - `[schemas]`: Structural data schemas for all entity types.
 

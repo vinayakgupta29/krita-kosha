@@ -51,6 +51,36 @@ aliases = ["jekyll", "Jekyll SSG"]
 language = "langs.ruby"
 category = "ssg"
 
+[fw.fastapi]
+formatted = "FastAPI"
+aliases = ["fastapi", "FastAPI"]
+language = "langs.python"
+category = "backend"
+
+[fw.pytorch]
+formatted = "PyTorch"
+aliases = ["pytorch", "torch", "PyTorch (CPU)"]
+language = "langs.python"
+category = "machine_learning"
+
+[fw.transformers]
+formatted = "Transformers (Hugging Face)"
+aliases = ["transformers", "huggingface", "Hugging Face"]
+language = "langs.python"
+category = "nlp"
+
+[fw.scikit_learn]
+formatted = "scikit-learn"
+aliases = ["scikit-learn", "sklearn"]
+language = "langs.python"
+category = "machine_learning"
+
+[fw.webextensions]
+formatted = "WebExtensions API"
+aliases = ["webextensions", "WebExtensions", "Browser Extensions", "chrome-extension"]
+language = "langs.javascript"
+category = "browser_extensions"
+
 # -----------------------------------------------------------------------------
 # Tools, Compilers, Cloud & Infrastructure (tools.*)
 # -----------------------------------------------------------------------------
@@ -98,4 +128,19 @@ category = "edge_deployment"
 formatted = "Gemini Antigravity"
 aliases = ["gemini", "antigravity", "Gemini Antigravity", "gemini-antigravity"]
 category = "ai_tooling"
+
+[tools.uvicorn]
+formatted = "Uvicorn"
+aliases = ["uvicorn"]
+category = "asgi_server"
+
+[tools.pytest]
+formatted = "Pytest"
+aliases = ["pytest"]
+category = "testing"
+
+[tools.tesseract]
+formatted = "Tesseract OCR"
+aliases = ["tesseract", "tesseract-ocr"]
+category = "ocr"
 

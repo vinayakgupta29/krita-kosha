@@ -1,0 +1,89 @@
+# Project Record: FinDecision (Financial Text & Article Sentiment Analysis Platform)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml",
+  "./taxonomy/protocols.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/FinDecision/refs/heads/main/README.md"
+]
+
+[project]
+id = "findecision"
+title = "FinDecision (Financial Text & Article Sentiment Analysis Platform)"
+category = "Applied AI & Financial NLP"
+date = "Oct-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/FinDecision"
+deployed_url = ""
+languages = [
+  "langs.python",
+  "langs.html",
+  "langs.css",
+  "langs.javascript"
+]
+technologies = [
+  "fw.fastapi",
+  "fw.pytorch",
+  "fw.transformers",
+  "proto.rest"
+]
+tagline = "Local financial text and article sentiment analysis platform featuring FinBERT transformer inference on CPU, SSRF-protected article extraction, and FastAPI REST endpoints"
+
+[project.readme_summary]
+overview = "A financial text and article sentiment classification platform utilizing local transformer models, FastAPI, and an embedded single-page web UI. Designed for standard consumer CPUs without paid external APIs or GPU dependencies, featuring sentence-aware text chunking for long financial reports and hardened SSRF protections for live web article extraction."
+architecture = """
+┌─────────────────────────────────┐
+│     Client (Browser / API)      │
+└────────────────┬────────────────┘
+                 │ POST /predict/text or /predict/url
+                 ▼
+┌─────────────────────────────────┐
+│   FastAPI Service & Concurrency │
+│ ├── Asyncio Inference Semaphore │
+│ ├── SSRF Defensive Article Svc  │
+│ └── Sentence-Aware Window Chunk │
+└────────────────┬────────────────┘
+                 │ Tokenized Batches
+                 ▼
+┌─────────────────────────────────┐
+│   PyTorch CPU Inference Engine  │
+│ ├── FinBERT-MiniLM Checkpoint   │
+│ ├── Softmax Logits Calculation  │
+│ └── Length-Weighted Aggregation │
+└─────────────────────────────────┘
+"""
+key_components = [
+  "FastAPI backend exposing REST endpoints (/predict/text, /predict/url, /health, /model-info) with Asyncio semaphore concurrency controls",
+  "100% local CPU inference pipeline leveraging PyTorch CPU wheels and FinBERT MiniLM (9mark9/finbert-minilm-sentiment) without GPU or external API dependencies",
+  "Sentence-aware window chunking algorithm splitting lengthy financial statements at natural grammatical boundaries (. , ; ) to respect the 512-token limit",
+  "Character-length weighted probability aggregation heuristic computing combined sentiment distributions across multiple document chunks",
+  "Hardened SSRF-protected article extraction engine using Trafilatura, DNS validation, private IP blocking (RFC 1918, loopback, cloud metadata), and redirect verification",
+  "Responsive single-page web application (HTML/CSS/JS) served directly from the FastAPI static mount for interactive sentiment scoring",
+  "Comprehensive test suite with pytest mocking model forward passes, benchmark latency profiling, and labeled dataset evaluation pipeline"
+]
+benchmarks_and_metrics = "Sub-second CPU inference on modern multi-core processors with zero GPU bloat, complete offline pytest execution, and safe extraction capped at 5MB with 5s connection timeouts."
+
+bullets = [
+  "Architected a local financial sentiment analysis service with FastAPI and PyTorch (CPU) utilizing FinBERT MiniLM to classify financial news and text into 3 sentiment categories without discrete GPU dependencies.",
+  "Engineered a boundary-aware text chunking and character-length weighted probability aggregation pipeline, enabling inference on arbitrary-length financial reports beyond the 512-token transformer limit.",
+  "Implemented a hardened web article extraction engine with Trafilatura and HTTPX featuring strict SSRF defense (DNS pre-resolution, RFC 1918 private IP rejection, 5MB stream caps, and redirect re-validation)."
+]
+keywords = [
+  "python",
+  "fastapi",
+  "pytorch",
+  "transformers",
+  "finbert",
+  "nlp",
+  "sentiment-analysis",
+  "ssrf-defense",
+  "trafilatura",
+  "cpu-inference",
+  "financial-nlp",
+  "rest-api",
+  "pytest"
+]

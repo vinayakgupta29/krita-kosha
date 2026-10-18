@@ -1,0 +1,84 @@
+# Project Record: Tab Crate (Local-First Multi-Browser Tab Manager)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/TabCrate/refs/heads/main/README.md"
+]
+
+[project]
+id = "tabcrate"
+title = "Tab Crate (Local-First Multi-Browser Tab Manager)"
+category = "Browser Engineering & Productivity Tooling"
+date = "Oct-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/TabCrate"
+deployed_url = ""
+languages = [
+  "langs.javascript",
+  "langs.html",
+  "langs.css",
+  "langs.bash"
+]
+technologies = [
+  "fw.webextensions",
+  "tools.linux"
+]
+tagline = "Local-first, privacy-focused browser extension for snapshotting, exporting, and restoring tab sessions across multi-window browser workflows without external tracking"
+
+[project.readme_summary]
+overview = "A zero-telemetry, local-first browser extension and tab management engine engineered for modern web browsers (Firefox, Zen Browser, Google Chrome, Brave, and Edge). Enables users to snapshot, export, validate, and restore multi-window tab sessions using human-readable plain-text files without remote server dependencies or third-party tracking."
+architecture = """
+┌────────────────────────────────────────────────────────┐
+│                      UI Layer                          │
+│  ├── Popup & Dedicated Tab Views (pop-up.html/js)      │
+│  └── Dark-Theme Modular Design System (style.css)      │
+└───────────────────────────┬────────────────────────────┘
+                            │
+┌───────────────────────────▼────────────────────────────┐
+│                    Shared Core                         │
+│  ├── Window & Tab Query Engine (tabs.js)               │
+│  ├── Multi-Window Snapshot Restoration (snapshot.js)   │
+│  ├── Local Storage CRUD & Persistence (storage.js)     │
+│  └── Plain-Text Serializer & Parser (text_format.js)   │
+└──────────────┬───────────────────────────┬─────────────┘
+               │                           │
+┌──────────────▼─────────────┐ ┌───────────▼─────────────┐
+│ Firefox / Zen (Manifest V2)│ │ Chrome (Manifest V3)    │
+│  ├── background.html / .js │ │  ├── background.js (SW) │
+│  └── manifest.json         │ │  └── manifest.json      │
+└────────────────────────────┘ └─────────────────────────┘
+"""
+key_components = [
+  "Dual Manifest cross-compilation pipeline generating native bundles for Manifest V2 (Firefox, Zen) and Manifest V3 (Chrome, Chromium) from a single shared codebase",
+  "Window and tab restoration engine preserving active tab focus, pinned tab states, and multi-window spatial groupings",
+  "Zero-telemetry local storage architecture keeping session snapshots and browsing history strictly on the client device",
+  "Plain-text session serialization engine supporting single and multi-window exports with comment preservation and line-level URL parsing",
+  "Import validation pipeline featuring pre-restore syntax highlighting, broken URL detection, and schema verification",
+  "Automated distribution build script (scripts/build.sh) generating staged production packages across browser targets"
+]
+benchmarks_and_metrics = "Zero cloud latency, zero third-party telemetry, instantaneous sub-millisecond local snapshot persistence, and automated packaging of 2 separate browser distribution bundles."
+
+bullets = [
+  "Architected a local-first, zero-telemetry browser tab manager extension for Firefox, Zen, and Chromium supporting multi-window snapshotting and restoration.",
+  "Engineered dual-target distribution pipelines supporting Manifest V2 (background pages) and Manifest V3 (service workers) from a unified shared JavaScript codebase.",
+  "Developed a resilient plain-text session serialization engine with syntax verification, broken URL isolation, and instant local storage restoration."
+]
+keywords = [
+  "javascript",
+  "webextensions",
+  "browser-extension",
+  "firefox",
+  "chrome",
+  "zen-browser",
+  "local-first",
+  "tab-manager",
+  "privacy",
+  "manifest-v3",
+  "manifest-v2",
+  "automation"
+]

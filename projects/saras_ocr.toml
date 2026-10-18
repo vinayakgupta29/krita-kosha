@@ -1,0 +1,38 @@
+# Project Record: SarasOCR (Desktop Optical Character Recognition Tool)
+
+references = [
+  "./taxonomy/languages.toml",
+  "./taxonomy/frameworks_and_tools.toml"
+]
+
+reference_urls = [
+  "https://raw.githubusercontent.com/vinayakgupta29/SarasOCR/refs/heads/main/README.md"
+]
+
+[project]
+id = "saras_ocr"
+title = "SarasOCR (Desktop Optical Character Recognition Tool)"
+category = "Automation & Computer Vision"
+date = "Jun-2026"
+status = "actively maintained"
+author = "Vinayak Gupta"
+repo_url = "https://github.com/vinayakgupta29/SarasOCR"
+deployed_url = ""
+is_minor = true
+languages = ["langs.python", "langs.html"]
+technologies = ["tools.docker", "tools.tesseract"]
+tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
+
+[project.readme_summary]
+overview = "A lightweight optical character recognition (OCR) utility written in Python (SarasOCR). Processes image and PDF inputs to extract English and Hindi text strings, packaged with automated builds for Windows (.exe) and Linux environments."
+key_components = [
+  "Python OCR processing pipeline with image pre-filtering and contrast enhancement",
+  "Containerized Docker packaging ensuring reproducible OCR engine dependencies",
+  "Standalone release builds for quick local execution across Linux and Windows"
+]
+
+bullets = [
+  "Developed SarasOCR, a desktop OCR text extraction tool in Python with containerized Docker packaging and cross-platform executable builds."
+]
+keywords = ["python", "ocr", "sarasocr", "computer-vision", "automation", "docker"]
+

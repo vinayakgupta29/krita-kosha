@@ -864,8 +864,8 @@ deployed_url = ""
 path = "./projects/poke_dex.toml"
 
 [[projects]]
-id = "py_ocr"
-title = "py_ocr (Desktop Optical Character Recognition Tool)"
+id = "saras_ocr"
+title = "SarasOCR (Desktop Optical Character Recognition Tool)"
 category = "Automation & Computer Vision"
 tagline = "Desktop OCR pipeline in Python packaged for cross-platform execution with standalone binaries and containerization"
 date = "Jun-2026"
@@ -880,7 +880,7 @@ competencies = [
     "standalone-executable-builds",
   ]
 languages = ["langs.python", "langs.html"]
-technologies = ["tools.docker"]
+technologies = ["tools.docker", "tools.tesseract"]
 target_roles = ["python-developer", "automation-engineer", "computer-vision-engineer"]
 
 evidence = { ownership = "sole-developer", depth = "desktop-ocr-pipeline", outcomes = [
@@ -892,15 +892,17 @@ academic_applicability = { subject_areas = ["computer-vision", "document-image-a
 tags = [
     "python",
     "ocr",
+    "sarasocr",
     "computer-vision",
     "automation",
     "docker",
     "image-processing",
     "desktop-tool",
   ]
-repo_url = "https://github.com/vinayakgupta29/py_ocr"
+repo_url = "https://github.com/vinayakgupta29/SarasOCR"
 deployed_url = ""
-path = "./projects/py_ocr.toml"
+path = "./projects/saras_ocr.toml"
+
 
 [[projects]]
 id = "accounting_inventory"
@@ -956,3 +958,140 @@ tags = [
 repo_url = "https://github.com/vinayakgupta29/accounting-node.TS"
 deployed_url = ""
 path = "./projects/accounting_inventory.toml"
+
+[[projects]]
+id = "findecision"
+title = "FinDecision (Financial Text & Article Sentiment Analysis Platform)"
+category = "Applied AI & Financial NLP"
+tagline = "Local financial text and article sentiment analysis platform featuring FinBERT transformer inference on CPU, SSRF-protected article extraction, and FastAPI REST endpoints"
+date = "Oct-2026"
+status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = [
+    "natural-language-processing",
+    "financial-engineering",
+    "machine-learning",
+    "api-security",
+    "web-scraping",
+  ]
+competencies = [
+    "transformer-sentiment-inference",
+    "cpu-inference-optimization",
+    "sentence-aware-text-chunking",
+    "length-weighted-probability-aggregation",
+    "ssrf-defensive-architecture",
+    "trafilatura-article-extraction",
+    "asyncio-semaphore-concurrency",
+    "fastapi-rest-service",
+  ]
+languages = ["langs.python", "langs.html", "langs.css", "langs.javascript"]
+technologies = ["fw.fastapi", "fw.pytorch", "fw.transformers", "proto.rest"]
+target_roles = [
+    "machine-learning-engineer",
+    "nlp-engineer",
+    "backend-engineer",
+    "python-developer",
+    "ai-engineer",
+  ]
+
+evidence = { ownership = "sole-author", depth = "transformer-inference-and-secure-service", outcomes = [
+    "zero-gpu-cpu-inference-pipeline",
+    "ssrf-immune-article-scraper",
+    "sentence-aware-window-chunker",
+    "fastapi-rest-api-and-spa-ui",
+  ] }
+academic_applicability = { subject_areas = [
+    "natural-language-processing",
+    "applied-machine-learning",
+    "financial-text-mining",
+  ], theoretical_foundations = [
+    "transformer-attention-mechanisms",
+    "sentiment-classification-probability-modeling",
+    "heuristic-length-weighted-aggregation",
+    "ssrf-attack-surface-mitigation",
+  ] }
+tags = [
+    "python",
+    "fastapi",
+    "pytorch",
+    "transformers",
+    "finbert",
+    "nlp",
+    "sentiment-analysis",
+    "ssrf-defense",
+    "trafilatura",
+    "cpu-inference",
+    "financial-nlp",
+    "rest-api",
+    "pytest",
+  ]
+repo_url = "https://github.com/vinayakgupta29/FinDecision"
+deployed_url = ""
+path = "./projects/findecision.toml"
+
+[[projects]]
+id = "tabcrate"
+title = "Tab Crate (Local-First Multi-Browser Tab Manager)"
+category = "Browser Engineering & Productivity Tooling"
+tagline = "Local-first, privacy-focused browser extension for snapshotting, exporting, and restoring tab sessions across multi-window browser workflows without external tracking"
+date = "Oct-2026"
+status = "actively maintained"
+lifecycle = "actively-maintained"
+
+domains = [
+    "browser-extensions",
+    "developer-tooling",
+    "privacy-engineering",
+    "web-technologies",
+  ]
+competencies = [
+    "webextensions-api",
+    "manifest-v2-v3-cross-compilation",
+    "local-storage-persistence",
+    "multi-window-tab-restoration",
+    "plain-text-serialization",
+    "client-side-privacy-architecture",
+  ]
+languages = ["langs.javascript", "langs.html", "langs.css", "langs.bash"]
+technologies = ["fw.webextensions", "tools.linux"]
+target_roles = [
+    "frontend-engineer",
+    "browser-tools-developer",
+    "javascript-engineer",
+    "fullstack-engineer",
+  ]
+
+evidence = { ownership = "sole-developer", depth = "cross-browser-extension", outcomes = [
+    "dual-manifest-v2-v3-bundles",
+    "zero-telemetry-local-storage",
+    "multi-window-session-restoration",
+    "plain-text-export-parser",
+  ] }
+academic_applicability = { subject_areas = [
+    "human-computer-interaction",
+    "software-architecture",
+  ], theoretical_foundations = [
+    "local-first-software-paradigms",
+    "cross-platform-extension-abstraction",
+    "session-state-serialization",
+  ] }
+tags = [
+    "javascript",
+    "webextensions",
+    "browser-extension",
+    "firefox",
+    "chrome",
+    "zen-browser",
+    "local-first",
+    "tab-manager",
+    "privacy",
+    "manifest-v3",
+    "manifest-v2",
+    "automation",
+  ]
+repo_url = "https://github.com/vinayakgupta29/TabCrate"
+deployed_url = ""
+path = "./projects/tabcrate.toml"
+
+
